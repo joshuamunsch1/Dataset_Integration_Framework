@@ -93,16 +93,16 @@ of this file.
 
 | Step | Script | Purpose |
 |------|--------|---------|
-| Normalise | `normalise.R` / `normalise_heart.R` | gene and samples filtering + library-size normalisation |
+| Normalise | `normalise_liver.R` / `normalise_heart.R` | gene and samples filtering + library-size normalisation |
 | Merge | `liver_merge.R` / `heart_merge.R` | merge raw counts (liver / heart) |
 | Correct | `01_combat_ref.R` | ComBat-ref correction  |
 | Correct | `02_ruvg.R` | RUVg correction |
 | Correct | `03_deseq2.R` | DESeq2 variance stabilisation + limma batch removal |
 | Diagnose | `diagnostics.R` | silhouette / PCA batch-correction diagnostics |
-| Model | `fit_liver.py` / `fit.py` | classifiers (SVM/GLM/elastic-net/XGBoost) + SHAP |
-| Targets | `Liver/10_dge_singlestudy.R` / `Heart/10_dge_singlestudy.R` | per-study DESeq2 recovery targets |
-| Enrich | `11_gsea.R` / `11_gseasecond_merged.R`, `11b_ora.R` / `11b_ora_second_merged.R` | GSEA / ORA enrichment |
-| Overlap | `13_go_overlap_methods.R` / `..._second_merged.R` | cross-arm term overlap |
+| Model | `fit_liver.py` / `fit_heart.py` | classifiers (SVM/GLM/elastic-net/XGBoost) + SHAP |
+| Targets | `10_dge_singlestudy_liver.R` / `10_dge_singlestudy_heart.R` | per-study DESeq2 recovery targets |
+| Enrich | `11_gsea_liver.R` / `11_gsea_heart.R`, `11b_ora_liver.R` / `11b_ora_heart.R` | GSEA / ORA enrichment |
+| Overlap | `13_go_overlap_methods_liver.R` / `13_go_overlap_methods_heart.R` | cross-arm term overlap |
 | Stability | `14_power_permutation_loso.R` | within-study permutation + leave-one-study-out |
 | Diagnostics | `17_integration_diagnostics.R` | D1/D2 integration diagnostics + meta referee |
 | Control | `18_model_free_enrichment.R` | model-independent GSEA/ORA on pooled DE |
