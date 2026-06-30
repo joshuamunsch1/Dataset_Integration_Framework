@@ -1,15 +1,4 @@
 #!/usr/bin/env python3
-"""
-Reproducible figure generation for the spaceflight-integration framework paper.
-Builds Fig 2 (framework + recovery), Fig 3 (cardiac programmes),
-Fig 4 (divergence->convergence), Fig 5 (cross-arm overlap), and re-creates
-Fig 6 (power/permutation/LOSO, recovery axis).
-
-Inputs (all in DATA): merged_vs_single_summary_{liver,heart}.csv,
-merged_vs_single_details_heart.csv, between_arms_jaccard_liver.csv,
-power_curve.csv, loso.csv, permutation_null.csv, single_study_baselines.csv.
-Outputs: fig2..fig6 .pdf/.png in OUT.
-"""
 import numpy as np, pandas as pd
 import os, io
 from pathlib import Path
@@ -21,15 +10,12 @@ from PIL import Image
 import pdf2image
 from matplotlib.lines import Line2D
 
-# --- Paths: relative to this file. Override with FIG_DATA / FIG_OUT env vars. ---
-# Inputs live in ./figure_data; PLOS TIFFs are written to ./figures_plos.
+
 _ROOT = Path(__file__).resolve().parent
 DATA = os.environ.get("FIG_DATA", str(_ROOT / "figure_data")).rstrip("/\\") + os.sep
 OUT  = os.environ.get("FIG_OUT",  str(_ROOT / "figures_plos")).rstrip("/\\") + os.sep
 os.makedirs(OUT, exist_ok=True)
 
-# --- Fonts per PLOS: Arial (Times/Symbol also allowed), 8-12 pt. If Arial is
-#     not installed matplotlib falls back to DejaVu Sans (visually equivalent). ---
 plt.rcParams.update({"font.family":"sans-serif",
                      "font.sans-serif":["Arial","Helvetica","DejaVu Sans"],
                      "font.size":10,"axes.titlesize":11,"axes.titleweight":"bold",
@@ -37,24 +23,7 @@ plt.rcParams.update({"font.family":"sans-serif",
 CDOWN, CUP = "#2c6fbb", "#c0392b"   # down / up
 TEAL, GREY = "#16a085", "#7f7f7f"
 
-# =====================================================================
-# PLOS Biology figure export
-# ---------------------------------------------------------------------
-# Specs enforced here:
-#   * TIFF, LZW compression, flattened RGB (no alpha, no layers)
-#   * 300-600 dpi; max physical width 19.05 cm (7.5 in)
-#   * < 10 MB per file (auto-falls back 600 -> 300 dpi if needed)
-#   * fonts set to Arial via rcParams above (8-12 pt; see width WARNINGs)
-# Each figure is written as Fig<N>.tif in citation order, per the map below.
-#
-# This script owns 7 of the 9 figures. Fig 2 (PCA, from diagnostics.R) and
-# Fig 9 (pooled-vs-integration) are produced outside it -- run those exported
-# images through  to_plos_tiff("path/to/img", 2)  and  to_plos_tiff(..., 9).
-#
-# !! If you apply manuscript edit D5 (move the between-arm-overlap float so it
-#    is first cited in order), the numbering shifts: the overlap figure becomes
-#    Fig 4 and stability/cardiac/convergence shift to 5/6/7. Update FIG_NUMBER
-#    accordingly -- it is the single source of truth for figure numbers.
+
 # =====================================================================
 FIG_NUMBER = {
     "fig_batch_correction_diagnostics": 1,   # silhouette trade-off   (Fig 1)
@@ -66,16 +35,16 @@ FIG_NUMBER = {
     "fig7_integration_quality":         8,   # integration quality    (Fig 8)
 }
 
-MAX_W_IN      = 7.5          # PLOS max physical width (19.05 cm)
-DPI_LADDER    = (600, 300)   # try 600 dpi, fall back to 300 to stay < 10 MB
+MAX_W_IN      = 7.5          
+DPI_LADDER    = (600, 300)   
 MAX_BYTES     = 9_500_000
-WRITE_PREVIEW = True         # also write a quick .pdf for local \showfigstrue preview
+WRITE_PREVIEW = True        
 
 def _normalise_to_plos_tiff(img, fig_number, dpi, label=""):
-    img = img.convert("RGB")                          # drop alpha / layers
+    img = img.convert("RGB")                        
     w_px, h_px = img.size
     w_in = w_px / dpi
-    if w_in > MAX_W_IN + 1e-6:                         # clamp to <= 7.5 in wide
+    if w_in > MAX_W_IN + 1e-6:                      
         scale = MAX_W_IN / w_in
         img = img.resize((int(round(w_px * scale)), int(round(h_px * scale))),
                          Image.LANCZOS)
@@ -89,13 +58,13 @@ def _normalise_to_plos_tiff(img, fig_number, dpi, label=""):
 def _fig_to_rgb(fig, dpi):
     buf = io.BytesIO()
     fig.savefig(buf, format="png", dpi=dpi, bbox_inches="tight",
-                pad_inches=0.03, facecolor="white")     # white -> opaque, no alpha
+                pad_inches=0.03, facecolor="white")     
     buf.seek(0)
     return Image.open(buf)
 
 def save(fig, name):
     num = FIG_NUMBER.get(name)
-    if WRITE_PREVIEW:                                   # legacy-named local preview
+    if WRITE_PREVIEW:                                   
         fig.savefig(f"{OUT}{name}.pdf", bbox_inches="tight", facecolor="white")
     if num is None:
         print(f"  NOTE: '{name}' has no PLOS number (Fig 2/9 come from other "
@@ -113,7 +82,7 @@ def save(fig, name):
 
 def to_plos_tiff(src, fig_number, dpi=600):
     if os.path.splitext(src)[1].lower() == ".pdf":
-        from pdf2image import convert_from_path          # needs poppler
+        from pdf2image import convert_from_path      
         img = convert_from_path(src, dpi=dpi)[0]
     else:
         img = Image.open(src)
@@ -400,9 +369,6 @@ def fig_diagnostics():
 
     save(fig, "fig_batch_correction_diagnostics")
 
-
-
-
     # ============ FIG 7: integration quality (Desiderata 1 & 2, liver) ============
 def fig7_integration_quality():
     from matplotlib.lines import Line2D
@@ -491,14 +457,7 @@ def fig7_integration_quality():
     axC.legend(frameon=False, fontsize=7.8, loc="upper left", handletextpad=0.5)
     axC.annotate("", xy=(3.35,-0.20), xytext=(-0.35,-0.20), xycoords=("data","axes fraction"),
                  arrowprops=dict(arrowstyle="->", color="#9aa3ab", lw=1.0), annotation_clip=False)
-   # axC.text(1.5,-0.255,"stronger $\\rightarrow$ weaker", transform=axC.get_xaxis_transform(),
-   #          ha="center", va="top", fontsize=7.8, color="#9aa3ab")
-   # axC.text(0.02, 0.40, "strong terms: ~all\nsurvive subsampling", transform=axC.transAxes,
-   #          fontsize=7.8, color=TEAL, va="top")
-   # axC.annotate("near-threshold: non-recovery is\npower loss, not noise",
-   #              xy=(3, rep[3]+notr[3]*0.5), xytext=(2.05, tot.max()*1.02),
-   #              fontsize=7.8, color=CUP, ha="left", va="top",
-   #              arrowprops=dict(arrowstyle="->", color=CUP, lw=0.9))
+
     axC.spines[["top","right"]].set_visible(False)
 
     # --- D: D2 -- merged-only verdict by correction arm ---
@@ -679,13 +638,6 @@ def fig_pooled_vs_integration():
     save(fig, "fig_pooled_vs_integration")
 
 
-
-
-# ---------------------------------------------------------------------
-# Build figures.  `python make_figures.py`           -> builds all available
-#                 `python make_figures.py fig5 fig2`  -> builds a subset
-# Figures whose input CSV is missing are skipped with a message (e.g. fig6
-# needs power_curve.csv + single_study_baselines.csv, which are not committed).
 # ---------------------------------------------------------------------
 _ALL = {"fig_diagnostics": fig_diagnostics, "fig2": fig2, "fig3": fig3,
         "fig4": fig4, "fig5": fig5, "fig6": fig6,

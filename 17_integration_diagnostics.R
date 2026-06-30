@@ -1,6 +1,6 @@
 # ============================================================
 # 17_integration_diagnostics.R
-
+# 
 # OUTPUTS  
 #   d1_retention_summary.csv     per paradigm x method x arm x study  (DESCRIPTIVE
 #                                full-merge retention; confounded by construction)
@@ -40,7 +40,7 @@ WITHIN_B          <- 30         # subsamples per study (raise for a tighter esti
 WITHIN_FRAC       <- 0.8        # fraction of each design cell kept per subsample
 STABLE_FREQ       <- 0.6        # selection_freq >= this  -> heterogeneity_loss
 NOISE_FREQ        <- 0.3        # selection_freq <  this  -> likely_noise
-DGE_SCRIPT        <- "10_dge_singlestudy.R"   # builders sourced from here (define-only)
+DGE_SCRIPT        <- "10_dge_singlestudy_liver.R"   # builders sourced from here (define-only)
 
 # A referee is needed by D1-DENOISING, D1-RELIABILITY (to define "single-only"),
 # and D2

@@ -53,13 +53,15 @@ class RNASeqModel:
         return targets
 
     def build_combined_df(self, custom_concat=None, prep='none', exclude_test=None, verbose=True):
+        """Concatenate loaded studies (native path) or read an externally
+        harmonised matrix (--custom_concat). Drops ERCC/NA columns, applies the
+        optional downstream prep, then appends the {-1,+1} target column."""
         if custom_concat is None:
             if verbose:
                 print("Order that counts are concatenated: {}".format(self.count_dict.keys()))
             self.concat_df = pd.concat([x['counts'] for x in self.count_dict.values()])
         else:
             print("Overwriting concatenated dataframe with file {}".format(custom_concat))
-            # custom matrices are stored genes x samples; transpose to samples x genes
             self.concat_df = pd.read_csv(custom_concat, index_col=0).transpose()
 
         # drop ERCC spike-ins / genes absent from a subset of studies
@@ -185,8 +187,6 @@ class RNASeqModel:
         raise ValueError("Unknown model: {}".format(model_name))
 
     def _final_estimator(self, model):
-        """Terminal estimator, so coef_/feature_importances_ read uniformly
-        whether or not the model is wrapped in a Pipeline (elasticnet)."""
         if hasattr(model, "named_steps"):
             return list(model.named_steps.values())[-1]
         return model
@@ -197,7 +197,7 @@ class RNASeqModel:
 
         A LinearExplainer must see features in the SAME space the linear model
         was trained in. The elasticnet pipeline lives in standardised space, so
-        its StandardScaler is applied before explaining. Passing raw values
+        its StandardScaler is applied before explaining; passing raw values
         would rescale each gene's attribution by its raw SD and corrupt the
         ranking. The bare linear models (svm/glm) already operate on the
         pre-scaled matrix."""
@@ -276,7 +276,9 @@ class RNASeqModel:
 
         skf = StratifiedKFold(n_splits=5, shuffle=True, random_state=12345)
         X = self.concat_df.iloc[:, :-1]
-
+        # target stored as {-1,+1}; re-encode to {0,1} (xgboost rejects {-1,+1};
+        # accuracy and decision_function sign conventions are unchanged, the
+        # positive class stays the SF / +1 group).
         y = (self.concat_df.iloc[:, -1] > 0).astype(int)
 
         if test_set:
@@ -301,6 +303,9 @@ class RNASeqModel:
                 accuracy = accuracy_score(model.predict(X.iloc[test, :]), y.iloc[test])
                 acc_list.append(accuracy)
 
+                # native importance / coefficients from the terminal estimator:
+                #   tree models  -> feature_importances_ (unsigned, gain-based)
+                #   linear models -> coef_ (signed)
                 final = self._final_estimator(model)
                 if hasattr(final, "feature_importances_"):
                     model_coef.append(final.feature_importances_)
@@ -335,7 +340,7 @@ class RNASeqModel:
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(
-        description="Minimal LIVER SF-vs-control classifier + gene attribution + concat export.")
+        description="Minimal HEART SF-vs-control classifier + gene attribution + concat export.")
     parser.add_argument("-C", "--custom_concat", default=None,
                         help="Externally harmonised concatenated matrix (genes x samples). "
                              "If omitted, the native z-score path (load + scale + filter) is used.")
@@ -344,7 +349,7 @@ if __name__ == "__main__":
                              "'count' (log2+global standardise), 'log' (global standardise only), 'none'.")
     parser.add_argument("-T", "--tag", default="",
                         help="Suffix appended to output filenames to keep per-arm results separate.")
-    parser.add_argument("-M", "--models", nargs="+", default=["svm", "glm", "elasticnet", "xgboost"],
+    parser.add_argument("-M", "--models", nargs="+", default=["glm"],
                         choices=["svm", "glm", "elasticnet", "xgboost"],
                         help="Classifier(s) to fit and attribute.")
     parser.add_argument("--no_test", action="store_true",
@@ -354,31 +359,10 @@ if __name__ == "__main__":
     parser.add_argument("-V", "--verbose", action="store_true")
     args = parser.parse_args()
 
-    # held-out SF + GC pair(s) per liver study (merged ids written by 00_merge.R)
     test_labels = {
-        '47': {'id': {'SF': ["Mmus_C57-6T_LVR_FLT_Rep1_F1"],
-                      'GC': ["Mmus_C57-6T_LVR_GC_Rep3_G5"]}},
-        '168_rr1': {'id': {'SF': ["Mmus_C57-6J_LVR_RR1_FLT_wERCC_Rep1_M25"],
-                           'GC': ["Mmus_C57-6J_LVR_RR1_GC_wERCC_Rep5_M40"]}},
-        '168_rr3': {'id': {'SF': ["Mmus_BAL-TAL_LVR_RR3_FLT_wERCC_Rep1_F1"],
-                           'GC': ["Mmus_BAL-TAL_LVR_RR3_GC_wERCC_Rep4_G5"]}},
-        '242': {'id': {'SF': ["Mmus_C57-6J_LVR_FLT_C1_Rep1_F1"],
-                       'GC': ["Mmus_C57-6J_LVR_GC_C2_Rep1_G1",
-                              "Mmus_C57-6J_LVR_CC_C1_Rep1_C1-1",
-                              "Mmus_C57-6J_LVR_CC_C2_Rep1_C2-1"]}},
-        '245': {'id': {'SF': ["Mmus_C57-6T_LVR_FLT_LAR_Rep1_F1",
-                              "Mmus_C57-6T_LVR_FLT_ISS-T_Rep4_F10",
-                              "Mmus_C57-6T_LVR_FLT_ISS-T_Rep2_F8"],
-                       'GC': ["Mmus_C57-6T_LVR_GC_ISS-T_Rep1_G4",
-                              "Mmus_C57-6T_LVR_GC_ISS-T_Rep2_G9",
-                              "Mmus_C57-6T_LVR_GC_LAR_Rep1_G6",
-                              "Mmus_C57-6T_LVR_GC_LAR_Rep2_G4"]}},
-        '379': {'id': {'SF': ["RR8_LVR_FLT_ISS-T_YNG_FI7", "RR8_LVR_FLT_ISS-T_YNG_FI8",
-                              "RR8_LVR_FLT_ISS-T_YNG_FI9", "RR8_LVR_FLT_ISS-T_OLD_FI11",
-                              "RR8_LVR_FLT_ISS-T_OLD_FI12", "RR8_LVR_FLT_ISS-T_OLD_FI13"],
-                       'GC': ["RR8_LVR_GC_ISS-T_YNG_GI8", "RR8_LVR_GC_ISS-T_YNG_GI9",
-                              "RR8_LVR_GC_ISS-T_YNG_GI10", "RR8_LVR_GC_ISS-T_OLD_GI11",
-                              "RR8_LVR_GC_ISS-T_OLD_GI12", "RR8_LVR_GC_ISS-T_OLD_GI13"]}},
+        '270': {'id': {'SF': ["RR3_HRT_FLT_F1"], 'GC': ["RR3_HRT_GC_G7"]}},
+        '580': {'id': {'SF': ["RRRM2_HRT_FLT_ISS-T_YNG_FY1"], 'GC': ["RRRM2_HRT_GC_ISS-T_YNG_GY1"]}},
+        '599': {'id': {'SF': ["GSM6996080"], 'GC': ["GSM6996077"]}},
     }
     if args.no_test:
         test_labels = None
@@ -386,7 +370,7 @@ if __name__ == "__main__":
     model = RNASeqModel()
 
     # --- build the concatenated matrix ---
-    if args.custom_concat is None:                  
+    if args.custom_concat is None:                      # native z-score path
         model.load_counts(data_dir=['data', 'norm_counts'], verbose=args.verbose,
                           scale=True, exclude_test=test_labels)
         model.treatment_filter(id_name="Sample Name", factor='Factor Value[Spaceflight]',
@@ -400,6 +384,7 @@ if __name__ == "__main__":
 
     model.concat_df.transpose().to_csv("concat_df{}.csv".format(suffix), header=True)
 
+    # --- classify + attribute ---
     results = model.fit_model(args.models, test_set=test_labels,
                               shap_values=not args.no_shap, verbose=args.verbose)
 
@@ -416,3 +401,4 @@ if __name__ == "__main__":
         if rd.get('accuracy') is not None:
             rd['accuracy'].to_csv('feature_importance/{}_accuracy{}.csv'.format(m, suffix), index=False)
 
+    print("Done.")

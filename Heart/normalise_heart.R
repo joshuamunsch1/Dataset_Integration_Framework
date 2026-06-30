@@ -13,7 +13,7 @@
 library(DESeq2)
 library(dplyr)
 
-setwd("C:/Users/Joshua/Desktop/Project")  # match countNormalize.R
+setwd("path/to/heart")  
 
 # defaults equivalent to the optparse options in countNormalize.R.
 # (no command-line parsing needed when sourcing interactively)

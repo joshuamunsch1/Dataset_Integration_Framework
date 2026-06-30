@@ -1,15 +1,5 @@
 # ============================================================
-#
-#   inputs  (all already on disk):
-#     17_integration_diagnostics.R                          (sourced for functions)
-#     data/expression_results/glds*_fc_and_pvals.csv        (per-study DE -> referee)
-#     data/model_free_enrichment/<TISSUE>_gsea_relaxed.tsv  (18_, the pooled cell)
-#     data/go_bp_comparison_results/<id>_gseGO_high_pval.tsv (single studies)
-#     data/go_bp_comparison_results/<arm>_<method>_gseGO_high_pval.tsv (panel)
-#   outputs (alongside 17_'s, so the pooled row rbinds onto d2_discovery_summary):
-#     data/go_bp_comparison_results/integration_diagnostics/
-#         <TISSUE>_pooled_vs_referee_summary.csv        (the leaderboard)
-#         <TISSUE>_pooled_merged_only_verdict.csv        (per-term verdicts)
+#     19_pooled_vs_meta_referee.R                          
 # ============================================================
 
 # ---- config: SET THESE TWO PER TISSUE ----------------------
@@ -31,9 +21,9 @@ WRITE_PANEL_VERDICTS <- FALSE # if TRUE, per-term verdict file includes panel ce
 # ---- per-tissue study sets (referee substrate + single-study union) ---------
 # LIVER mirrors 17_'s STUDIES EXACTLY (6 studies) so the pooled cell is scored by
 # the identical referee/union the classifier arms were. HEART uses the 3 cardiac
-# per-study tables (10_dge_singlestudy_second_merged_dataset.R). `id` keys the
+# per-study tables (10_dge_singlestudy_heart.R). `id` keys the
 # single-study relaxed file (<id>_gseGO_high_pval.tsv); `rr` is a label; `expr`
-# is the per-study DESeq2 table under data/expression_results/.
+# is the per-study DESeq2 table 
 STUDIES_BY_TISSUE <- list(
   liver = list(
     list(rr = "RR1_NASA", id = "168_RR1", expr = "glds168rr1_fc_and_pvals.csv"),

@@ -1,12 +1,7 @@
 # ============================================================
 # 10_dge_singlestudy.R  (per-study DESeq2 DGE -> ranked log2FC)
 #
-#   inputs : data/raw_counts/<id>.csv   (raw OSDR counts, genes x samples)
-#            data/single_study_metadata/<id>.txt  (+ specialty/ for 168, 245)
-#            prefiltered_pseudogenes.csv (the same -F feature list)
-#   outputs: data/expression_results/glds<ID>_fc_and_pvals.csv
-#            columns: gene, log2fc, baseMean, lfcSE, stat, pvalue, padj
-# adapted from Ilangovan et al. for benchmarking
+# adapted from Ilangovan et al. for comparison
 # ============================================================
 
 suppressPackageStartupMessages({
