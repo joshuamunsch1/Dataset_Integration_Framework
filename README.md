@@ -122,8 +122,7 @@ of this file.
 
 ## License
 
-This repository is released under the MIT License (see `LICENSE`). Vendored
-third-party code under `external/` is governed by its own license.
+This repository is released under the MIT License (see `LICENSE`). 
 
 ---
 
