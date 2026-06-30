@@ -1,7 +1,7 @@
-# Integrating heterogeneous spaceflight RNA-seq datasets
+# Investigation of the effectiveness of integrating heterogeneous datasets
 
 Analysis code and processed data for the manuscript
-**"[FULL TITLE]"** (J. Munsch, G. C. M. Siontis)
+Investigation of the effectiveness of integrating heterogeneous datasets (J. Munsch, G. C. M. Siontis)
 
 The project benchmarks a modular integration framework — four batch-correction
 strategies (per-study z-score, DESeq2+limma, RUVg, ComBat-ref) × four
@@ -61,7 +61,7 @@ Dataset DOIs are listed in Table 1 of the manuscript.
 ## Software environment
 
 ### R
-- R version: **[e.g. 4.6.0]** .
+- R version: **4.6.0** .
 - Package versions are pinned in `renv.lock`. Reproduce with:
   ```r
   install.packages("renv"); renv::restore()
@@ -70,7 +70,7 @@ Dataset DOIs are listed in Table 1 of the manuscript.
   `RUVSeq`, `sva` (ComBat), `org.Mm.eg.db`, `dplyr`.
 
 ### Python
-- Python version: **[e.g. 3.8.1]**
+- Python version: **3.8.1**
 - Package versions are pinned in `requirements.txt`. Reproduce with:
   ```bash
   pip install -r requirements.txt
@@ -131,7 +131,7 @@ This repository is released under the MIT License (see `LICENSE`).
 If you use this code or the processed data, please cite the manuscript and the
 archived release:
 
-- Munsch J, Siontis GCM. *[FULL TITLE]*. [Journal] (year).
+- Munsch J, Siontis GCM. Investigation of the effectiveness of integrating heterogeneous datasets. 
 - Archived snapshot: Zenodo, DOI **[10.5281/zenodo.XXXXXXX]**.
 
 ---
