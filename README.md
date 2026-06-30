@@ -1,7 +1,8 @@
-# Investigation of the effectiveness of integrating heterogeneous datasets
+# A framework for investigating the effectiveness of integrating heterogeneous spaceflight transcriptomic datasets
+
 
 Analysis code and processed data for the manuscript
-Investigation of the effectiveness of integrating heterogeneous datasets (J. Munsch, G. C. M. Siontis)
+A framework for investigating the effectiveness of integrating heterogeneous spaceflight transcriptomic datasets (J. Munsch, G. C. M. Siontis)
 
 The project benchmarks a modular integration framework — four batch-correction
 strategies (per-study z-score, DESeq2+limma, RUVg, ComBat-ref) × four
@@ -30,7 +31,6 @@ on murine **liver** (six-batch validation benchmark) and **heart**
 ├── Heart/                      # heart specific analyis files
 │   ├── data/
 │   └── pipeline/
-├── figure_data/                # the CSVs make_figures.py consumes (values behind every figure)
 ├── 01_combat_ref, ...          # files applied to both datasets/framework tests
 
 
@@ -131,7 +131,7 @@ This repository is released under the MIT License (see `LICENSE`).
 If you use this code or the processed data, please cite the manuscript and the
 archived release:
 
-- Munsch J, Siontis GCM. Investigation of the effectiveness of integrating heterogeneous datasets. 
+- Munsch J, Siontis GCM. A framework for investigating the effectiveness of integrating heterogeneous spaceflight transcriptomic datasets. 
 - Archived snapshot: Zenodo, DOI **[10.5281/zenodo.XXXXXXX]**.
 
 ---
