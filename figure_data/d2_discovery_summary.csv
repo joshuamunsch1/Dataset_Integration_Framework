@@ -1,0 +1,9 @@
+"Arm","Method","n_merged_only","n_meta_recovered","frac_recovered"
+"zscore","svm",174,98,0.563
+"zscore","glm",286,172,0.601
+"deseq2","svm",196,97,0.495
+"deseq2","glm",150,84,0.56
+"ruvg","svm",139,71,0.511
+"ruvg","glm",235,114,0.485
+"combat_ref","svm",170,116,0.682
+"combat_ref","glm",223,156,0.7

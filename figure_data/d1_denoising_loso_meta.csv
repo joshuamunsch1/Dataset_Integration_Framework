@@ -1,0 +1,7 @@
+"Paradigm","RR_Mission","comparator","n_single_sig","n_recovered","n_notrecovered","recovered_frac","AUC_by_signif","rank_biserial","wilcox_greater_p","perm_p","median_logp_recovered","median_logp_notrecovered","AUC_by_absNES","median_absNES_recovered","median_absNES_notrecovered","perm_p_adj"
+"gsea","RR1_NASA","loso_meta_excl_k",270,104,166,0.385,0.677,0.354,4.89e-07,5e-04,2.573,1.512,0.531,1.871,1.819,6e-04
+"gsea","RR6","loso_meta_excl_k",327,211,116,0.645,0.629,0.258,5.8e-05,5e-04,1.895,1.536,0.473,1.788,1.814,6e-04
+"gsea","RR8","loso_meta_excl_k",250,172,78,0.688,0.655,0.31,4.34e-05,5e-04,1.756,1.367,0.456,1.789,1.811,6e-04
+"gsea","RR9","loso_meta_excl_k",642,362,280,0.564,0.649,0.297,5.12e-11,5e-04,2.095,1.459,0.399,1.644,1.688,6e-04
+"gsea","RR3","loso_meta_excl_k",82,11,71,0.134,0.595,0.191,0.157,0.154,1.829,1.515,0.373,1.725,1.873,0.154
+"gsea","RR47","loso_meta_excl_k",331,256,75,0.773,0.729,0.458,8.39e-10,5e-04,1.745,1.236,0.554,1.669,1.623,6e-04
