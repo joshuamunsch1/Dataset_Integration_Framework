@@ -1,787 +1,787 @@
-"RR_Mission","ID","Description","single_logp","single_NES","in_full_referee","within_study_selection_freq","n_success","n_attempt","verdict"
-"RR1_NASA","GO:0002181","cytoplasmic translation",7.423,-2.887,TRUE,1,30,30,"heterogeneity_loss"
-"RR1_NASA","GO:0006941","striated muscle contraction",7.423,-2.504,TRUE,0.033,30,30,"likely_noise"
-"RR1_NASA","GO:0098869","cellular oxidant detoxification",5.933,-2.409,TRUE,0.033,30,30,"likely_noise"
-"RR1_NASA","GO:0006936","muscle contraction",7.423,-2.346,TRUE,0.033,30,30,"likely_noise"
-"RR1_NASA","GO:0003009","skeletal muscle contraction",3.379,-2.286,FALSE,0,30,30,"likely_noise"
-"RR1_NASA","GO:1990748","cellular detoxification",5.85,-2.232,TRUE,0.033,30,30,"likely_noise"
-"RR1_NASA","GO:0014902","myotube differentiation",6.079,-2.173,TRUE,0.033,30,30,"likely_noise"
-"RR1_NASA","GO:0098754","detoxification",5.764,-2.17,TRUE,0.033,30,30,"likely_noise"
-"RR1_NASA","GO:0006575","modified amino acid metabolic process",6.338,-2.164,FALSE,1,30,30,"heterogeneity_loss"
-"RR1_NASA","GO:0009152","purine ribonucleotide biosynthetic process",5.976,-2.161,FALSE,0.033,30,30,"likely_noise"
-"RR1_NASA","GO:0170035","L-amino acid catabolic process",3.68,-2.16,FALSE,0,30,30,"likely_noise"
-"RR1_NASA","GO:0033539","fatty acid beta-oxidation using acyl-CoA dehydrogenase",2.818,-2.158,FALSE,1,30,30,"heterogeneity_loss"
-"RR1_NASA","GO:0097237","cellular response to toxic substance",4.852,-2.153,TRUE,0.033,30,30,"likely_noise"
-"RR1_NASA","GO:0014819","regulation of skeletal muscle contraction",2.517,-2.145,FALSE,0,30,30,"likely_noise"
-"RR1_NASA","GO:0050879","multicellular organismal movement",3.183,-2.136,FALSE,0,30,30,"likely_noise"
-"RR1_NASA","GO:0050881","musculoskeletal movement",2.818,-2.132,FALSE,0,30,30,"likely_noise"
-"RR1_NASA","GO:0170033","L-amino acid metabolic process",5.795,-2.129,FALSE,0,30,30,"likely_noise"
-"RR1_NASA","GO:0009260","ribonucleotide biosynthetic process",5.578,-2.118,FALSE,0.033,30,30,"likely_noise"
-"RR1_NASA","GO:0034377","plasma lipoprotein particle assembly",1.964,-2.098,FALSE,0,30,30,"likely_noise"
-"RR1_NASA","GO:0170039","proteinogenic amino acid metabolic process",4.906,-2.095,FALSE,0,30,30,"likely_noise"
-"RR1_NASA","GO:0065005","protein-lipid complex assembly",2.322,-2.088,FALSE,0,30,30,"likely_noise"
-"RR1_NASA","GO:0170040","proteinogenic amino acid catabolic process",3.315,-2.077,FALSE,0,30,30,"likely_noise"
-"RR1_NASA","GO:0046390","ribose phosphate biosynthetic process",5.578,-2.052,FALSE,0.033,30,30,"likely_noise"
-"RR1_NASA","GO:0150172","regulation of phosphatidylcholine metabolic process",1.562,-2.032,FALSE,0.033,30,30,"likely_noise"
-"RR1_NASA","GO:0060426","lung vasculature development",1.559,-2.029,FALSE,0,30,30,"likely_noise"
-"RR1_NASA","GO:0010898","positive regulation of triglyceride catabolic process",1.559,-2.027,FALSE,0,30,30,"likely_noise"
-"RR1_NASA","GO:0006749","glutathione metabolic process",2.183,-2.019,FALSE,0.033,30,30,"likely_noise"
-"RR1_NASA","GO:0034370","triglyceride-rich lipoprotein particle remodeling",1.512,-2.019,FALSE,0,30,30,"likely_noise"
-"RR1_NASA","GO:0034372","very-low-density lipoprotein particle remodeling",1.512,-2.019,FALSE,0,30,30,"likely_noise"
-"RR1_NASA","GO:0010574","regulation of vascular endothelial growth factor production",2.02,-2,FALSE,0,30,30,"likely_noise"
-"RR1_NASA","GO:0033314","mitotic DNA replication checkpoint signaling",2.099,1.992,FALSE,0,30,30,"likely_noise"
-"RR1_NASA","GO:0070444","oligodendrocyte progenitor proliferation",2.097,1.991,FALSE,1,30,30,"heterogeneity_loss"
-"RR1_NASA","GO:0006805","xenobiotic metabolic process",3.448,-1.982,FALSE,1,30,30,"heterogeneity_loss"
-"RR1_NASA","GO:2000279","negative regulation of DNA biosynthetic process",1.868,1.981,TRUE,0,30,30,"likely_noise"
-"RR1_NASA","GO:0010573","vascular endothelial growth factor production",1.678,-1.979,FALSE,0,30,30,"likely_noise"
-"RR1_NASA","GO:0035082","axoneme assembly",2.322,1.968,FALSE,0.033,30,30,"likely_noise"
-"RR1_NASA","GO:0070445","regulation of oligodendrocyte progenitor proliferation",1.818,1.968,FALSE,1,30,30,"heterogeneity_loss"
-"RR1_NASA","GO:0000056","ribosomal small subunit export from nucleus",1.661,-1.962,FALSE,0.033,30,30,"likely_noise"
-"RR1_NASA","GO:0014857","regulation of skeletal muscle cell proliferation",1.918,1.957,FALSE,0.033,30,30,"likely_noise"
-"RR1_NASA","GO:0035235","ionotropic glutamate receptor signaling pathway",1.593,1.951,FALSE,1,30,30,"heterogeneity_loss"
-"RR1_NASA","GO:0033108","mitochondrial respiratory chain complex assembly",2.888,-1.95,FALSE,0,30,30,"likely_noise"
-"RR1_NASA","GO:0043586","tongue development",1.393,1.944,FALSE,0,30,30,"likely_noise"
-"RR1_NASA","GO:0034447","very-low-density lipoprotein particle clearance",1.21,-1.941,FALSE,0,30,30,"likely_noise"
-"RR1_NASA","GO:0006164","purine nucleotide biosynthetic process",4.668,-1.934,FALSE,0.033,30,30,"likely_noise"
-"RR1_NASA","GO:0050996","positive regulation of lipid catabolic process",1.559,-1.933,FALSE,0.967,30,30,"heterogeneity_loss"
-"RR1_NASA","GO:0015669","gas transport",1.127,-1.931,FALSE,0.033,30,30,"likely_noise"
-"RR1_NASA","GO:0030200","heparan sulfate proteoglycan catabolic process",1.127,-1.93,TRUE,0,30,30,"likely_noise"
-"RR1_NASA","GO:0001578","microtubule bundle formation",2.89,1.929,TRUE,0.033,30,30,"likely_noise"
-"RR1_NASA","GO:0046889","positive regulation of lipid biosynthetic process",2.818,-1.924,FALSE,1,30,30,"heterogeneity_loss"
-"RR1_NASA","GO:0071450","cellular response to oxygen radical",1.424,-1.919,FALSE,0,30,30,"likely_noise"
-"RR1_NASA","GO:0071451","cellular response to superoxide",1.424,-1.919,FALSE,0,30,30,"likely_noise"
-"RR1_NASA","GO:0006103","2-oxoglutarate metabolic process",1.133,-1.915,FALSE,0,30,30,"likely_noise"
-"RR1_NASA","GO:1990806","ligand-gated ion channel signaling pathway",1.75,1.915,FALSE,1,30,30,"heterogeneity_loss"
-"RR1_NASA","GO:0048525","negative regulation of viral process",1.734,1.914,FALSE,0.967,30,30,"heterogeneity_loss"
-"RR1_NASA","GO:0019430","removal of superoxide radicals",1.512,-1.906,FALSE,0,30,30,"likely_noise"
-"RR1_NASA","GO:0048821","erythrocyte development",1.661,1.902,FALSE,0.967,30,30,"heterogeneity_loss"
-"RR1_NASA","GO:0043691","reverse cholesterol transport",1.312,-1.898,FALSE,0.967,30,30,"heterogeneity_loss"
-"RR1_NASA","GO:0045071","negative regulation of viral genome replication",1.779,1.897,FALSE,1,30,30,"heterogeneity_loss"
-"RR1_NASA","GO:0000076","DNA replication checkpoint signaling",1.452,1.897,FALSE,0,30,30,"likely_noise"
-"RR1_NASA","GO:0014856","skeletal muscle cell proliferation",1.495,1.894,FALSE,1,30,30,"heterogeneity_loss"
-"RR1_NASA","GO:0014850","response to muscle activity",1.422,-1.876,FALSE,0,30,30,"likely_noise"
-"RR1_NASA","GO:0016226","iron-sulfur cluster assembly",1.107,-1.872,FALSE,0,30,30,"likely_noise"
-"RR1_NASA","GO:0031163","metallo-sulfur cluster assembly",1.107,-1.872,FALSE,0,30,30,"likely_noise"
-"RR1_NASA","GO:0097066","response to thyroid hormone",1.084,-1.867,FALSE,0,30,30,"likely_noise"
-"RR1_NASA","GO:0030948","negative regulation of vascular endothelial growth factor receptor signaling pathway",1.25,-1.865,FALSE,0,30,30,"likely_noise"
-"RR1_NASA","GO:0033489","cholesterol biosynthetic process via desmosterol",1.334,1.865,TRUE,0,30,30,"likely_noise"
-"RR1_NASA","GO:0061469","regulation of type B pancreatic cell proliferation",1.006,-1.864,FALSE,0,30,30,"likely_noise"
-"RR1_NASA","GO:0044273","sulfur compound catabolic process",1.331,-1.855,FALSE,0,30,30,"likely_noise"
-"RR1_NASA","GO:0015936","coenzyme A metabolic process",1.278,-1.853,FALSE,0,30,30,"likely_noise"
-"RR1_NASA","GO:0036196","zymosterol metabolic process",1.042,1.853,TRUE,0,30,30,"likely_noise"
-"RR1_NASA","GO:0036197","zymosterol biosynthetic process",1.042,1.853,TRUE,0,30,30,"likely_noise"
-"RR1_NASA","GO:0000028","ribosomal small subunit assembly",1.13,-1.853,FALSE,0,30,30,"likely_noise"
-"RR1_NASA","GO:0001975","response to amphetamine",1.133,-1.85,FALSE,0,30,30,"likely_noise"
-"RR1_NASA","GO:0060080","inhibitory postsynaptic potential",1.177,1.849,FALSE,0,30,30,"likely_noise"
-"RR1_NASA","GO:0009081","branched-chain amino acid metabolic process",1.129,-1.847,FALSE,0,30,30,"likely_noise"
-"RR1_NASA","GO:2000342","negative regulation of chemokine (C-X-C motif) ligand 2 production",1.78,1.838,FALSE,0,30,30,"likely_noise"
-"RR1_NASA","GO:0009636","response to toxic substance",4.297,-1.837,TRUE,0.033,30,30,"likely_noise"
-"RR1_NASA","GO:0055090","acylglycerol homeostasis",1.247,-1.831,FALSE,0,30,30,"likely_noise"
-"RR1_NASA","GO:1902099","regulation of metaphase/anaphase transition of cell cycle",1.818,1.825,FALSE,0.967,30,30,"heterogeneity_loss"
-"RR1_NASA","GO:0030071","regulation of mitotic metaphase/anaphase transition",1.841,1.824,FALSE,0.967,30,30,"heterogeneity_loss"
-"RR1_NASA","GO:0140013","meiotic nuclear division",2.615,1.824,FALSE,0.967,30,30,"heterogeneity_loss"
-"RR1_NASA","GO:0000305","response to oxygen radical",1.227,-1.823,FALSE,0,30,30,"likely_noise"
-"RR1_NASA","GO:0000303","response to superoxide",1.023,-1.82,FALSE,0,30,30,"likely_noise"
-"RR1_NASA","GO:0033045","regulation of sister chromatid segregation",2.144,1.818,FALSE,0.967,30,30,"heterogeneity_loss"
-"RR1_NASA","GO:0010744","positive regulation of macrophage derived foam cell differentiation",1.112,-1.816,FALSE,0,30,30,"likely_noise"
-"RR1_NASA","GO:0007131","reciprocal meiotic recombination",1.361,1.814,TRUE,0,30,30,"likely_noise"
-"RR1_NASA","GO:0140527","reciprocal homologous recombination",1.361,1.814,TRUE,0,30,30,"likely_noise"
-"RR1_NASA","GO:0051146","striated muscle cell differentiation",5.63,-1.812,TRUE,0,30,30,"likely_noise"
-"RR1_NASA","GO:1903046","meiotic cell cycle process",3.306,1.812,FALSE,0.967,30,30,"heterogeneity_loss"
-"RR1_NASA","GO:0044784","metaphase/anaphase transition of cell cycle",1.68,1.811,FALSE,0.967,30,30,"heterogeneity_loss"
-"RR1_NASA","GO:0043501","skeletal muscle adaptation",1.133,-1.809,FALSE,0,30,30,"likely_noise"
-"RR1_NASA","GO:0044539","long-chain fatty acid import into cell",1.129,-1.807,FALSE,0,30,30,"likely_noise"
-"RR1_NASA","GO:0003139","secondary heart field specification",1.176,1.807,FALSE,0,30,30,"likely_noise"
-"RR1_NASA","GO:0015909","long-chain fatty acid transport",1.422,-1.804,FALSE,0,30,30,"likely_noise"
-"RR1_NASA","GO:0051985","negative regulation of chromosome segregation",1.176,1.802,FALSE,0.967,30,30,"heterogeneity_loss"
-"RR1_NASA","GO:0035825","homologous recombination",1.076,1.8,FALSE,0,30,30,"likely_noise"
-"RR1_NASA","GO:0007091","metaphase/anaphase transition of mitotic cell cycle",1.855,1.799,FALSE,0.967,30,30,"heterogeneity_loss"
-"RR1_NASA","GO:0061982","meiosis I cell cycle process",1.818,1.793,FALSE,0.967,30,30,"heterogeneity_loss"
-"RR1_NASA","GO:0010984","regulation of lipoprotein particle clearance",1.014,-1.791,FALSE,0.033,30,30,"likely_noise"
-"RR1_NASA","GO:0007094","mitotic spindle assembly checkpoint signaling",1.176,1.786,FALSE,0.967,30,30,"heterogeneity_loss"
-"RR1_NASA","GO:0071173","spindle assembly checkpoint signaling",1.176,1.786,FALSE,0.967,30,30,"heterogeneity_loss"
-"RR1_NASA","GO:0071174","mitotic spindle checkpoint signaling",1.176,1.786,FALSE,0.967,30,30,"heterogeneity_loss"
-"RR1_NASA","GO:0007127","meiosis I",1.613,1.779,FALSE,0.967,30,30,"heterogeneity_loss"
-"RR1_NASA","GO:0070328","triglyceride homeostasis",1.203,-1.776,FALSE,0,30,30,"likely_noise"
-"RR1_NASA","GO:0051983","regulation of chromosome segregation",2.091,1.775,FALSE,0.967,30,30,"heterogeneity_loss"
-"RR1_NASA","GO:0009165","nucleotide biosynthetic process",3.315,-1.774,FALSE,0,30,30,"likely_noise"
-"RR1_NASA","GO:0044818","mitotic G2/M transition checkpoint",1.586,1.774,FALSE,0,30,30,"likely_noise"
-"RR1_NASA","GO:0170041","non-proteinogenic amino acid metabolic process",1.33,-1.773,FALSE,0,30,30,"likely_noise"
-"RR1_NASA","GO:0033046","negative regulation of sister chromatid segregation",1.001,1.766,FALSE,0.967,30,30,"heterogeneity_loss"
-"RR1_NASA","GO:0033048","negative regulation of mitotic sister chromatid segregation",1.001,1.766,FALSE,0.967,30,30,"heterogeneity_loss"
-"RR1_NASA","GO:0045841","negative regulation of mitotic metaphase/anaphase transition",1.001,1.766,FALSE,0.967,30,30,"heterogeneity_loss"
-"RR1_NASA","GO:2000816","negative regulation of mitotic sister chromatid separation",1.001,1.766,FALSE,0.967,30,30,"heterogeneity_loss"
-"RR1_NASA","GO:0007093","mitotic cell cycle checkpoint signaling",1.918,1.763,FALSE,0.967,30,30,"heterogeneity_loss"
-"RR1_NASA","GO:0031577","spindle checkpoint signaling",1.13,1.76,FALSE,0.967,30,30,"heterogeneity_loss"
-"RR1_NASA","GO:0060338","regulation of type I interferon-mediated signaling pathway",1.129,1.751,TRUE,0,30,30,"likely_noise"
-"RR1_NASA","GO:0070286","axonemal dynein complex assembly",1.001,1.75,FALSE,0.033,30,30,"likely_noise"
-"RR1_NASA","GO:0061515","myeloid cell development",1.639,1.75,FALSE,0,30,30,"likely_noise"
-"RR1_NASA","GO:0014719","skeletal muscle satellite cell activation",1.153,1.745,FALSE,0.033,30,30,"likely_noise"
-"RR1_NASA","GO:1902100","negative regulation of metaphase/anaphase transition of cell cycle",1.176,1.74,FALSE,0.967,30,30,"heterogeneity_loss"
-"RR1_NASA","GO:1905819","negative regulation of chromosome separation",1.176,1.74,FALSE,0.967,30,30,"heterogeneity_loss"
-"RR1_NASA","GO:0045834","positive regulation of lipid metabolic process",2.057,-1.74,FALSE,1,30,30,"heterogeneity_loss"
-"RR1_NASA","GO:0071825","protein-lipid complex organization",1.247,-1.739,FALSE,0,30,30,"likely_noise"
-"RR1_NASA","GO:0060078","regulation of postsynaptic membrane potential",1.736,1.739,FALSE,0.033,30,30,"likely_noise"
-"RR1_NASA","GO:0051321","meiotic cell cycle",2.729,1.733,FALSE,0.967,30,30,"heterogeneity_loss"
-"RR1_NASA","GO:0008608","attachment of spindle microtubules to kinetochore",1.112,1.721,FALSE,0.967,30,30,"heterogeneity_loss"
-"RR1_NASA","GO:0060920","cardiac pacemaker cell differentiation",1.021,-1.721,FALSE,0,30,30,"likely_noise"
-"RR1_NASA","GO:0071612","IP-10 production",1.032,1.713,FALSE,0,30,30,"likely_noise"
-"RR1_NASA","GO:0071658","regulation of IP-10 production",1.032,1.713,FALSE,0,30,30,"likely_noise"
-"RR1_NASA","GO:0000075","cell cycle checkpoint signaling",2.144,1.711,TRUE,0.967,30,30,"heterogeneity_loss"
-"RR1_NASA","GO:0001676","long-chain fatty acid metabolic process",1.781,-1.711,TRUE,1,30,30,"heterogeneity_loss"
-"RR1_NASA","GO:0033047","regulation of mitotic sister chromatid segregation",1.217,1.707,FALSE,0.967,30,30,"heterogeneity_loss"
-"RR1_NASA","GO:0000819","sister chromatid segregation",2.339,1.684,FALSE,0.967,30,30,"heterogeneity_loss"
-"RR1_NASA","GO:0044774","mitotic DNA integrity checkpoint signaling",1.001,1.682,FALSE,0,30,30,"likely_noise"
-"RR1_NASA","GO:0071466","cellular response to xenobiotic stimulus",2.322,-1.682,FALSE,1,30,30,"heterogeneity_loss"
-"RR1_NASA","GO:0019079","viral genome replication",1.201,1.671,TRUE,0,30,30,"likely_noise"
-"RR1_NASA","GO:2001251","negative regulation of chromosome organization",1.291,1.67,TRUE,0.967,30,30,"heterogeneity_loss"
-"RR1_NASA","GO:0009123","nucleoside monophosphate metabolic process",1.087,-1.667,FALSE,0,30,30,"likely_noise"
-"RR1_NASA","GO:0051304","chromosome separation",1.081,1.662,FALSE,0.967,30,30,"heterogeneity_loss"
-"RR1_NASA","GO:0140374","antiviral innate immune response",1.177,1.661,TRUE,0,30,30,"likely_noise"
-"RR1_NASA","GO:0090303","positive regulation of wound healing",1.001,-1.66,TRUE,0,30,30,"likely_noise"
-"RR1_NASA","GO:0007006","mitochondrial membrane organization",1.005,-1.66,FALSE,0,30,30,"likely_noise"
-"RR1_NASA","GO:0098813","nuclear chromosome segregation",2.516,1.658,FALSE,0.967,30,30,"heterogeneity_loss"
-"RR1_NASA","GO:0060021","roof of mouth development",1.109,1.654,FALSE,0.033,30,30,"likely_noise"
-"RR1_NASA","GO:0051784","negative regulation of nuclear division",1.001,1.647,FALSE,0.967,30,30,"heterogeneity_loss"
-"RR1_NASA","GO:0050435","amyloid-beta metabolic process",1.001,-1.646,TRUE,0,30,30,"likely_noise"
-"RR1_NASA","GO:0120254","olefinic compound metabolic process",1.75,-1.644,TRUE,0.033,30,30,"likely_noise"
-"RR1_NASA","GO:0045132","meiotic chromosome segregation",1.02,1.642,FALSE,0.967,30,30,"heterogeneity_loss"
-"RR1_NASA","GO:0051310","metaphase chromosome alignment",1.067,1.636,FALSE,0.967,30,30,"heterogeneity_loss"
-"RR1_NASA","GO:0072522","purine-containing compound biosynthetic process",2.649,-1.623,FALSE,0,30,30,"likely_noise"
-"RR1_NASA","GO:1901293","nucleoside phosphate biosynthetic process",2.332,-1.602,FALSE,0,30,30,"likely_noise"
-"RR1_NASA","GO:0060759","regulation of response to cytokine stimulus",1.222,1.598,FALSE,0,30,30,"likely_noise"
-"RR1_NASA","GO:0016042","lipid catabolic process",3.237,-1.596,FALSE,0,30,30,"likely_noise"
-"RR1_NASA","GO:0007059","chromosome segregation",2.615,1.585,TRUE,0.967,30,30,"heterogeneity_loss"
-"RR1_NASA","GO:1901991","negative regulation of mitotic cell cycle phase transition",1.178,1.584,FALSE,0.967,30,30,"heterogeneity_loss"
-"RR1_NASA","GO:0001959","regulation of cytokine-mediated signaling pathway",1.083,1.577,FALSE,0.967,30,30,"heterogeneity_loss"
-"RR1_NASA","GO:0010389","regulation of G2/M transition of mitotic cell cycle",1.021,1.574,FALSE,0,30,30,"likely_noise"
-"RR1_NASA","GO:0006163","purine nucleotide metabolic process",3.577,-1.572,FALSE,0,30,30,"likely_noise"
-"RR1_NASA","GO:0034308","primary alcohol metabolic process",1.03,-1.57,TRUE,0,30,30,"likely_noise"
-"RR1_NASA","GO:0000280","nuclear division",2.183,1.566,FALSE,0.967,30,30,"heterogeneity_loss"
-"RR1_NASA","GO:0008637","apoptotic mitochondrial changes",1.129,-1.552,FALSE,0,30,30,"likely_noise"
-"RR1_NASA","GO:0046890","regulation of lipid biosynthetic process",1.678,-1.549,FALSE,0,30,30,"likely_noise"
-"RR1_NASA","GO:1901988","negative regulation of cell cycle phase transition",1.424,1.536,TRUE,0.967,30,30,"heterogeneity_loss"
-"RR1_NASA","GO:0000302","response to reactive oxygen species",1.451,-1.486,TRUE,0.033,30,30,"likely_noise"
-"RR1_NASA","GO:0034614","cellular response to reactive oxygen species",1.047,-1.48,TRUE,0,30,30,"likely_noise"
-"RR1_NASA","GO:0006066","alcohol metabolic process",1.593,-1.411,TRUE,0,30,30,"likely_noise"
-"RR1_NASA","GO:0019216","regulation of lipid metabolic process",1.035,-1.28,FALSE,0,30,30,"likely_noise"
-"RR6","GO:0002474","antigen processing and presentation of peptide antigen via MHC class I",3.874,-2.243,TRUE,1,30,30,"heterogeneity_loss"
-"RR6","GO:0050881","musculoskeletal movement",3.136,2.201,FALSE,0,30,30,"likely_noise"
-"RR6","GO:0003009","skeletal muscle contraction",3.284,2.194,FALSE,0,30,30,"likely_noise"
-"RR6","GO:0050879","multicellular organismal movement",3.58,2.16,FALSE,0,30,30,"likely_noise"
-"RR6","GO:0002483","antigen processing and presentation of endogenous peptide antigen",2.922,-2.142,TRUE,0,30,30,"likely_noise"
-"RR6","GO:0019885","antigen processing and presentation of endogenous peptide antigen via MHC class I",2.922,-2.142,TRUE,0,30,30,"likely_noise"
-"RR6","GO:0006953","acute-phase response",2.843,-2.097,TRUE,0,30,30,"likely_noise"
-"RR6","GO:0090009","primitive streak formation",1.798,2.091,FALSE,1,30,30,"heterogeneity_loss"
-"RR6","GO:0006068","ethanol catabolic process",2.413,-2.077,FALSE,1,30,30,"heterogeneity_loss"
-"RR6","GO:0019883","antigen processing and presentation of endogenous antigen",2.993,-2.057,TRUE,0,30,30,"likely_noise"
-"RR6","GO:0002476","antigen processing and presentation of endogenous peptide antigen via MHC class Ib",2.233,-2.051,TRUE,1,30,30,"heterogeneity_loss"
-"RR6","GO:0002484","antigen processing and presentation of endogenous peptide antigen via MHC class I via ER pathway",2.233,-2.051,TRUE,1,30,30,"heterogeneity_loss"
-"RR6","GO:0034308","primary alcohol metabolic process",3.833,-2.045,TRUE,1,30,30,"heterogeneity_loss"
-"RR6","GO:0034310","primary alcohol catabolic process",2.55,-2.037,FALSE,1,30,30,"heterogeneity_loss"
-"RR6","GO:0006067","ethanol metabolic process",2.53,-2.036,FALSE,1,30,30,"heterogeneity_loss"
-"RR6","GO:0002486","antigen processing and presentation of endogenous peptide antigen via MHC class I via ER pathway, TAP-independent",2.577,-2.034,TRUE,0.967,30,30,"heterogeneity_loss"
-"RR6","GO:0033865","nucleoside bisphosphate metabolic process",2.655,-2.028,FALSE,1,30,30,"heterogeneity_loss"
-"RR6","GO:0033875","ribonucleoside bisphosphate metabolic process",2.655,-2.028,FALSE,1,30,30,"heterogeneity_loss"
-"RR6","GO:0034032","purine nucleoside bisphosphate metabolic process",2.655,-2.028,FALSE,1,30,30,"heterogeneity_loss"
-"RR6","GO:0034035","purine ribonucleoside bisphosphate metabolic process",2.655,-2.028,FALSE,1,30,30,"heterogeneity_loss"
-"RR6","GO:0050427","3'-phosphoadenosine 5'-phosphosulfate metabolic process",2.655,-2.028,FALSE,1,30,30,"heterogeneity_loss"
-"RR6","GO:0006066","alcohol metabolic process",7.193,-2.003,TRUE,0,30,30,"likely_noise"
-"RR6","GO:0001975","response to amphetamine",1.662,1.99,FALSE,0,30,30,"likely_noise"
-"RR6","GO:1901970","positive regulation of mitotic sister chromatid separation",1.765,-1.977,FALSE,0,30,30,"likely_noise"
-"RR6","GO:0002428","antigen processing and presentation of peptide antigen via MHC class Ib",2.092,-1.969,TRUE,0.033,30,30,"likely_noise"
-"RR6","GO:0002475","antigen processing and presentation via MHC class Ib",2.128,-1.961,TRUE,0,30,30,"likely_noise"
-"RR6","GO:0010965","regulation of mitotic sister chromatid separation",2.378,-1.959,FALSE,0,30,30,"likely_noise"
-"RR6","GO:0007094","mitotic spindle assembly checkpoint signaling",1.963,-1.952,FALSE,0,30,30,"likely_noise"
-"RR6","GO:0071173","spindle assembly checkpoint signaling",1.963,-1.952,FALSE,0,30,30,"likely_noise"
-"RR6","GO:0071174","mitotic spindle checkpoint signaling",1.963,-1.952,FALSE,0,30,30,"likely_noise"
-"RR6","GO:0033046","negative regulation of sister chromatid segregation",1.999,-1.946,FALSE,0,30,30,"likely_noise"
-"RR6","GO:0033048","negative regulation of mitotic sister chromatid segregation",1.999,-1.946,FALSE,0,30,30,"likely_noise"
-"RR6","GO:0045841","negative regulation of mitotic metaphase/anaphase transition",1.999,-1.946,FALSE,0,30,30,"likely_noise"
-"RR6","GO:2000816","negative regulation of mitotic sister chromatid separation",1.999,-1.946,FALSE,0,30,30,"likely_noise"
-"RR6","GO:0031577","spindle checkpoint signaling",2.104,-1.945,FALSE,0,30,30,"likely_noise"
-"RR6","GO:0007096","regulation of exit from mitosis",1.548,-1.93,FALSE,0,30,30,"likely_noise"
-"RR6","GO:1902100","negative regulation of metaphase/anaphase transition of cell cycle",2.128,-1.921,FALSE,0,30,30,"likely_noise"
-"RR6","GO:1905819","negative regulation of chromosome separation",2.128,-1.921,FALSE,0,30,30,"likely_noise"
-"RR6","GO:0060004","reflex",1.339,1.921,FALSE,0,30,30,"likely_noise"
-"RR6","GO:0051306","mitotic sister chromatid separation",2.22,-1.91,FALSE,0,30,30,"likely_noise"
-"RR6","GO:0008608","attachment of spindle microtubules to kinetochore",2.216,-1.909,FALSE,0,30,30,"likely_noise"
-"RR6","GO:0051784","negative regulation of nuclear division",2.116,-1.908,FALSE,0,30,30,"likely_noise"
-"RR6","GO:0042776","proton motive force-driven mitochondrial ATP synthesis",1.999,-1.903,FALSE,0,30,30,"likely_noise"
-"RR6","GO:0045842","positive regulation of mitotic metaphase/anaphase transition",1.525,-1.887,FALSE,0,30,30,"likely_noise"
-"RR6","GO:0008202","steroid metabolic process",5.442,-1.885,FALSE,0,30,30,"likely_noise"
-"RR6","GO:0015986","proton motive force-driven ATP synthesis",1.999,-1.883,FALSE,0,30,30,"likely_noise"
-"RR6","GO:0033047","regulation of mitotic sister chromatid segregation",1.985,-1.872,FALSE,0,30,30,"likely_noise"
-"RR6","GO:0045839","negative regulation of mitotic nuclear division",1.952,-1.858,FALSE,0,30,30,"likely_noise"
-"RR6","GO:0051791","medium-chain fatty acid metabolic process",1.201,1.857,FALSE,1,30,30,"heterogeneity_loss"
-"RR6","GO:0051985","negative regulation of chromosome segregation",1.608,-1.853,FALSE,0,30,30,"likely_noise"
-"RR6","GO:0055062","phosphate ion homeostasis",1.01,1.847,FALSE,0.033,30,30,"likely_noise"
-"RR6","GO:0071394","cellular response to testosterone stimulus",1.156,-1.833,FALSE,0,30,30,"likely_noise"
-"RR6","GO:0006359","regulation of transcription by RNA polymerase III",1.156,1.827,TRUE,1,30,30,"heterogeneity_loss"
-"RR6","GO:0021533","cell differentiation in hindbrain",1.248,1.825,TRUE,0,30,30,"likely_noise"
-"RR6","GO:0046686","response to cadmium ion",1.588,-1.822,FALSE,0,30,30,"likely_noise"
-"RR6","GO:0051923","sulfation",1.116,-1.821,FALSE,1,30,30,"heterogeneity_loss"
-"RR6","GO:0048149","behavioral response to ethanol",1.031,1.817,FALSE,0,30,30,"likely_noise"
-"RR6","GO:0038166","angiotensin-activated signaling pathway",1.03,1.816,FALSE,0,30,30,"likely_noise"
-"RR6","GO:0021697","cerebellar cortex formation",1.12,1.813,TRUE,0,30,30,"likely_noise"
-"RR6","GO:0046164","alcohol catabolic process",1.258,-1.81,FALSE,1,30,30,"heterogeneity_loss"
-"RR6","GO:0090306","meiotic spindle assembly",1.031,-1.808,FALSE,0,30,30,"likely_noise"
-"RR6","GO:0061179","negative regulation of insulin secretion involved in cellular response to glucose stimulus",1.159,-1.807,FALSE,0,30,30,"likely_noise"
-"RR6","GO:0009409","response to cold",1.39,1.789,FALSE,0,30,30,"likely_noise"
-"RR6","GO:0051304","chromosome separation",1.422,-1.783,FALSE,0,30,30,"likely_noise"
-"RR6","GO:0043903","regulation of biological process involved in symbiotic interaction",1.216,-1.779,TRUE,0,30,30,"likely_noise"
-"RR6","GO:0002023","reduction of food intake in response to dietary excess",1.072,1.775,FALSE,0,30,30,"likely_noise"
-"RR6","GO:0032780","negative regulation of ATP-dependent activity",1.019,-1.759,FALSE,0,30,30,"likely_noise"
-"RR6","GO:0045475","locomotor rhythm",1.01,-1.751,FALSE,0,30,30,"likely_noise"
-"RR6","GO:0035458","cellular response to interferon-beta",1.4,-1.751,FALSE,1,30,30,"heterogeneity_loss"
-"RR6","GO:0002118","aggressive behavior",1.03,1.748,FALSE,0,30,30,"likely_noise"
-"RR6","GO:0043647","inositol phosphate metabolic process",1.248,1.745,FALSE,0,30,30,"likely_noise"
-"RR6","GO:0051310","metaphase chromosome alignment",1.673,-1.737,FALSE,0,30,30,"likely_noise"
-"RR6","GO:0033108","mitochondrial respiratory chain complex assembly",1.555,-1.736,FALSE,0,30,30,"likely_noise"
-"RR6","GO:0001523","retinoid metabolic process",1.375,-1.731,TRUE,0,30,30,"likely_noise"
-"RR6","GO:0051783","regulation of nuclear division",1.81,-1.73,FALSE,0,30,30,"likely_noise"
-"RR6","GO:1905818","regulation of chromosome separation",1.471,-1.724,FALSE,0,30,30,"likely_noise"
-"RR6","GO:0042572","retinol metabolic process",1.32,-1.723,TRUE,0,30,30,"likely_noise"
-"RR6","GO:0000212","meiotic spindle organization",1.045,-1.723,FALSE,0,30,30,"likely_noise"
-"RR6","GO:0035456","response to interferon-beta",1.165,-1.711,FALSE,1,30,30,"heterogeneity_loss"
-"RR6","GO:0007143","female meiotic nuclear division",1.018,-1.709,FALSE,0,30,30,"likely_noise"
-"RR6","GO:0030239","myofibril assembly",1.047,1.693,FALSE,0,30,30,"likely_noise"
-"RR6","GO:0006692","prostanoid metabolic process",1.047,-1.69,TRUE,0,30,30,"likely_noise"
-"RR6","GO:0016101","diterpenoid metabolic process",1.4,-1.686,TRUE,0,30,30,"likely_noise"
-"RR6","GO:0000070","mitotic sister chromatid segregation",2.227,-1.681,FALSE,0,30,30,"likely_noise"
-"RR6","GO:0007088","regulation of mitotic nuclear division",1.233,-1.678,FALSE,0,30,30,"likely_noise"
-"RR6","GO:0050000","chromosome localization",1.639,-1.668,FALSE,0,30,30,"likely_noise"
-"RR6","GO:0042445","hormone metabolic process",2.518,-1.663,TRUE,0,30,30,"likely_noise"
-"RR6","GO:0099149","regulation of postsynaptic neurotransmitter receptor internalization",1.062,1.661,TRUE,0,30,30,"likely_noise"
-"RR6","GO:0006693","prostaglandin metabolic process",1.077,-1.657,TRUE,0,30,30,"likely_noise"
-"RR6","GO:0099084","postsynaptic specialization organization",1.01,1.653,FALSE,0,30,30,"likely_noise"
-"RR6","GO:0022904","respiratory electron transport chain",1.383,-1.649,FALSE,0,30,30,"likely_noise"
-"RR6","GO:0051785","positive regulation of nuclear division",1.03,-1.646,FALSE,0,30,30,"likely_noise"
-"RR6","GO:0010927","cellular component assembly involved in morphogenesis",1.766,1.64,FALSE,0,30,30,"likely_noise"
-"RR6","GO:0032989","cellular anatomical entity morphogenesis",1.766,1.64,FALSE,0,30,30,"likely_noise"
-"RR6","GO:0009062","fatty acid catabolic process",1.322,1.636,FALSE,1,30,30,"heterogeneity_loss"
-"RR6","GO:0006635","fatty acid beta-oxidation",1.158,1.636,FALSE,0,30,30,"likely_noise"
-"RR6","GO:0030071","regulation of mitotic metaphase/anaphase transition",1.18,-1.624,FALSE,0,30,30,"likely_noise"
-"RR6","GO:0035270","endocrine system development",1.23,1.619,FALSE,0,30,30,"likely_noise"
-"RR6","GO:0007091","metaphase/anaphase transition of mitotic cell cycle",1.047,-1.613,FALSE,0,30,30,"likely_noise"
-"RR6","GO:0019395","fatty acid oxidation",1.291,1.605,FALSE,0,30,30,"likely_noise"
-"RR6","GO:0009584","detection of visible light",1.033,-1.598,FALSE,0,30,30,"likely_noise"
-"RR6","GO:0033559","unsaturated fatty acid metabolic process",1.173,-1.59,FALSE,0,30,30,"likely_noise"
-"RR6","GO:0044403","biological process involved in symbiotic interaction",1.166,-1.588,TRUE,0,30,30,"likely_noise"
-"RR6","GO:0006119","oxidative phosphorylation",1.288,-1.584,FALSE,0,30,30,"likely_noise"
-"RR6","GO:0072329","monocarboxylic acid catabolic process",1.4,1.581,FALSE,1,30,30,"heterogeneity_loss"
-"RR6","GO:2001251","negative regulation of chromosome organization",1.01,-1.57,TRUE,0,30,30,"likely_noise"
-"RR6","GO:0046394","carboxylic acid biosynthetic process",2.056,-1.556,FALSE,0,30,30,"likely_noise"
-"RR6","GO:0046890","regulation of lipid biosynthetic process",1.383,-1.53,FALSE,0,30,30,"likely_noise"
-"RR6","GO:0034440","lipid oxidation",1.03,1.523,FALSE,0,30,30,"likely_noise"
-"RR6","GO:0000819","sister chromatid segregation",1.316,-1.522,FALSE,0,30,30,"likely_noise"
-"RR6","GO:1902850","microtubule cytoskeleton organization involved in mitosis",1.117,-1.519,FALSE,0,30,30,"likely_noise"
-"RR6","GO:0016053","organic acid biosynthetic process",1.558,-1.508,FALSE,0,30,30,"likely_noise"
-"RR6","GO:0140014","mitotic nuclear division",1.264,-1.506,FALSE,0,30,30,"likely_noise"
-"RR6","GO:0098813","nuclear chromosome segregation",1.242,-1.495,FALSE,0,30,30,"likely_noise"
-"RR6","GO:0016331","morphogenesis of embryonic epithelium",1.18,1.468,TRUE,0,30,30,"likely_noise"
-"RR6","GO:0055088","lipid homeostasis",1.03,-1.448,FALSE,0,30,30,"likely_noise"
-"RR8","GO:0033490","cholesterol biosynthetic process via lathosterol",3.629,2.378,FALSE,1,30,30,"heterogeneity_loss"
-"RR8","GO:0045337","farnesyl diphosphate biosynthetic process",2.541,2.222,FALSE,1,30,30,"heterogeneity_loss"
-"RR8","GO:0006084","acetyl-CoA metabolic process",2.671,2.185,FALSE,1,30,30,"heterogeneity_loss"
-"RR8","GO:0045338","farnesyl diphosphate metabolic process",1.919,2.108,TRUE,1,30,30,"heterogeneity_loss"
-"RR8","GO:0032543","mitochondrial translation",3.734,2.105,FALSE,0,30,30,"likely_noise"
-"RR8","GO:0033385","geranylgeranyl diphosphate metabolic process",2.556,2.093,FALSE,1,30,30,"heterogeneity_loss"
-"RR8","GO:0006695","cholesterol biosynthetic process",2.28,2.074,FALSE,1,30,30,"heterogeneity_loss"
-"RR8","GO:1902653","secondary alcohol biosynthetic process",2.28,2.074,FALSE,1,30,30,"heterogeneity_loss"
-"RR8","GO:0071616","acyl-CoA biosynthetic process",2.172,2.071,FALSE,1,30,30,"heterogeneity_loss"
-"RR8","GO:0016126","sterol biosynthetic process",2.387,2.044,FALSE,1,30,30,"heterogeneity_loss"
-"RR8","GO:0070106","interleukin-27-mediated signaling pathway",2.515,-2.01,FALSE,0.967,30,30,"heterogeneity_loss"
-"RR8","GO:0002476","antigen processing and presentation of endogenous peptide antigen via MHC class Ib",2.121,-1.99,TRUE,0,30,30,"likely_noise"
-"RR8","GO:0002484","antigen processing and presentation of endogenous peptide antigen via MHC class I via ER pathway",2.121,-1.99,TRUE,0,30,30,"likely_noise"
-"RR8","GO:0051775","response to redox state",1.751,1.98,FALSE,1,30,30,"heterogeneity_loss"
-"RR8","GO:0045214","sarcomere organization",1.963,1.973,FALSE,0.967,30,30,"heterogeneity_loss"
-"RR8","GO:0016114","terpenoid biosynthetic process",1.367,1.972,FALSE,1,30,30,"heterogeneity_loss"
-"RR8","GO:0045292","mRNA cis splicing, via spliceosome",1.448,1.964,TRUE,0.033,30,30,"likely_noise"
-"RR8","GO:2001053","regulation of mesenchymal cell apoptotic process",1.313,1.962,FALSE,1,30,30,"heterogeneity_loss"
-"RR8","GO:0030239","myofibril assembly",1.936,1.959,FALSE,0.967,30,30,"heterogeneity_loss"
-"RR8","GO:0140053","mitochondrial gene expression",3.368,1.949,FALSE,0,30,30,"likely_noise"
-"RR8","GO:0008299","isoprenoid biosynthetic process",1.289,1.941,FALSE,1,30,30,"heterogeneity_loss"
-"RR8","GO:0002115","store-operated calcium entry",1.66,-1.938,FALSE,0.033,30,30,"likely_noise"
-"RR8","GO:0002486","antigen processing and presentation of endogenous peptide antigen via MHC class I via ER pathway, TAP-independent",1.758,-1.93,TRUE,0,30,30,"likely_noise"
-"RR8","GO:0006406","mRNA export from nucleus",1.881,1.906,TRUE,0,30,30,"likely_noise"
-"RR8","GO:0015697","quaternary ammonium group transport",1.458,-1.886,FALSE,0.033,30,30,"likely_noise"
-"RR8","GO:2000253","positive regulation of feeding behavior",1.681,1.885,FALSE,0,30,30,"likely_noise"
-"RR8","GO:0003323","type B pancreatic cell development",1.008,1.88,FALSE,1,30,30,"heterogeneity_loss"
-"RR8","GO:0050966","detection of mechanical stimulus involved in sensory perception of pain",1.367,-1.88,TRUE,0,30,30,"likely_noise"
-"RR8","GO:0050482","arachidonate secretion",1.327,-1.871,TRUE,0,30,30,"likely_noise"
-"RR8","GO:1903963","arachidonate transport",1.327,-1.871,TRUE,0,30,30,"likely_noise"
-"RR8","GO:0031018","endocrine pancreas development",1.274,1.871,FALSE,1,30,30,"heterogeneity_loss"
-"RR8","GO:0010832","negative regulation of myotube differentiation",1.331,-1.852,FALSE,0.033,30,30,"likely_noise"
-"RR8","GO:0002475","antigen processing and presentation via MHC class Ib",1.277,-1.85,TRUE,0,30,30,"likely_noise"
-"RR8","GO:0030656","regulation of vitamin metabolic process",1.38,-1.845,FALSE,0,30,30,"likely_noise"
-"RR8","GO:0071715","icosanoid transport",1.448,-1.838,TRUE,0,30,30,"likely_noise"
-"RR8","GO:0006637","acyl-CoA metabolic process",1.946,1.822,FALSE,1,30,30,"heterogeneity_loss"
-"RR8","GO:0006414","translational elongation",1.448,1.818,TRUE,0.967,30,30,"heterogeneity_loss"
-"RR8","GO:0006376","mRNA splice site recognition",1.15,1.812,TRUE,0.033,30,30,"likely_noise"
-"RR8","GO:0032790","ribosome disassembly",1.078,1.812,TRUE,1,30,30,"heterogeneity_loss"
-"RR8","GO:1903008","organelle disassembly",1.66,1.809,TRUE,1,30,30,"heterogeneity_loss"
-"RR8","GO:0030397","membrane disassembly",1.237,-1.807,FALSE,0,30,30,"likely_noise"
-"RR8","GO:0032309","icosanoid secretion",1.05,-1.8,TRUE,0,30,30,"likely_noise"
-"RR8","GO:0044273","sulfur compound catabolic process",1.269,-1.79,FALSE,0.967,30,30,"heterogeneity_loss"
-"RR8","GO:1905168","positive regulation of double-strand break repair via homologous recombination",1.159,1.79,TRUE,1,30,30,"heterogeneity_loss"
-"RR8","GO:0017158","regulation of calcium ion-dependent exocytosis",1.271,-1.779,FALSE,0,30,30,"likely_noise"
-"RR8","GO:2001185","regulation of CD8-positive, alpha-beta T cell activation",1.024,-1.771,TRUE,0,30,30,"likely_noise"
-"RR8","GO:2001256","regulation of store-operated calcium entry",1.237,-1.767,FALSE,0.033,30,30,"likely_noise"
-"RR8","GO:0051081","nuclear membrane disassembly",1.048,-1.765,FALSE,0,30,30,"likely_noise"
-"RR8","GO:0099538","synaptic signaling via neuropeptide",1.159,-1.761,FALSE,0,30,30,"likely_noise"
-"RR8","GO:0006656","phosphatidylcholine biosynthetic process",1.033,1.755,FALSE,0,30,30,"likely_noise"
-"RR8","GO:0002438","acute inflammatory response to antigenic stimulus",1.088,-1.744,TRUE,0,30,30,"likely_noise"
-"RR8","GO:0019228","neuronal action potential",1.081,-1.743,TRUE,0,30,30,"likely_noise"
-"RR8","GO:0015695","organic cation transport",1.38,-1.74,FALSE,0,30,30,"likely_noise"
-"RR8","GO:0033599","regulation of mammary gland epithelial cell proliferation",1.008,-1.733,FALSE,0,30,30,"likely_noise"
-"RR8","GO:0048265","response to pain",1.043,-1.732,TRUE,0,30,30,"likely_noise"
-"RR8","GO:0090398","cellular senescence",1.274,1.701,FALSE,0.033,30,30,"likely_noise"
-"RR8","GO:0006403","RNA localization",1.718,1.697,TRUE,1,30,30,"heterogeneity_loss"
-"RR8","GO:0089718","amino acid import across plasma membrane",1.002,-1.68,TRUE,0,30,30,"likely_noise"
-"RR8","GO:0060700","regulation of ribonuclease activity",1.195,-1.663,FALSE,0,30,30,"likely_noise"
-"RR8","GO:0042254","ribosome biogenesis",2.671,1.657,TRUE,0,30,30,"likely_noise"
-"RR8","GO:1905039","carboxylic acid transmembrane transport",1.425,-1.646,TRUE,0.033,30,30,"likely_noise"
-"RR8","GO:0071824","protein-DNA complex organization",1.367,1.644,TRUE,0.033,30,30,"likely_noise"
-"RR8","GO:0016072","rRNA metabolic process",2.043,1.624,TRUE,0,30,30,"likely_noise"
-"RR8","GO:0006364","rRNA processing",1.919,1.604,TRUE,0,30,30,"likely_noise"
-"RR8","GO:0035725","sodium ion transmembrane transport",1.119,-1.602,TRUE,0,30,30,"likely_noise"
-"RR8","GO:0006633","fatty acid biosynthetic process",1.501,1.597,FALSE,0.967,30,30,"heterogeneity_loss"
-"RR8","GO:0055002","striated muscle cell development",1.516,1.593,FALSE,0.967,30,30,"heterogeneity_loss"
-"RR8","GO:0006694","steroid biosynthetic process",1.448,1.585,FALSE,1,30,30,"heterogeneity_loss"
-"RR8","GO:0051236","establishment of RNA localization",1.176,1.561,TRUE,1,30,30,"heterogeneity_loss"
-"RR8","GO:0010927","cellular component assembly involved in morphogenesis",1.159,1.559,FALSE,0.967,30,30,"heterogeneity_loss"
-"RR8","GO:0032989","cellular anatomical entity morphogenesis",1.159,1.559,FALSE,0.967,30,30,"heterogeneity_loss"
-"RR8","GO:0050806","positive regulation of synaptic transmission",1.191,-1.54,FALSE,0,30,30,"likely_noise"
-"RR8","GO:0050657","nucleic acid transport",1.166,1.531,TRUE,1,30,30,"heterogeneity_loss"
-"RR8","GO:0050658","RNA transport",1.166,1.531,TRUE,1,30,30,"heterogeneity_loss"
-"RR8","GO:0006865","amino acid transport",1.048,-1.526,TRUE,0,30,30,"likely_noise"
-"RR8","GO:0007416","synapse assembly",1.024,-1.472,TRUE,0,30,30,"likely_noise"
-"RR8","GO:0051054","positive regulation of DNA metabolic process",1.643,1.453,TRUE,1,30,30,"heterogeneity_loss"
-"RR8","GO:0006457","protein folding",1.236,1.453,FALSE,0,30,30,"likely_noise"
-"RR9","GO:0033489","cholesterol biosynthetic process via desmosterol",7.15,2.704,TRUE,1,30,30,"heterogeneity_loss"
-"RR9","GO:0036196","zymosterol metabolic process",7.15,2.67,TRUE,1,30,30,"heterogeneity_loss"
-"RR9","GO:0036197","zymosterol biosynthetic process",7.15,2.67,TRUE,1,30,30,"heterogeneity_loss"
-"RR9","GO:0033490","cholesterol biosynthetic process via lathosterol",6.977,2.584,FALSE,1,30,30,"heterogeneity_loss"
-"RR9","GO:0051791","medium-chain fatty acid metabolic process",4.525,2.404,FALSE,1,30,30,"heterogeneity_loss"
-"RR9","GO:0045337","farnesyl diphosphate biosynthetic process",5,2.387,FALSE,1,30,30,"heterogeneity_loss"
-"RR9","GO:0045338","farnesyl diphosphate metabolic process",5.17,2.371,TRUE,1,30,30,"heterogeneity_loss"
-"RR9","GO:0006695","cholesterol biosynthetic process",4.563,2.319,FALSE,1,30,30,"heterogeneity_loss"
-"RR9","GO:1902653","secondary alcohol biosynthetic process",4.563,2.319,FALSE,1,30,30,"heterogeneity_loss"
-"RR9","GO:0010142","farnesyl diphosphate biosynthetic process, mevalonate pathway",5.263,2.304,TRUE,1,30,30,"heterogeneity_loss"
-"RR9","GO:1902767","isoprenoid biosynthetic process via mevalonate",5.263,2.304,TRUE,1,30,30,"heterogeneity_loss"
-"RR9","GO:0016126","sterol biosynthetic process",4.346,2.302,FALSE,1,30,30,"heterogeneity_loss"
-"RR9","GO:0090208","positive regulation of triglyceride metabolic process",3.339,2.242,FALSE,1,30,30,"heterogeneity_loss"
-"RR9","GO:0033385","geranylgeranyl diphosphate metabolic process",3.806,2.231,FALSE,1,30,30,"heterogeneity_loss"
-"RR9","GO:0045922","negative regulation of fatty acid metabolic process",2.78,2.189,FALSE,1,30,30,"heterogeneity_loss"
-"RR9","GO:1901523","icosanoid catabolic process",2.246,2.153,FALSE,1,30,30,"heterogeneity_loss"
-"RR9","GO:0046164","alcohol catabolic process",2.489,2.12,FALSE,1,30,30,"heterogeneity_loss"
-"RR9","GO:0008299","isoprenoid biosynthetic process",2.422,2.108,FALSE,1,30,30,"heterogeneity_loss"
-"RR9","GO:0048643","positive regulation of skeletal muscle tissue development",1.504,2.096,FALSE,0,30,30,"likely_noise"
-"RR9","GO:0010898","positive regulation of triglyceride catabolic process",1.881,2.094,FALSE,1,30,30,"heterogeneity_loss"
-"RR9","GO:0042758","long-chain fatty acid catabolic process",2.256,2.093,FALSE,1,30,30,"heterogeneity_loss"
-"RR9","GO:1901569","fatty acid derivative catabolic process",2.066,2.079,FALSE,1,30,30,"heterogeneity_loss"
-"RR9","GO:0016125","sterol metabolic process",5.958,2.077,FALSE,1,30,30,"heterogeneity_loss"
-"RR9","GO:0051304","chromosome separation",7.15,-2.075,FALSE,1,30,30,"heterogeneity_loss"
-"RR9","GO:0010965","regulation of mitotic sister chromatid separation",6.423,-2.061,FALSE,1,30,30,"heterogeneity_loss"
-"RR9","GO:0033047","regulation of mitotic sister chromatid segregation",5.958,-2.06,FALSE,1,30,30,"heterogeneity_loss"
-"RR9","GO:0031577","spindle checkpoint signaling",5.379,-2.053,FALSE,1,30,30,"heterogeneity_loss"
-"RR9","GO:0033046","negative regulation of sister chromatid segregation",5.635,-2.052,FALSE,1,30,30,"heterogeneity_loss"
-"RR9","GO:0033048","negative regulation of mitotic sister chromatid segregation",5.635,-2.052,FALSE,1,30,30,"heterogeneity_loss"
-"RR9","GO:0045841","negative regulation of mitotic metaphase/anaphase transition",5.635,-2.052,FALSE,1,30,30,"heterogeneity_loss"
-"RR9","GO:2000816","negative regulation of mitotic sister chromatid separation",5.635,-2.052,FALSE,1,30,30,"heterogeneity_loss"
-"RR9","GO:1902100","negative regulation of metaphase/anaphase transition of cell cycle",5.635,-2.04,FALSE,1,30,30,"heterogeneity_loss"
-"RR9","GO:1905819","negative regulation of chromosome separation",5.635,-2.04,FALSE,1,30,30,"heterogeneity_loss"
-"RR9","GO:0036100","leukotriene catabolic process",2.013,2.032,FALSE,1,30,30,"heterogeneity_loss"
-"RR9","GO:0090009","primitive streak formation",1.753,2.029,FALSE,0.033,30,30,"likely_noise"
-"RR9","GO:0055062","phosphate ion homeostasis",1.572,2.027,FALSE,0.033,30,30,"likely_noise"
-"RR9","GO:0008203","cholesterol metabolic process",5.385,2.024,FALSE,1,30,30,"heterogeneity_loss"
-"RR9","GO:0051306","mitotic sister chromatid separation",5.8,-2.021,FALSE,1,30,30,"heterogeneity_loss"
-"RR9","GO:1905818","regulation of chromosome separation",6.67,-2.021,FALSE,1,30,30,"heterogeneity_loss"
-"RR9","GO:0009648","photoperiodism",1.931,2.012,FALSE,0.967,30,30,"heterogeneity_loss"
-"RR9","GO:0043153","entrainment of circadian clock by photoperiod",1.931,2.012,FALSE,0.967,30,30,"heterogeneity_loss"
-"RR9","GO:0007094","mitotic spindle assembly checkpoint signaling",5.379,-2.009,FALSE,1,30,30,"heterogeneity_loss"
-"RR9","GO:0071173","spindle assembly checkpoint signaling",5.379,-2.009,FALSE,1,30,30,"heterogeneity_loss"
-"RR9","GO:0071174","mitotic spindle checkpoint signaling",5.379,-2.009,FALSE,1,30,30,"heterogeneity_loss"
-"RR9","GO:0036101","leukotriene B4 catabolic process",1.853,2.004,FALSE,1,30,30,"heterogeneity_loss"
-"RR9","GO:0016114","terpenoid biosynthetic process",1.931,2.004,FALSE,1,30,30,"heterogeneity_loss"
-"RR9","GO:1902652","secondary alcohol metabolic process",5.785,2.003,FALSE,1,30,30,"heterogeneity_loss"
-"RR9","GO:0051985","negative regulation of chromosome segregation",5.247,-1.989,FALSE,1,30,30,"heterogeneity_loss"
-"RR9","GO:0009649","entrainment of circadian clock",1.924,1.981,FALSE,0.967,30,30,"heterogeneity_loss"
-"RR9","GO:0045839","negative regulation of mitotic nuclear division",5.16,-1.967,FALSE,1,30,30,"heterogeneity_loss"
-"RR9","GO:0006577","amino-acid betaine metabolic process",1.783,1.957,FALSE,0.967,30,30,"heterogeneity_loss"
-"RR9","GO:0033865","nucleoside bisphosphate metabolic process",1.418,1.957,FALSE,0,30,30,"likely_noise"
-"RR9","GO:0033875","ribonucleoside bisphosphate metabolic process",1.418,1.957,FALSE,0,30,30,"likely_noise"
-"RR9","GO:0034032","purine nucleoside bisphosphate metabolic process",1.418,1.957,FALSE,0,30,30,"likely_noise"
-"RR9","GO:0034035","purine ribonucleoside bisphosphate metabolic process",1.418,1.957,FALSE,0,30,30,"likely_noise"
-"RR9","GO:0050427","3'-phosphoadenosine 5'-phosphosulfate metabolic process",1.418,1.957,FALSE,0,30,30,"likely_noise"
-"RR9","GO:0036102","leukotriene B4 metabolic process",1.357,1.946,FALSE,1,30,30,"heterogeneity_loss"
-"RR9","GO:0051923","sulfation",1.801,1.943,FALSE,1,30,30,"heterogeneity_loss"
-"RR9","GO:0046322","negative regulation of fatty acid oxidation",1.246,1.929,TRUE,0.967,30,30,"heterogeneity_loss"
-"RR9","GO:0048557","embryonic digestive tract morphogenesis",1.465,1.916,FALSE,0,30,30,"likely_noise"
-"RR9","GO:0051315","attachment of mitotic spindle microtubules to kinetochore",3.583,-1.911,FALSE,1,30,30,"heterogeneity_loss"
-"RR9","GO:1901856","negative regulation of cellular respiration",1.124,1.908,FALSE,0,30,30,"likely_noise"
-"RR9","GO:0045844","positive regulation of striated muscle tissue development",1.339,1.907,FALSE,0,30,30,"likely_noise"
-"RR9","GO:0048636","positive regulation of muscle organ development",1.339,1.907,FALSE,0,30,30,"likely_noise"
-"RR9","GO:1901863","positive regulation of muscle tissue development",1.339,1.907,FALSE,0,30,30,"likely_noise"
-"RR9","GO:1905198","manchette assembly",1.845,1.906,FALSE,0,30,30,"likely_noise"
-"RR9","GO:1901970","positive regulation of mitotic sister chromatid separation",2.808,-1.904,FALSE,1,30,30,"heterogeneity_loss"
-"RR9","GO:0000070","mitotic sister chromatid segregation",7.15,-1.892,FALSE,1,30,30,"heterogeneity_loss"
-"RR9","GO:0007398","ectoderm development",1.339,1.884,TRUE,0.033,30,30,"likely_noise"
-"RR9","GO:1905820","positive regulation of chromosome separation",3.212,-1.88,FALSE,1,30,30,"heterogeneity_loss"
-"RR9","GO:0015937","coenzyme A biosynthetic process",1.195,1.871,FALSE,0,30,30,"likely_noise"
-"RR9","GO:0050996","positive regulation of lipid catabolic process",1.46,1.866,FALSE,1,30,30,"heterogeneity_loss"
-"RR9","GO:0006693","prostaglandin metabolic process",3.402,-1.862,TRUE,0.033,30,30,"likely_noise"
-"RR9","GO:0090324","negative regulation of oxidative phosphorylation",1.109,1.856,FALSE,0,30,30,"likely_noise"
-"RR9","GO:0051784","negative regulation of nuclear division",3.514,-1.854,FALSE,1,30,30,"heterogeneity_loss"
-"RR9","GO:0002082","regulation of oxidative phosphorylation",1.46,1.849,FALSE,0,30,30,"likely_noise"
-"RR9","GO:0061029","eyelid development in camera-type eye",1.102,1.845,FALSE,0.033,30,30,"likely_noise"
-"RR9","GO:0051984","positive regulation of chromosome segregation",3.014,-1.838,FALSE,1,30,30,"heterogeneity_loss"
-"RR9","GO:0070341","fat cell proliferation",1.089,1.836,FALSE,0,30,30,"likely_noise"
-"RR9","GO:0002407","dendritic cell chemotaxis",2.184,-1.834,FALSE,0.033,30,30,"likely_noise"
-"RR9","GO:0006692","prostanoid metabolic process",3.248,-1.833,TRUE,0.033,30,30,"likely_noise"
-"RR9","GO:0036315","cellular response to sterol",1.208,1.831,FALSE,0,30,30,"likely_noise"
-"RR9","GO:0072329","monocarboxylic acid catabolic process",3.592,1.829,FALSE,1,30,30,"heterogeneity_loss"
-"RR9","GO:0007143","female meiotic nuclear division",2.445,-1.819,FALSE,1,30,30,"heterogeneity_loss"
-"RR9","GO:0034310","primary alcohol catabolic process",1.084,1.818,FALSE,0,30,30,"likely_noise"
-"RR9","GO:0010866","regulation of triglyceride biosynthetic process",1.354,1.817,FALSE,0.967,30,30,"heterogeneity_loss"
-"RR9","GO:0010867","positive regulation of triglyceride biosynthetic process",1.102,1.81,FALSE,0.967,30,30,"heterogeneity_loss"
-"RR9","GO:1903083","protein localization to condensed chromosome",2.003,-1.808,FALSE,1,30,30,"heterogeneity_loss"
-"RR9","GO:0006068","ethanol catabolic process",1.109,1.806,FALSE,0,30,30,"likely_noise"
-"RR9","GO:1901568","fatty acid derivative metabolic process",1.525,1.804,FALSE,0.967,30,30,"heterogeneity_loss"
-"RR9","GO:1990573","potassium ion import across plasma membrane",2.419,-1.803,TRUE,0.967,30,30,"heterogeneity_loss"
-"RR9","GO:0006817","phosphate ion transport",1.022,1.802,FALSE,0.967,30,30,"heterogeneity_loss"
-"RR9","GO:0034501","protein localization to kinetochore",2.169,-1.8,FALSE,1,30,30,"heterogeneity_loss"
-"RR9","GO:0008608","attachment of spindle microtubules to kinetochore",2.711,-1.797,FALSE,1,30,30,"heterogeneity_loss"
-"RR9","GO:1902101","positive regulation of metaphase/anaphase transition of cell cycle",1.922,-1.796,FALSE,0.967,30,30,"heterogeneity_loss"
-"RR9","GO:0006067","ethanol metabolic process",1.022,1.788,FALSE,0,30,30,"likely_noise"
-"RR9","GO:0051310","metaphase chromosome alignment",3.985,-1.786,FALSE,1,30,30,"heterogeneity_loss"
-"RR9","GO:0010466","negative regulation of peptidase activity",1.917,-1.786,FALSE,0.967,30,30,"heterogeneity_loss"
-"RR9","GO:0032467","positive regulation of cytokinesis",2.297,-1.784,FALSE,0.033,30,30,"likely_noise"
-"RR9","GO:0045842","positive regulation of mitotic metaphase/anaphase transition",2.018,-1.783,FALSE,0.967,30,30,"heterogeneity_loss"
-"RR9","GO:0090306","meiotic spindle assembly",1.801,-1.779,FALSE,1,30,30,"heterogeneity_loss"
-"RR9","GO:0060221","retinal rod cell differentiation",1.967,-1.771,FALSE,0.967,30,30,"heterogeneity_loss"
-"RR9","GO:0051383","kinetochore organization",2.195,-1.763,FALSE,1,30,30,"heterogeneity_loss"
-"RR9","GO:0051307","meiotic chromosome separation",2.149,-1.763,FALSE,0.967,30,30,"heterogeneity_loss"
-"RR9","GO:0019682","glyceraldehyde-3-phosphate metabolic process",1.144,1.762,TRUE,0.967,30,30,"heterogeneity_loss"
-"RR9","GO:0048641","regulation of skeletal muscle tissue development",1.196,1.761,FALSE,0,30,30,"likely_noise"
-"RR9","GO:0070601","centromeric sister chromatid cohesion",2.081,-1.758,FALSE,1,30,30,"heterogeneity_loss"
-"RR9","GO:0050765","negative regulation of phagocytosis",1.784,-1.756,TRUE,0.033,30,30,"likely_noise"
-"RR9","GO:0090207","regulation of triglyceride metabolic process",1.542,1.755,FALSE,1,30,30,"heterogeneity_loss"
-"RR9","GO:0014808","release of sequestered calcium ion into cytosol by sarcoplasmic reticulum",1.931,-1.743,FALSE,0.967,30,30,"heterogeneity_loss"
-"RR9","GO:1903514","release of sequestered calcium ion into cytosol by endoplasmic reticulum",1.986,-1.741,FALSE,0.967,30,30,"heterogeneity_loss"
-"RR9","GO:0090266","regulation of mitotic cell cycle spindle assembly checkpoint",1.801,-1.74,FALSE,1,30,30,"heterogeneity_loss"
-"RR9","GO:1903504","regulation of mitotic spindle checkpoint",1.801,-1.74,FALSE,1,30,30,"heterogeneity_loss"
-"RR9","GO:0051987","positive regulation of attachment of spindle microtubules to kinetochore",1.686,-1.737,FALSE,1,30,30,"heterogeneity_loss"
-"RR9","GO:0090231","regulation of spindle checkpoint",1.746,-1.737,FALSE,1,30,30,"heterogeneity_loss"
-"RR9","GO:0071605","monocyte chemotactic protein-1 production",1.917,-1.733,FALSE,0.033,30,30,"likely_noise"
-"RR9","GO:0071637","regulation of monocyte chemotactic protein-1 production",1.917,-1.733,FALSE,0.033,30,30,"likely_noise"
-"RR9","GO:0050000","chromosome localization",3.684,-1.732,FALSE,1,30,30,"heterogeneity_loss"
-"RR9","GO:0034143","regulation of toll-like receptor 4 signaling pathway",1.886,-1.73,FALSE,0,30,30,"likely_noise"
-"RR9","GO:0070269","pyroptotic inflammatory response",1.966,-1.727,FALSE,1,30,30,"heterogeneity_loss"
-"RR9","GO:0098543","detection of other organism",1.713,-1.726,TRUE,0.033,30,30,"likely_noise"
-"RR9","GO:0002220","innate immune response activating cell surface receptor signaling pathway",2.801,-1.726,FALSE,0.033,30,30,"likely_noise"
-"RR9","GO:0010951","negative regulation of endopeptidase activity",1.487,-1.715,FALSE,0.967,30,30,"heterogeneity_loss"
-"RR9","GO:0051280","negative regulation of release of sequestered calcium ion into cytosol",1.69,-1.714,FALSE,0.033,30,30,"likely_noise"
-"RR9","GO:0044771","meiotic cell cycle phase transition",1.651,-1.71,FALSE,1,30,30,"heterogeneity_loss"
-"RR9","GO:0070296","sarcoplasmic reticulum calcium ion transport",1.967,-1.708,FALSE,0.967,30,30,"heterogeneity_loss"
-"RR9","GO:0000022","mitotic spindle elongation",1.65,-1.708,FALSE,0,30,30,"likely_noise"
-"RR9","GO:0007056","spindle assembly involved in female meiosis",1.343,-1.708,FALSE,0.967,30,30,"heterogeneity_loss"
-"RR9","GO:0051231","spindle elongation",1.438,-1.701,FALSE,0.033,30,30,"likely_noise"
-"RR9","GO:0098703","calcium ion import across plasma membrane",1.46,-1.7,TRUE,1,30,30,"heterogeneity_loss"
-"RR9","GO:1902656","calcium ion import into cytosol",1.46,-1.7,TRUE,1,30,30,"heterogeneity_loss"
-"RR9","GO:0090181","regulation of cholesterol metabolic process",1.125,1.696,FALSE,0.967,30,30,"heterogeneity_loss"
-"RR9","GO:0097623","potassium ion export across plasma membrane",1.529,-1.696,FALSE,0,30,30,"likely_noise"
-"RR9","GO:0045722","positive regulation of gluconeogenesis",1.1,1.696,TRUE,0,30,30,"likely_noise"
-"RR9","GO:0051988","regulation of attachment of spindle microtubules to kinetochore",1.552,-1.694,FALSE,1,30,30,"heterogeneity_loss"
-"RR9","GO:0002765","immune response-inhibiting signal transduction",1.401,-1.693,TRUE,1,30,30,"heterogeneity_loss"
-"RR9","GO:1904706","negative regulation of vascular associated smooth muscle cell proliferation",1.648,-1.691,FALSE,1,30,30,"heterogeneity_loss"
-"RR9","GO:1902423","regulation of attachment of mitotic spindle microtubules to kinetochore",1.509,-1.69,FALSE,1,30,30,"heterogeneity_loss"
-"RR9","GO:0007088","regulation of mitotic nuclear division",2.884,-1.689,FALSE,1,30,30,"heterogeneity_loss"
-"RR9","GO:0051281","positive regulation of release of sequestered calcium ion into cytosol",1.339,-1.689,TRUE,0.033,30,30,"likely_noise"
-"RR9","GO:0052548","regulation of endopeptidase activity",1.271,-1.687,FALSE,0.967,30,30,"heterogeneity_loss"
-"RR9","GO:0032814","regulation of natural killer cell activation",1.572,-1.682,TRUE,1,30,30,"heterogeneity_loss"
-"RR9","GO:0009595","detection of biotic stimulus",1.572,-1.681,TRUE,1,30,30,"heterogeneity_loss"
-"RR9","GO:0001516","prostaglandin biosynthetic process",1.606,-1.679,FALSE,0.033,30,30,"likely_noise"
-"RR9","GO:0046457","prostanoid biosynthetic process",1.606,-1.679,FALSE,0.033,30,30,"likely_noise"
-"RR9","GO:0032604","granulocyte macrophage colony-stimulating factor production",1.442,-1.678,FALSE,0,30,30,"likely_noise"
-"RR9","GO:0032645","regulation of granulocyte macrophage colony-stimulating factor production",1.442,-1.678,FALSE,0,30,30,"likely_noise"
-"RR9","GO:0051255","spindle midzone assembly",1.299,-1.675,FALSE,0.967,30,30,"heterogeneity_loss"
-"RR9","GO:0070671","response to interleukin-12",1.286,-1.673,TRUE,0,30,30,"likely_noise"
-"RR9","GO:0016045","detection of bacterium",1.225,-1.673,TRUE,0.033,30,30,"likely_noise"
-"RR9","GO:0008206","bile acid metabolic process",1.179,1.671,FALSE,0,30,30,"likely_noise"
-"RR9","GO:0032703","negative regulation of interleukin-2 production",1.491,-1.671,TRUE,0,30,30,"likely_noise"
-"RR9","GO:0071459","protein localization to chromosome, centromeric region",1.462,-1.669,FALSE,1,30,30,"heterogeneity_loss"
-"RR9","GO:0031649","heat generation",1.274,-1.668,TRUE,0.033,30,30,"likely_noise"
-"RR9","GO:0035655","interleukin-18-mediated signaling pathway",1.181,-1.662,FALSE,0,30,30,"likely_noise"
-"RR9","GO:0071351","cellular response to interleukin-18",1.181,-1.662,FALSE,0,30,30,"likely_noise"
-"RR9","GO:0002920","regulation of humoral immune response",1.481,-1.662,TRUE,0.033,30,30,"likely_noise"
-"RR9","GO:0006984","ER-nucleus signaling pathway",1.231,1.659,FALSE,0.967,30,30,"heterogeneity_loss"
-"RR9","GO:0010745","negative regulation of macrophage derived foam cell differentiation",1.349,-1.657,FALSE,0,30,30,"likely_noise"
-"RR9","GO:0006968","cellular defense response",1.346,-1.657,TRUE,0.033,30,30,"likely_noise"
-"RR9","GO:0006635","fatty acid beta-oxidation",1.22,1.655,FALSE,1,30,30,"heterogeneity_loss"
-"RR9","GO:0035194","regulatory ncRNA-mediated post-transcriptional gene silencing",1.417,1.653,TRUE,0,30,30,"likely_noise"
-"RR9","GO:0034144","negative regulation of toll-like receptor 4 signaling pathway",1.256,-1.651,FALSE,0,30,30,"likely_noise"
-"RR9","GO:0010880","regulation of release of sequestered calcium ion into cytosol by sarcoplasmic reticulum",1.471,-1.651,FALSE,0,30,30,"likely_noise"
-"RR9","GO:0090022","regulation of neutrophil chemotaxis",1.486,-1.651,TRUE,1,30,30,"heterogeneity_loss"
-"RR9","GO:0030157","pancreatic juice secretion",1.102,-1.651,FALSE,0,30,30,"likely_noise"
-"RR9","GO:0140014","mitotic nuclear division",5.158,-1.648,FALSE,1,30,30,"heterogeneity_loss"
-"RR9","GO:0045132","meiotic chromosome segregation",2.036,-1.647,FALSE,1,30,30,"heterogeneity_loss"
-"RR9","GO:0071639","positive regulation of monocyte chemotactic protein-1 production",1.256,-1.647,FALSE,0,30,30,"likely_noise"
-"RR9","GO:0000212","meiotic spindle organization",1.444,-1.643,FALSE,0.967,30,30,"heterogeneity_loss"
-"RR9","GO:0042304","regulation of fatty acid biosynthetic process",1.015,1.642,FALSE,0.967,30,30,"heterogeneity_loss"
-"RR9","GO:0070673","response to interleukin-18",1.046,-1.641,FALSE,0,30,30,"likely_noise"
-"RR9","GO:0098814","spontaneous synaptic transmission",1.091,-1.641,TRUE,0.967,30,30,"heterogeneity_loss"
-"RR9","GO:1901978","positive regulation of cell cycle checkpoint",1.216,-1.638,FALSE,1,30,30,"heterogeneity_loss"
-"RR9","GO:0061669","spontaneous neurotransmitter secretion",1.279,-1.634,FALSE,0,30,30,"likely_noise"
-"RR9","GO:0034086","maintenance of sister chromatid cohesion",1.18,-1.631,FALSE,0.033,30,30,"likely_noise"
-"RR9","GO:0002702","positive regulation of production of molecular mediator of immune response",2.119,-1.631,TRUE,0.033,30,30,"likely_noise"
-"RR9","GO:0051382","kinetochore assembly",1.281,-1.63,FALSE,1,30,30,"heterogeneity_loss"
-"RR9","GO:0034088","maintenance of mitotic sister chromatid cohesion",1.046,-1.628,FALSE,0,30,30,"likely_noise"
-"RR9","GO:0051481","negative regulation of cytosolic calcium ion concentration",1.178,-1.625,FALSE,0.033,30,30,"likely_noise"
-"RR9","GO:0016322","neuron remodeling",1.133,-1.624,FALSE,0.033,30,30,"likely_noise"
-"RR9","GO:1903715","regulation of aerobic respiration",1,1.623,FALSE,0,30,30,"likely_noise"
-"RR9","GO:0006957","complement activation, alternative pathway",1.064,-1.622,TRUE,0.033,30,30,"likely_noise"
-"RR9","GO:0031664","regulation of lipopolysaccharide-mediated signaling pathway",1.443,-1.622,TRUE,0,30,30,"likely_noise"
-"RR9","GO:0032310","prostaglandin secretion",1.022,-1.621,FALSE,0,30,30,"likely_noise"
-"RR9","GO:2000508","regulation of dendritic cell chemotaxis",1.153,-1.619,FALSE,0.033,30,30,"likely_noise"
-"RR9","GO:0006813","potassium ion transport",2.706,-1.618,TRUE,0.967,30,30,"heterogeneity_loss"
-"RR9","GO:0001787","natural killer cell proliferation",1.138,-1.618,FALSE,0,30,30,"likely_noise"
-"RR9","GO:0002638","negative regulation of immunoglobulin production",1.022,-1.616,TRUE,0.033,30,30,"likely_noise"
-"RR9","GO:0033004","negative regulation of mast cell activation",1.151,-1.615,FALSE,0.033,30,30,"likely_noise"
-"RR9","GO:1903170","negative regulation of calcium ion transmembrane transport",1.26,-1.614,FALSE,0,30,30,"likely_noise"
-"RR9","GO:0060193","positive regulation of lipase activity",1.046,-1.612,FALSE,0,30,30,"likely_noise"
-"RR9","GO:0006637","acyl-CoA metabolic process",2.111,1.608,FALSE,1,30,30,"heterogeneity_loss"
-"RR9","GO:0043457","regulation of cellular respiration",1.218,1.603,FALSE,0.033,30,30,"likely_noise"
-"RR9","GO:0032725","positive regulation of granulocyte macrophage colony-stimulating factor production",1.109,-1.602,FALSE,0,30,30,"likely_noise"
-"RR9","GO:0030449","regulation of complement activation",1.185,-1.602,TRUE,0.033,30,30,"likely_noise"
-"RR9","GO:0033623","regulation of integrin activation",1.077,-1.602,TRUE,1,30,30,"heterogeneity_loss"
-"RR9","GO:0002701","negative regulation of production of molecular mediator of immune response",1.136,-1.601,TRUE,0.033,30,30,"likely_noise"
-"RR9","GO:0071361","cellular response to ethanol",1.038,-1.596,FALSE,0,30,30,"likely_noise"
-"RR9","GO:0034114","regulation of heterotypic cell-cell adhesion",1.052,-1.596,FALSE,0,30,30,"likely_noise"
-"RR9","GO:0031665","negative regulation of lipopolysaccharide-mediated signaling pathway",1.028,-1.594,FALSE,0,30,30,"likely_noise"
-"RR9","GO:0002381","immunoglobulin production involved in immunoglobulin-mediated immune response",1.218,-1.592,FALSE,0.033,30,30,"likely_noise"
-"RR9","GO:0071312","cellular response to alkaloid",1.122,-1.591,FALSE,0,30,30,"likely_noise"
-"RR9","GO:0090023","positive regulation of neutrophil chemotaxis",1.119,-1.591,TRUE,0.033,30,30,"likely_noise"
-"RR9","GO:0042104","positive regulation of activated T cell proliferation",1.037,-1.59,FALSE,0,30,30,"likely_noise"
-"RR9","GO:1901894","regulation of ATPase-coupled calcium transmembrane transporter activity",1.033,-1.588,FALSE,0,30,30,"likely_noise"
-"RR9","GO:1902476","chloride transmembrane transport",1.323,-1.587,FALSE,0.967,30,30,"heterogeneity_loss"
-"RR9","GO:1903305","regulation of regulated secretory pathway",2.276,-1.579,TRUE,1,30,30,"heterogeneity_loss"
-"RR9","GO:0086010","membrane depolarization during action potential",1.006,-1.577,FALSE,1,30,30,"heterogeneity_loss"
-"RR9","GO:1902850","microtubule cytoskeleton organization involved in mitosis",2.339,-1.577,FALSE,1,30,30,"heterogeneity_loss"
-"RR9","GO:0048662","negative regulation of smooth muscle cell proliferation",1.259,-1.576,TRUE,0.967,30,30,"heterogeneity_loss"
-"RR9","GO:0007052","mitotic spindle organization",2.119,-1.576,FALSE,1,30,30,"heterogeneity_loss"
-"RR9","GO:0002312","B cell activation involved in immune response",1.606,-1.571,TRUE,0.033,30,30,"likely_noise"
-"RR9","GO:0090307","mitotic spindle assembly",1.414,-1.57,FALSE,0,30,30,"likely_noise"
-"RR9","GO:0002027","regulation of heart rate",1.401,-1.569,FALSE,0.967,30,30,"heterogeneity_loss"
-"RR9","GO:0034440","lipid oxidation",1.458,1.563,FALSE,0.967,30,30,"heterogeneity_loss"
-"RR9","GO:0030212","hyaluronan metabolic process",1.125,-1.559,FALSE,0.967,30,30,"heterogeneity_loss"
-"RR9","GO:1901991","negative regulation of mitotic cell cycle phase transition",2.37,-1.559,FALSE,1,30,30,"heterogeneity_loss"
-"RR9","GO:0051480","regulation of cytosolic calcium ion concentration",1.094,-1.558,FALSE,1,30,30,"heterogeneity_loss"
-"RR9","GO:0140115","export across plasma membrane",1.274,-1.555,TRUE,0.967,30,30,"heterogeneity_loss"
-"RR9","GO:0051225","spindle assembly",1.871,-1.554,FALSE,0.967,30,30,"heterogeneity_loss"
-"RR9","GO:0002377","immunoglobulin production",1.488,-1.55,FALSE,0.033,30,30,"likely_noise"
-"RR9","GO:0030261","chromosome condensation",1.105,-1.548,FALSE,0,30,30,"likely_noise"
-"RR9","GO:0051783","regulation of nuclear division",1.853,-1.546,FALSE,1,30,30,"heterogeneity_loss"
-"RR9","GO:0032272","negative regulation of protein polymerization",1.18,-1.542,FALSE,0.967,30,30,"heterogeneity_loss"
-"RR9","GO:0045840","positive regulation of mitotic nuclear division",1.024,-1.541,FALSE,0,30,30,"likely_noise"
-"RR9","GO:0002637","regulation of immunoglobulin production",1.259,-1.539,FALSE,0.033,30,30,"likely_noise"
-"RR9","GO:0006821","chloride transport",1.339,-1.531,FALSE,0.967,30,30,"heterogeneity_loss"
-"RR9","GO:0030837","negative regulation of actin filament polymerization",1.069,-1.53,FALSE,0.967,30,30,"heterogeneity_loss"
-"RR9","GO:0046889","positive regulation of lipid biosynthetic process",1.46,1.527,FALSE,0.967,30,30,"heterogeneity_loss"
-"RR9","GO:0001676","long-chain fatty acid metabolic process",1.367,1.525,TRUE,1,30,30,"heterogeneity_loss"
-"RR9","GO:1904063","negative regulation of cation transmembrane transport",1.089,-1.523,FALSE,0,30,30,"likely_noise"
-"RR9","GO:0050777","negative regulation of immune response",2.297,-1.523,TRUE,1,30,30,"heterogeneity_loss"
-"RR9","GO:0007051","spindle organization",2.186,-1.519,FALSE,1,30,30,"heterogeneity_loss"
-"RR9","GO:0051926","negative regulation of calcium ion transport",1.011,-1.517,FALSE,0,30,30,"likely_noise"
-"RR9","GO:0006749","glutathione metabolic process",1.136,-1.515,FALSE,0,30,30,"likely_noise"
-"RR9","GO:0002752","cell surface pattern recognition receptor signaling pathway",1.279,-1.513,FALSE,0,30,30,"likely_noise"
-"RR9","GO:0006694","steroid biosynthetic process",2.066,1.509,FALSE,1,30,30,"heterogeneity_loss"
-"RR9","GO:0034766","negative regulation of monoatomic ion transmembrane transport",1.109,-1.505,FALSE,0,30,30,"likely_noise"
-"RR9","GO:0031348","negative regulation of defense response",2.701,-1.504,TRUE,0.033,30,30,"likely_noise"
-"RR9","GO:0098656","monoatomic anion transmembrane transport",1.141,-1.498,TRUE,0.967,30,30,"heterogeneity_loss"
-"RR9","GO:0019395","fatty acid oxidation",1.35,1.497,FALSE,1,30,30,"heterogeneity_loss"
-"RR9","GO:0060078","regulation of postsynaptic membrane potential",1.464,-1.494,FALSE,0.967,30,30,"heterogeneity_loss"
-"RR9","GO:0035967","cellular response to topologically incorrect protein",1.218,1.484,FALSE,0.967,30,30,"heterogeneity_loss"
-"RR9","GO:0046928","regulation of neurotransmitter secretion",1.032,-1.483,FALSE,0.967,30,30,"heterogeneity_loss"
-"RR9","GO:0070252","actin-mediated cell contraction",1.133,-1.482,FALSE,0.967,30,30,"heterogeneity_loss"
-"RR9","GO:0030048","actin filament-based movement",1.238,-1.477,FALSE,0.967,30,30,"heterogeneity_loss"
-"RR9","GO:0043271","negative regulation of monoatomic ion transport",1.259,-1.475,FALSE,0.967,30,30,"heterogeneity_loss"
-"RR9","GO:0030833","regulation of actin filament polymerization",1.332,-1.474,TRUE,0.967,30,30,"heterogeneity_loss"
-"RR9","GO:0046165","alcohol biosynthetic process",1.676,1.469,FALSE,1,30,30,"heterogeneity_loss"
-"RR9","GO:0051048","negative regulation of secretion",1.43,-1.467,FALSE,0,30,30,"likely_noise"
-"RR9","GO:0050886","endocrine process",1.056,-1.466,FALSE,0,30,30,"likely_noise"
-"RR9","GO:0030216","keratinocyte differentiation",1.017,1.463,FALSE,0,30,30,"likely_noise"
-"RR9","GO:0051494","negative regulation of cytoskeleton organization",1.21,-1.446,FALSE,0.967,30,30,"heterogeneity_loss"
-"RR9","GO:0008064","regulation of actin polymerization or depolymerization",1.096,-1.436,TRUE,0.967,30,30,"heterogeneity_loss"
-"RR9","GO:0030041","actin filament polymerization",1.251,-1.434,TRUE,0.967,30,30,"heterogeneity_loss"
-"RR9","GO:0019217","regulation of fatty acid metabolic process",1.037,1.433,FALSE,0.967,30,30,"heterogeneity_loss"
-"RR9","GO:0042180","ketone metabolic process",1.853,1.431,FALSE,1,30,30,"heterogeneity_loss"
-"RR9","GO:0019369","arachidonate metabolic process",1.037,1.428,FALSE,1,30,30,"heterogeneity_loss"
-"RR9","GO:0030832","regulation of actin filament length",1.337,-1.428,TRUE,0.967,30,30,"heterogeneity_loss"
-"RR9","GO:0007292","female gamete generation",1.033,-1.42,FALSE,1,30,30,"heterogeneity_loss"
-"RR9","GO:0006937","regulation of muscle contraction",1.052,-1.416,FALSE,0.967,30,30,"heterogeneity_loss"
-"RR9","GO:0043123","positive regulation of canonical NF-kappaB signal transduction",1.35,-1.412,FALSE,0,30,30,"likely_noise"
-"RR9","GO:1902904","negative regulation of supramolecular fiber organization",1.059,-1.407,FALSE,0.967,30,30,"heterogeneity_loss"
-"RR9","GO:0032271","regulation of protein polymerization",1.129,-1.399,FALSE,0.967,30,30,"heterogeneity_loss"
-"RR9","GO:0045930","negative regulation of mitotic cell cycle",1.387,-1.395,FALSE,1,30,30,"heterogeneity_loss"
-"RR9","GO:0002520","immune system development",1.191,-1.387,FALSE,0.033,30,30,"likely_noise"
-"RR9","GO:0017157","regulation of exocytosis",1.203,-1.387,TRUE,1,30,30,"heterogeneity_loss"
-"RR9","GO:1903531","negative regulation of secretion by cell",1.083,-1.387,FALSE,0,30,30,"likely_noise"
-"RR9","GO:0060047","heart contraction",1.11,-1.379,FALSE,0.967,30,30,"heterogeneity_loss"
-"RR9","GO:0090068","positive regulation of cell cycle process",1.352,-1.375,FALSE,1,30,30,"heterogeneity_loss"
-"RR9","GO:0051258","protein polymerization",1.487,-1.343,FALSE,0.967,30,30,"heterogeneity_loss"
-"RR9","GO:0035966","response to topologically incorrect protein",1.138,1.329,FALSE,0.967,30,30,"heterogeneity_loss"
-"RR9","GO:0007611","learning or memory",1.173,-1.322,TRUE,0.967,30,30,"heterogeneity_loss"
-"RR9","GO:0043122","regulation of canonical NF-kappaB signal transduction",1.017,-1.307,FALSE,0.033,30,30,"likely_noise"
-"RR9","GO:0050890","cognition",1.21,-1.304,TRUE,0.967,30,30,"heterogeneity_loss"
-"RR9","GO:0007249","canonical NF-kappaB signal transduction",1.309,-1.303,FALSE,0.033,30,30,"likely_noise"
-"RR9","GO:0021700","developmental maturation",1.2,-1.301,FALSE,0.967,30,30,"heterogeneity_loss"
-"RR9","GO:0030258","lipid modification",1.044,1.289,FALSE,0.967,30,30,"heterogeneity_loss"
-"RR9","GO:1901990","regulation of mitotic cell cycle phase transition",1.046,-1.289,FALSE,0.967,30,30,"heterogeneity_loss"
-"RR3","GO:0030239","myofibril assembly",6.892,2.512,FALSE,1,30,30,"heterogeneity_loss"
-"RR3","GO:0055002","striated muscle cell development",6.892,2.424,FALSE,1,30,30,"heterogeneity_loss"
-"RR3","GO:0045214","sarcomere organization",6.892,2.404,FALSE,1,30,30,"heterogeneity_loss"
-"RR3","GO:0031032","actomyosin structure organization",6.892,2.277,FALSE,1,30,30,"heterogeneity_loss"
-"RR3","GO:0055001","muscle cell development",6.892,2.253,FALSE,1,30,30,"heterogeneity_loss"
-"RR3","GO:0050881","musculoskeletal movement",3.861,2.239,FALSE,1,30,30,"heterogeneity_loss"
-"RR3","GO:0003009","skeletal muscle contraction",3.714,2.226,FALSE,1,30,30,"heterogeneity_loss"
-"RR3","GO:0050879","multicellular organismal movement",3.861,2.203,FALSE,1,30,30,"heterogeneity_loss"
-"RR3","GO:0090075","relaxation of muscle",3.454,2.19,FALSE,1,30,30,"heterogeneity_loss"
-"RR3","GO:0010927","cellular component assembly involved in morphogenesis",4.82,2.153,FALSE,1,30,30,"heterogeneity_loss"
-"RR3","GO:0032989","cellular anatomical entity morphogenesis",4.82,2.153,FALSE,1,30,30,"heterogeneity_loss"
-"RR3","GO:1901077","regulation of relaxation of muscle",3.05,2.087,FALSE,1,30,30,"heterogeneity_loss"
-"RR3","GO:0048741","skeletal muscle fiber development",2.186,2.083,FALSE,1,30,30,"heterogeneity_loss"
-"RR3","GO:0009583","detection of light stimulus",1.864,-2.071,FALSE,1,30,30,"heterogeneity_loss"
-"RR3","GO:0014888","striated muscle adaptation",1.876,2.054,TRUE,1,30,30,"heterogeneity_loss"
-"RR3","GO:0070885","negative regulation of calcineurin-NFAT signaling cascade",1.967,2.032,FALSE,1,30,30,"heterogeneity_loss"
-"RR3","GO:0106057","negative regulation of calcineurin-mediated signaling",1.967,2.032,FALSE,1,30,30,"heterogeneity_loss"
-"RR3","GO:0014904","myotube cell development",1.945,2.024,FALSE,1,30,30,"heterogeneity_loss"
-"RR3","GO:0050849","negative regulation of calcium-mediated signaling",1.967,2.022,FALSE,1,30,30,"heterogeneity_loss"
-"RR3","GO:0043501","skeletal muscle adaptation",1.754,2.018,FALSE,1,30,30,"heterogeneity_loss"
-"RR3","GO:0007602","phototransduction",1.515,-2.001,TRUE,0,30,30,"likely_noise"
-"RR3","GO:0070296","sarcoplasmic reticulum calcium ion transport",1.843,1.992,FALSE,1,30,30,"heterogeneity_loss"
-"RR3","GO:0043462","regulation of ATP-dependent activity",1.515,1.987,FALSE,1,30,30,"heterogeneity_loss"
-"RR3","GO:0021772","olfactory bulb development",1.682,-1.977,FALSE,0,30,30,"likely_noise"
-"RR3","GO:0010880","regulation of release of sequestered calcium ion into cytosol by sarcoplasmic reticulum",1.193,1.947,FALSE,1,30,30,"heterogeneity_loss"
-"RR3","GO:0140131","positive regulation of lymphocyte chemotaxis",1.153,-1.946,TRUE,1,30,30,"heterogeneity_loss"
-"RR3","GO:0035767","endothelial cell chemotaxis",1.214,-1.942,TRUE,1,30,30,"heterogeneity_loss"
-"RR3","GO:0050953","sensory perception of light stimulus",2.109,-1.94,TRUE,1,30,30,"heterogeneity_loss"
-"RR3","GO:0007601","visual perception",1.99,-1.939,TRUE,1,30,30,"heterogeneity_loss"
-"RR3","GO:0014819","regulation of skeletal muscle contraction",1.101,1.91,FALSE,1,30,30,"heterogeneity_loss"
-"RR3","GO:0032781","positive regulation of ATP-dependent activity",1.317,1.909,FALSE,1,30,30,"heterogeneity_loss"
-"RR3","GO:1903514","release of sequestered calcium ion into cytosol by endoplasmic reticulum",1.103,1.909,FALSE,0,30,30,"likely_noise"
-"RR3","GO:0035825","homologous recombination",1.249,1.898,FALSE,0,30,30,"likely_noise"
-"RR3","GO:0014854","response to inactivity",1.747,1.89,FALSE,1,30,30,"heterogeneity_loss"
-"RR3","GO:0006937","regulation of muscle contraction",1.918,1.889,FALSE,1,30,30,"heterogeneity_loss"
-"RR3","GO:0007131","reciprocal meiotic recombination",1.095,1.873,TRUE,0,30,30,"likely_noise"
-"RR3","GO:0140527","reciprocal homologous recombination",1.095,1.873,TRUE,0,30,30,"likely_noise"
-"RR3","GO:1901623","regulation of lymphocyte chemotaxis",1.103,-1.872,TRUE,1,30,30,"heterogeneity_loss"
-"RR3","GO:0014808","release of sequestered calcium ion into cytosol by sarcoplasmic reticulum",1.004,1.872,FALSE,0,30,30,"likely_noise"
-"RR3","GO:0070884","regulation of calcineurin-NFAT signaling cascade",1.101,1.858,FALSE,1,30,30,"heterogeneity_loss"
-"RR3","GO:0106056","regulation of calcineurin-mediated signaling",1.101,1.858,FALSE,1,30,30,"heterogeneity_loss"
-"RR3","GO:0061323","cell proliferation involved in heart morphogenesis",1.017,-1.853,FALSE,0,30,30,"likely_noise"
-"RR3","GO:2000136","regulation of cell proliferation involved in heart morphogenesis",1.017,-1.853,FALSE,0,30,30,"likely_noise"
-"RR3","GO:0014870","response to muscle inactivity",1.244,1.842,FALSE,1,30,30,"heterogeneity_loss"
-"RR3","GO:0071313","cellular response to caffeine",1.101,1.821,FALSE,0,30,30,"likely_noise"
-"RR3","GO:0006942","regulation of striated muscle contraction",1.317,1.819,FALSE,1,30,30,"heterogeneity_loss"
-"RR3","GO:0090257","regulation of muscle system process",2.436,1.785,FALSE,1,30,30,"heterogeneity_loss"
-"RR3","GO:0050905","neuromuscular process",1.738,1.772,FALSE,1,30,30,"heterogeneity_loss"
-"RR3","GO:0007519","skeletal muscle tissue development",1.515,1.769,FALSE,1,30,30,"heterogeneity_loss"
-"RR3","GO:0003263","cardioblast proliferation",1.101,-1.767,FALSE,0.033,30,30,"likely_noise"
-"RR3","GO:0003264","regulation of cardioblast proliferation",1.101,-1.767,FALSE,0.033,30,30,"likely_noise"
-"RR3","GO:0007127","meiosis I",1.004,1.761,FALSE,0.967,30,30,"heterogeneity_loss"
-"RR3","GO:0060538","skeletal muscle organ development",1.682,1.76,FALSE,1,30,30,"heterogeneity_loss"
-"RR3","GO:0043500","muscle adaptation",1.283,1.72,FALSE,1,30,30,"heterogeneity_loss"
-"RR3","GO:0048754","branching morphogenesis of an epithelial tube",1.663,-1.717,TRUE,0,30,30,"likely_noise"
-"RR3","GO:0032543","mitochondrial translation",1.283,1.715,FALSE,0,30,30,"likely_noise"
-"RR3","GO:0007517","muscle organ development",1.901,1.68,FALSE,1,30,30,"heterogeneity_loss"
-"RR3","GO:0051321","meiotic cell cycle",1.804,1.679,FALSE,0.967,30,30,"heterogeneity_loss"
-"RR3","GO:0140013","meiotic nuclear division",1.004,1.635,FALSE,0.967,30,30,"heterogeneity_loss"
-"RR3","GO:0001763","morphogenesis of a branching structure",1.317,-1.633,TRUE,0,30,30,"likely_noise"
-"RR3","GO:0014706","striated muscle tissue development",1.843,1.613,FALSE,1,30,30,"heterogeneity_loss"
-"RR3","GO:0060047","heart contraction",1.001,1.599,FALSE,1,30,30,"heterogeneity_loss"
-"RR3","GO:1903046","meiotic cell cycle process",1.062,1.593,FALSE,0.967,30,30,"heterogeneity_loss"
-"RR3","GO:0044282","small molecule catabolic process",1.444,1.585,FALSE,0.967,30,30,"heterogeneity_loss"
-"RR3","GO:0003015","heart process",1.004,1.585,FALSE,1,30,30,"heterogeneity_loss"
-"RR3","GO:0061138","morphogenesis of a branching epithelium",1.101,-1.578,TRUE,0,30,30,"likely_noise"
-"RR3","GO:0009060","aerobic respiration",1.103,1.541,FALSE,0.967,30,30,"heterogeneity_loss"
-"RR3","GO:0061448","connective tissue development",1.45,-1.51,TRUE,0.033,30,30,"likely_noise"
-"RR3","GO:0071560","cellular response to transforming growth factor beta stimulus",1.103,-1.501,TRUE,0,30,30,"likely_noise"
-"RR3","GO:0045333","cellular respiration",1.206,1.497,FALSE,0.967,30,30,"heterogeneity_loss"
-"RR3","GO:0042063","gliogenesis",1.168,-1.459,TRUE,1,30,30,"heterogeneity_loss"
-"RR47","GO:0033865","nucleoside bisphosphate metabolic process",1.59,1.999,FALSE,1,30,30,"heterogeneity_loss"
-"RR47","GO:0033875","ribonucleoside bisphosphate metabolic process",1.59,1.999,FALSE,1,30,30,"heterogeneity_loss"
-"RR47","GO:0034032","purine nucleoside bisphosphate metabolic process",1.59,1.999,FALSE,1,30,30,"heterogeneity_loss"
-"RR47","GO:0034035","purine ribonucleoside bisphosphate metabolic process",1.59,1.999,FALSE,1,30,30,"heterogeneity_loss"
-"RR47","GO:0050427","3'-phosphoadenosine 5'-phosphosulfate metabolic process",1.59,1.999,FALSE,1,30,30,"heterogeneity_loss"
-"RR47","GO:0042776","proton motive force-driven mitochondrial ATP synthesis",1.82,1.922,FALSE,1,30,30,"heterogeneity_loss"
-"RR47","GO:0015986","proton motive force-driven ATP synthesis",1.696,1.914,FALSE,0.967,30,30,"heterogeneity_loss"
-"RR47","GO:0022904","respiratory electron transport chain",2.977,1.902,FALSE,0.967,30,30,"heterogeneity_loss"
-"RR47","GO:0070593","dendrite self-avoidance",1.09,1.858,FALSE,0.033,30,30,"likely_noise"
-"RR47","GO:0006068","ethanol catabolic process",1.053,1.853,FALSE,0.967,30,30,"heterogeneity_loss"
-"RR47","GO:0006704","glucocorticoid biosynthetic process",2.397,-1.821,FALSE,1,30,30,"heterogeneity_loss"
-"RR47","GO:0006805","xenobiotic metabolic process",1.996,1.814,FALSE,0.967,30,30,"heterogeneity_loss"
-"RR47","GO:0042775","mitochondrial ATP synthesis coupled electron transport",1.276,1.812,FALSE,0,30,30,"likely_noise"
-"RR47","GO:0008211","glucocorticoid metabolic process",2.059,-1.798,FALSE,1,30,30,"heterogeneity_loss"
-"RR47","GO:0006067","ethanol metabolic process",1.174,1.781,FALSE,0.967,30,30,"heterogeneity_loss"
-"RR47","GO:0034310","primary alcohol catabolic process",1.155,1.776,FALSE,0.967,30,30,"heterogeneity_loss"
-"RR47","GO:0022900","electron transport chain",1.925,1.77,FALSE,0.967,30,30,"heterogeneity_loss"
-"RR47","GO:0045059","positive thymic T cell selection",1.838,-1.767,TRUE,0.967,30,30,"heterogeneity_loss"
-"RR47","GO:0042773","ATP synthesis coupled electron transport",1.59,1.767,FALSE,0,30,30,"likely_noise"
-"RR47","GO:0010819","regulation of T cell chemotaxis",1.569,-1.73,TRUE,0.967,30,30,"heterogeneity_loss"
-"RR47","GO:1905521","regulation of macrophage migration",1.696,-1.726,TRUE,1,30,30,"heterogeneity_loss"
-"RR47","GO:0002377","immunoglobulin production",2.146,-1.721,FALSE,0.967,30,30,"heterogeneity_loss"
-"RR47","GO:0140131","positive regulation of lymphocyte chemotaxis",1.431,-1.719,TRUE,0.967,30,30,"heterogeneity_loss"
-"RR47","GO:0045060","negative thymic T cell selection",1.696,-1.717,TRUE,0.967,30,30,"heterogeneity_loss"
-"RR47","GO:0019646","aerobic electron transport chain",1.207,1.713,FALSE,0,30,30,"likely_noise"
-"RR47","GO:0045582","positive regulation of T cell differentiation",2.086,-1.706,TRUE,0.967,30,30,"heterogeneity_loss"
-"RR47","GO:0002637","regulation of immunoglobulin production",1.75,-1.694,FALSE,0.967,30,30,"heterogeneity_loss"
-"RR47","GO:0002702","positive regulation of production of molecular mediator of immune response",1.826,-1.693,TRUE,1,30,30,"heterogeneity_loss"
-"RR47","GO:0010820","positive regulation of T cell chemotaxis",1.317,-1.693,TRUE,0.967,30,30,"heterogeneity_loss"
-"RR47","GO:0045621","positive regulation of lymphocyte differentiation",2.257,-1.681,TRUE,0.967,30,30,"heterogeneity_loss"
-"RR47","GO:0010758","regulation of macrophage chemotaxis",1.404,-1.677,TRUE,1,30,30,"heterogeneity_loss"
-"RR47","GO:0120178","steroid hormone biosynthetic process",1.696,-1.672,FALSE,0.967,30,30,"heterogeneity_loss"
-"RR47","GO:0006700","C21-steroid hormone biosynthetic process",1.175,-1.659,FALSE,0,30,30,"likely_noise"
-"RR47","GO:0002763","positive regulation of myeloid leukocyte differentiation",1.428,-1.645,TRUE,1,30,30,"heterogeneity_loss"
-"RR47","GO:0045066","regulatory T cell differentiation",1.308,-1.635,FALSE,0.967,30,30,"heterogeneity_loss"
-"RR47","GO:0002714","positive regulation of B cell mediated immunity",1.149,-1.628,FALSE,0.967,30,30,"heterogeneity_loss"
-"RR47","GO:0002891","positive regulation of immunoglobulin mediated immune response",1.149,-1.628,FALSE,0.967,30,30,"heterogeneity_loss"
-"RR47","GO:0051131","chaperone-mediated protein complex assembly",1.067,-1.623,FALSE,0.967,30,30,"heterogeneity_loss"
-"RR47","GO:0072538","T-helper 17 type immune response",1.149,-1.621,TRUE,0.967,30,30,"heterogeneity_loss"
-"RR47","GO:0150077","regulation of neuroinflammatory response",1.01,-1.619,TRUE,0.967,30,30,"heterogeneity_loss"
-"RR47","GO:0002639","positive regulation of immunoglobulin production",1.04,-1.614,FALSE,0.967,30,30,"heterogeneity_loss"
-"RR47","GO:0006119","oxidative phosphorylation",1.409,1.611,FALSE,0.967,30,30,"heterogeneity_loss"
-"RR47","GO:0002312","B cell activation involved in immune response",1.396,-1.606,TRUE,0.967,30,30,"heterogeneity_loss"
-"RR47","GO:0045589","regulation of regulatory T cell differentiation",1.079,-1.605,FALSE,0.967,30,30,"heterogeneity_loss"
-"RR47","GO:0009988","cell-cell recognition",1.007,-1.604,TRUE,0.967,30,30,"heterogeneity_loss"
-"RR47","GO:1903020","positive regulation of glycoprotein metabolic process",1.083,-1.603,FALSE,0.967,30,30,"heterogeneity_loss"
-"RR47","GO:0002888","positive regulation of myeloid leukocyte mediated immunity",1.078,-1.602,TRUE,1,30,30,"heterogeneity_loss"
-"RR47","GO:0035455","response to interferon-alpha",1.076,-1.596,FALSE,0,30,30,"likely_noise"
-"RR47","GO:2000510","positive regulation of dendritic cell chemotaxis",1.064,-1.587,FALSE,0.967,30,30,"heterogeneity_loss"
-"RR47","GO:0002520","immune system development",1.999,-1.582,FALSE,0.967,30,30,"heterogeneity_loss"
-"RR47","GO:0002360","T cell lineage commitment",1.038,-1.579,FALSE,0.967,30,30,"heterogeneity_loss"
-"RR47","GO:0002381","immunoglobulin production involved in immunoglobulin-mediated immune response",1.013,-1.575,FALSE,0.967,30,30,"heterogeneity_loss"
-"RR47","GO:0043123","positive regulation of canonical NF-kappaB signal transduction",1.757,-1.559,FALSE,1,30,30,"heterogeneity_loss"
-"RR47","GO:0042446","hormone biosynthetic process",1.083,-1.558,FALSE,0,30,30,"likely_noise"
-"RR47","GO:0002761","regulation of myeloid leukocyte differentiation",1.272,-1.533,TRUE,0.967,30,30,"heterogeneity_loss"
-"RR47","GO:0030512","negative regulation of transforming growth factor beta receptor signaling pathway",1.092,-1.529,FALSE,0,30,30,"likely_noise"
-"RR47","GO:0048661","positive regulation of smooth muscle cell proliferation",1.202,-1.527,TRUE,0,30,30,"likely_noise"
-"RR47","GO:0033209","tumor necrosis factor-mediated signaling pathway",1.137,-1.515,FALSE,0.967,30,30,"heterogeneity_loss"
-"RR47","GO:0048534","hematopoietic or lymphoid organ development",1.038,-1.512,FALSE,0.967,30,30,"heterogeneity_loss"
-"RR47","GO:1902905","positive regulation of supramolecular fiber organization",1.121,-1.505,FALSE,0.967,30,30,"heterogeneity_loss"
-"RR47","GO:0016125","sterol metabolic process",1.198,1.484,FALSE,0.967,30,30,"heterogeneity_loss"
-"RR47","GO:0050777","negative regulation of immune response",1.361,-1.472,TRUE,0.967,30,30,"heterogeneity_loss"
-"RR47","GO:0001959","regulation of cytokine-mediated signaling pathway",1.032,-1.464,FALSE,0.967,30,30,"heterogeneity_loss"
-"RR47","GO:0051495","positive regulation of cytoskeleton organization",1.17,-1.45,FALSE,0.967,30,30,"heterogeneity_loss"
-"RR47","GO:0045637","regulation of myeloid cell differentiation",1.173,-1.449,TRUE,0.967,30,30,"heterogeneity_loss"
-"RR47","GO:0071356","cellular response to tumor necrosis factor",1.2,-1.435,FALSE,0.967,30,30,"heterogeneity_loss"
-"RR47","GO:0060759","regulation of response to cytokine stimulus",1.022,-1.432,FALSE,0.967,30,30,"heterogeneity_loss"
-"RR47","GO:0007249","canonical NF-kappaB signal transduction",1.544,-1.418,FALSE,0.967,30,30,"heterogeneity_loss"
-"RR47","GO:0043122","regulation of canonical NF-kappaB signal transduction",1.236,-1.414,FALSE,0.967,30,30,"heterogeneity_loss"
-"RR47","GO:0031348","negative regulation of defense response",1.013,-1.392,TRUE,0.967,30,30,"heterogeneity_loss"
-"RR47","GO:0071559","response to transforming growth factor beta",1.079,-1.388,TRUE,0.967,30,30,"heterogeneity_loss"
-"RR47","GO:1903532","positive regulation of secretion by cell",1.282,-1.388,TRUE,0.967,30,30,"heterogeneity_loss"
-"RR47","GO:0071560","cellular response to transforming growth factor beta stimulus",1.032,-1.387,TRUE,0.967,30,30,"heterogeneity_loss"
-"RR47","GO:0051047","positive regulation of secretion",1.116,-1.376,TRUE,0.967,30,30,"heterogeneity_loss"
-"RR47","GO:0030100","regulation of endocytosis",1.09,-1.372,TRUE,0.967,30,30,"heterogeneity_loss"
+RR_Mission,ID,Description,single_logp,single_NES,in_full_referee,within_study_selection_freq,n_success,n_attempt,verdict
+RR1_NASA,GO:0002181,cytoplasmic translation,7.423,-2.887,true,1,30,30,heterogeneity_loss
+RR1_NASA,GO:0006941,striated muscle contraction,7.423,-2.504,true,1,30,30,heterogeneity_loss
+RR1_NASA,GO:0098869,cellular oxidant detoxification,5.933,-2.409,true,1,30,30,heterogeneity_loss
+RR1_NASA,GO:0006936,muscle contraction,7.423,-2.346,true,1,30,30,heterogeneity_loss
+RR1_NASA,GO:0003009,skeletal muscle contraction,3.379,-2.286,false,1,30,30,heterogeneity_loss
+RR1_NASA,GO:1990748,cellular detoxification,5.85,-2.232,true,1,30,30,heterogeneity_loss
+RR1_NASA,GO:0014902,myotube differentiation,6.079,-2.173,true,1,30,30,heterogeneity_loss
+RR1_NASA,GO:0098754,detoxification,5.764,-2.17,true,1,30,30,heterogeneity_loss
+RR1_NASA,GO:0006575,modified amino acid metabolic process,6.338,-2.164,false,1,30,30,heterogeneity_loss
+RR1_NASA,GO:0009152,purine ribonucleotide biosynthetic process,5.976,-2.161,false,1,30,30,heterogeneity_loss
+RR1_NASA,GO:0170035,L-amino acid catabolic process,3.68,-2.16,false,1,30,30,heterogeneity_loss
+RR1_NASA,GO:0033539,fatty acid beta-oxidation using acyl-CoA dehydrogenase,2.818,-2.158,false,1,30,30,heterogeneity_loss
+RR1_NASA,GO:0097237,cellular response to toxic substance,4.852,-2.153,true,1,30,30,heterogeneity_loss
+RR1_NASA,GO:0014819,regulation of skeletal muscle contraction,2.517,-2.145,false,1,30,30,heterogeneity_loss
+RR1_NASA,GO:0050879,multicellular organismal movement,3.183,-2.136,false,1,30,30,heterogeneity_loss
+RR1_NASA,GO:0050881,musculoskeletal movement,2.818,-2.132,false,1,30,30,heterogeneity_loss
+RR1_NASA,GO:0170033,L-amino acid metabolic process,5.795,-2.129,false,1,30,30,heterogeneity_loss
+RR1_NASA,GO:0009260,ribonucleotide biosynthetic process,5.578,-2.118,false,1,30,30,heterogeneity_loss
+RR1_NASA,GO:0034377,plasma lipoprotein particle assembly,1.964,-2.098,false,1,30,30,heterogeneity_loss
+RR1_NASA,GO:0170039,proteinogenic amino acid metabolic process,4.906,-2.095,false,1,30,30,heterogeneity_loss
+RR1_NASA,GO:0065005,protein-lipid complex assembly,2.322,-2.088,false,1,30,30,heterogeneity_loss
+RR1_NASA,GO:0170040,proteinogenic amino acid catabolic process,3.315,-2.077,false,1,30,30,heterogeneity_loss
+RR1_NASA,GO:0046390,ribose phosphate biosynthetic process,5.578,-2.052,false,1,30,30,heterogeneity_loss
+RR1_NASA,GO:0150172,regulation of phosphatidylcholine metabolic process,1.562,-2.032,false,1,30,30,heterogeneity_loss
+RR1_NASA,GO:0060426,lung vasculature development,1.559,-2.029,false,1,30,30,heterogeneity_loss
+RR1_NASA,GO:0010898,positive regulation of triglyceride catabolic process,1.559,-2.027,false,1,30,30,heterogeneity_loss
+RR1_NASA,GO:0006749,glutathione metabolic process,2.183,-2.019,false,0.967,30,30,heterogeneity_loss
+RR1_NASA,GO:0034370,triglyceride-rich lipoprotein particle remodeling,1.512,-2.019,false,1,30,30,heterogeneity_loss
+RR1_NASA,GO:0034372,very-low-density lipoprotein particle remodeling,1.512,-2.019,false,1,30,30,heterogeneity_loss
+RR1_NASA,GO:0010574,regulation of vascular endothelial growth factor production,2.02,-2,false,1,30,30,heterogeneity_loss
+RR1_NASA,GO:0033314,mitotic DNA replication checkpoint signaling,2.099,1.992,false,1,30,30,heterogeneity_loss
+RR1_NASA,GO:0070444,oligodendrocyte progenitor proliferation,2.097,1.991,false,1,30,30,heterogeneity_loss
+RR1_NASA,GO:0006805,xenobiotic metabolic process,3.448,-1.982,false,1,30,30,heterogeneity_loss
+RR1_NASA,GO:2000279,negative regulation of DNA biosynthetic process,1.868,1.981,true,1,30,30,heterogeneity_loss
+RR1_NASA,GO:0010573,vascular endothelial growth factor production,1.678,-1.979,false,1,30,30,heterogeneity_loss
+RR1_NASA,GO:0035082,axoneme assembly,2.322,1.968,false,1,30,30,heterogeneity_loss
+RR1_NASA,GO:0070445,regulation of oligodendrocyte progenitor proliferation,1.818,1.968,false,1,30,30,heterogeneity_loss
+RR1_NASA,GO:0000056,ribosomal small subunit export from nucleus,1.661,-1.962,false,0.967,30,30,heterogeneity_loss
+RR1_NASA,GO:0014857,regulation of skeletal muscle cell proliferation,1.918,1.957,false,1,30,30,heterogeneity_loss
+RR1_NASA,GO:0035235,ionotropic glutamate receptor signaling pathway,1.593,1.951,false,1,30,30,heterogeneity_loss
+RR1_NASA,GO:0033108,mitochondrial respiratory chain complex assembly,2.888,-1.95,false,0.967,30,30,heterogeneity_loss
+RR1_NASA,GO:0043586,tongue development,1.393,1.944,false,0.967,30,30,heterogeneity_loss
+RR1_NASA,GO:0034447,very-low-density lipoprotein particle clearance,1.21,-1.941,false,0.967,30,30,heterogeneity_loss
+RR1_NASA,GO:0006164,purine nucleotide biosynthetic process,4.668,-1.934,false,1,30,30,heterogeneity_loss
+RR1_NASA,GO:0050996,positive regulation of lipid catabolic process,1.559,-1.933,false,1,30,30,heterogeneity_loss
+RR1_NASA,GO:0015669,gas transport,1.127,-1.931,false,0.967,30,30,heterogeneity_loss
+RR1_NASA,GO:0030200,heparan sulfate proteoglycan catabolic process,1.127,-1.93,true,0.967,30,30,heterogeneity_loss
+RR1_NASA,GO:0001578,microtubule bundle formation,2.89,1.929,true,1,30,30,heterogeneity_loss
+RR1_NASA,GO:0046889,positive regulation of lipid biosynthetic process,2.818,-1.924,false,1,30,30,heterogeneity_loss
+RR1_NASA,GO:0071450,cellular response to oxygen radical,1.424,-1.919,false,0.967,30,30,heterogeneity_loss
+RR1_NASA,GO:0071451,cellular response to superoxide,1.424,-1.919,false,0.967,30,30,heterogeneity_loss
+RR1_NASA,GO:0006103,2-oxoglutarate metabolic process,1.133,-1.915,false,0,30,30,likely_noise
+RR1_NASA,GO:1990806,ligand-gated ion channel signaling pathway,1.75,1.915,false,1,30,30,heterogeneity_loss
+RR1_NASA,GO:0048525,negative regulation of viral process,1.734,1.914,false,1,30,30,heterogeneity_loss
+RR1_NASA,GO:0019430,removal of superoxide radicals,1.512,-1.906,false,0.967,30,30,heterogeneity_loss
+RR1_NASA,GO:0048821,erythrocyte development,1.661,1.902,false,0.033,30,30,likely_noise
+RR1_NASA,GO:0043691,reverse cholesterol transport,1.312,-1.898,false,1,30,30,heterogeneity_loss
+RR1_NASA,GO:0045071,negative regulation of viral genome replication,1.779,1.897,false,1,30,30,heterogeneity_loss
+RR1_NASA,GO:0000076,DNA replication checkpoint signaling,1.452,1.897,false,0.967,30,30,heterogeneity_loss
+RR1_NASA,GO:0014856,skeletal muscle cell proliferation,1.495,1.894,false,1,30,30,heterogeneity_loss
+RR1_NASA,GO:0014850,response to muscle activity,1.422,-1.876,false,1,30,30,heterogeneity_loss
+RR1_NASA,GO:0016226,iron-sulfur cluster assembly,1.107,-1.872,false,1,30,30,heterogeneity_loss
+RR1_NASA,GO:0031163,metallo-sulfur cluster assembly,1.107,-1.872,false,1,30,30,heterogeneity_loss
+RR1_NASA,GO:0097066,response to thyroid hormone,1.084,-1.867,false,0.033,30,30,likely_noise
+RR1_NASA,GO:0030948,negative regulation of vascular endothelial growth factor receptor signaling pathway,1.25,-1.865,false,0.967,30,30,heterogeneity_loss
+RR1_NASA,GO:0033489,cholesterol biosynthetic process via desmosterol,1.334,1.865,true,0.967,30,30,heterogeneity_loss
+RR1_NASA,GO:0061469,regulation of type B pancreatic cell proliferation,1.006,-1.864,false,0.967,30,30,heterogeneity_loss
+RR1_NASA,GO:0044273,sulfur compound catabolic process,1.331,-1.855,false,1,30,30,heterogeneity_loss
+RR1_NASA,GO:0015936,coenzyme A metabolic process,1.278,-1.853,false,0.967,30,30,heterogeneity_loss
+RR1_NASA,GO:0036196,zymosterol metabolic process,1.042,1.853,true,0.967,30,30,heterogeneity_loss
+RR1_NASA,GO:0036197,zymosterol biosynthetic process,1.042,1.853,true,0.967,30,30,heterogeneity_loss
+RR1_NASA,GO:0000028,ribosomal small subunit assembly,1.13,-1.853,false,1,30,30,heterogeneity_loss
+RR1_NASA,GO:0001975,response to amphetamine,1.133,-1.85,false,0.967,30,30,heterogeneity_loss
+RR1_NASA,GO:0060080,inhibitory postsynaptic potential,1.177,1.849,false,0.033,30,30,likely_noise
+RR1_NASA,GO:0009081,branched-chain amino acid metabolic process,1.129,-1.847,false,0.967,30,30,heterogeneity_loss
+RR1_NASA,GO:2000342,negative regulation of chemokine (C-X-C motif) ligand 2 production,1.78,1.838,false,1,30,30,heterogeneity_loss
+RR1_NASA,GO:0009636,response to toxic substance,4.297,-1.837,true,1,30,30,heterogeneity_loss
+RR1_NASA,GO:0055090,acylglycerol homeostasis,1.247,-1.831,false,1,30,30,heterogeneity_loss
+RR1_NASA,GO:1902099,regulation of metaphase/anaphase transition of cell cycle,1.818,1.825,false,1,30,30,heterogeneity_loss
+RR1_NASA,GO:0030071,regulation of mitotic metaphase/anaphase transition,1.841,1.824,false,1,30,30,heterogeneity_loss
+RR1_NASA,GO:0140013,meiotic nuclear division,2.615,1.824,false,1,30,30,heterogeneity_loss
+RR1_NASA,GO:0000305,response to oxygen radical,1.227,-1.823,false,1,30,30,heterogeneity_loss
+RR1_NASA,GO:0000303,response to superoxide,1.023,-1.82,false,0.967,30,30,heterogeneity_loss
+RR1_NASA,GO:0033045,regulation of sister chromatid segregation,2.144,1.818,false,1,30,30,heterogeneity_loss
+RR1_NASA,GO:0010744,positive regulation of macrophage derived foam cell differentiation,1.112,-1.816,false,0,30,30,likely_noise
+RR1_NASA,GO:0007131,reciprocal meiotic recombination,1.361,1.814,true,0.033,30,30,likely_noise
+RR1_NASA,GO:0140527,reciprocal homologous recombination,1.361,1.814,true,0.033,30,30,likely_noise
+RR1_NASA,GO:0051146,striated muscle cell differentiation,5.63,-1.812,true,1,30,30,heterogeneity_loss
+RR1_NASA,GO:1903046,meiotic cell cycle process,3.306,1.812,false,1,30,30,heterogeneity_loss
+RR1_NASA,GO:0044784,metaphase/anaphase transition of cell cycle,1.68,1.811,false,1,30,30,heterogeneity_loss
+RR1_NASA,GO:0043501,skeletal muscle adaptation,1.133,-1.809,false,0,30,30,likely_noise
+RR1_NASA,GO:0044539,long-chain fatty acid import into cell,1.129,-1.807,false,0,30,30,likely_noise
+RR1_NASA,GO:0003139,secondary heart field specification,1.176,1.807,false,0.033,30,30,likely_noise
+RR1_NASA,GO:0015909,long-chain fatty acid transport,1.422,-1.804,false,1,30,30,heterogeneity_loss
+RR1_NASA,GO:0051985,negative regulation of chromosome segregation,1.176,1.802,false,1,30,30,heterogeneity_loss
+RR1_NASA,GO:0035825,homologous recombination,1.076,1.8,false,1,30,30,heterogeneity_loss
+RR1_NASA,GO:0007091,metaphase/anaphase transition of mitotic cell cycle,1.855,1.799,false,1,30,30,heterogeneity_loss
+RR1_NASA,GO:0061982,meiosis I cell cycle process,1.818,1.793,false,1,30,30,heterogeneity_loss
+RR1_NASA,GO:0010984,regulation of lipoprotein particle clearance,1.014,-1.791,false,1,30,30,heterogeneity_loss
+RR1_NASA,GO:0007094,mitotic spindle assembly checkpoint signaling,1.176,1.786,false,1,30,30,heterogeneity_loss
+RR1_NASA,GO:0071173,spindle assembly checkpoint signaling,1.176,1.786,false,1,30,30,heterogeneity_loss
+RR1_NASA,GO:0071174,mitotic spindle checkpoint signaling,1.176,1.786,false,1,30,30,heterogeneity_loss
+RR1_NASA,GO:0007127,meiosis I,1.613,1.779,false,1,30,30,heterogeneity_loss
+RR1_NASA,GO:0070328,triglyceride homeostasis,1.203,-1.776,false,1,30,30,heterogeneity_loss
+RR1_NASA,GO:0051983,regulation of chromosome segregation,2.091,1.775,false,1,30,30,heterogeneity_loss
+RR1_NASA,GO:0009165,nucleotide biosynthetic process,3.315,-1.774,false,0.967,30,30,heterogeneity_loss
+RR1_NASA,GO:0044818,mitotic G2/M transition checkpoint,1.586,1.774,false,1,30,30,heterogeneity_loss
+RR1_NASA,GO:0170041,non-proteinogenic amino acid metabolic process,1.33,-1.773,false,0.967,30,30,heterogeneity_loss
+RR1_NASA,GO:0033046,negative regulation of sister chromatid segregation,1.001,1.766,false,1,30,30,heterogeneity_loss
+RR1_NASA,GO:0033048,negative regulation of mitotic sister chromatid segregation,1.001,1.766,false,1,30,30,heterogeneity_loss
+RR1_NASA,GO:0045841,negative regulation of mitotic metaphase/anaphase transition,1.001,1.766,false,1,30,30,heterogeneity_loss
+RR1_NASA,GO:2000816,negative regulation of mitotic sister chromatid separation,1.001,1.766,false,1,30,30,heterogeneity_loss
+RR1_NASA,GO:0007093,mitotic cell cycle checkpoint signaling,1.918,1.763,false,1,30,30,heterogeneity_loss
+RR1_NASA,GO:0031577,spindle checkpoint signaling,1.13,1.76,false,1,30,30,heterogeneity_loss
+RR1_NASA,GO:0060338,regulation of type I interferon-mediated signaling pathway,1.129,1.751,true,0.967,30,30,heterogeneity_loss
+RR1_NASA,GO:0070286,axonemal dynein complex assembly,1.001,1.75,false,0.033,30,30,likely_noise
+RR1_NASA,GO:0061515,myeloid cell development,1.639,1.75,false,0.033,30,30,likely_noise
+RR1_NASA,GO:0014719,skeletal muscle satellite cell activation,1.153,1.745,false,0.967,30,30,heterogeneity_loss
+RR1_NASA,GO:1902100,negative regulation of metaphase/anaphase transition of cell cycle,1.176,1.74,false,1,30,30,heterogeneity_loss
+RR1_NASA,GO:1905819,negative regulation of chromosome separation,1.176,1.74,false,1,30,30,heterogeneity_loss
+RR1_NASA,GO:0045834,positive regulation of lipid metabolic process,2.057,-1.74,false,1,30,30,heterogeneity_loss
+RR1_NASA,GO:0071825,protein-lipid complex organization,1.247,-1.739,false,0.967,30,30,heterogeneity_loss
+RR1_NASA,GO:0060078,regulation of postsynaptic membrane potential,1.736,1.739,false,1,30,30,heterogeneity_loss
+RR1_NASA,GO:0051321,meiotic cell cycle,2.729,1.733,false,1,30,30,heterogeneity_loss
+RR1_NASA,GO:0008608,attachment of spindle microtubules to kinetochore,1.112,1.721,false,0.033,30,30,likely_noise
+RR1_NASA,GO:0060920,cardiac pacemaker cell differentiation,1.021,-1.721,false,0,30,30,likely_noise
+RR1_NASA,GO:0071612,IP-10 production,1.032,1.713,false,0.967,30,30,heterogeneity_loss
+RR1_NASA,GO:0071658,regulation of IP-10 production,1.032,1.713,false,0.967,30,30,heterogeneity_loss
+RR1_NASA,GO:0000075,cell cycle checkpoint signaling,2.144,1.711,true,1,30,30,heterogeneity_loss
+RR1_NASA,GO:0001676,long-chain fatty acid metabolic process,1.781,-1.711,true,1,30,30,heterogeneity_loss
+RR1_NASA,GO:0033047,regulation of mitotic sister chromatid segregation,1.217,1.707,false,1,30,30,heterogeneity_loss
+RR1_NASA,GO:0000819,sister chromatid segregation,2.339,1.684,false,1,30,30,heterogeneity_loss
+RR1_NASA,GO:0044774,mitotic DNA integrity checkpoint signaling,1.001,1.682,false,0,30,30,likely_noise
+RR1_NASA,GO:0071466,cellular response to xenobiotic stimulus,2.322,-1.682,false,1,30,30,heterogeneity_loss
+RR1_NASA,GO:0019079,viral genome replication,1.201,1.671,true,1,30,30,heterogeneity_loss
+RR1_NASA,GO:2001251,negative regulation of chromosome organization,1.291,1.67,true,1,30,30,heterogeneity_loss
+RR1_NASA,GO:0009123,nucleoside monophosphate metabolic process,1.087,-1.667,false,0.033,30,30,likely_noise
+RR1_NASA,GO:0051304,chromosome separation,1.081,1.662,false,0.033,30,30,likely_noise
+RR1_NASA,GO:0140374,antiviral innate immune response,1.177,1.661,true,1,30,30,heterogeneity_loss
+RR1_NASA,GO:0090303,positive regulation of wound healing,1.001,-1.66,true,0.967,30,30,heterogeneity_loss
+RR1_NASA,GO:0007006,mitochondrial membrane organization,1.005,-1.66,false,0.967,30,30,heterogeneity_loss
+RR1_NASA,GO:0098813,nuclear chromosome segregation,2.516,1.658,false,1,30,30,heterogeneity_loss
+RR1_NASA,GO:0060021,roof of mouth development,1.109,1.654,false,0.967,30,30,heterogeneity_loss
+RR1_NASA,GO:0051784,negative regulation of nuclear division,1.001,1.647,false,1,30,30,heterogeneity_loss
+RR1_NASA,GO:0050435,amyloid-beta metabolic process,1.001,-1.646,true,0,30,30,likely_noise
+RR1_NASA,GO:0120254,olefinic compound metabolic process,1.75,-1.644,true,1,30,30,heterogeneity_loss
+RR1_NASA,GO:0045132,meiotic chromosome segregation,1.02,1.642,false,0.033,30,30,likely_noise
+RR1_NASA,GO:0051310,metaphase chromosome alignment,1.067,1.636,false,1,30,30,heterogeneity_loss
+RR1_NASA,GO:0072522,purine-containing compound biosynthetic process,2.649,-1.623,false,0.967,30,30,heterogeneity_loss
+RR1_NASA,GO:1901293,nucleoside phosphate biosynthetic process,2.332,-1.602,false,0.967,30,30,heterogeneity_loss
+RR1_NASA,GO:0060759,regulation of response to cytokine stimulus,1.222,1.598,false,0,30,30,likely_noise
+RR1_NASA,GO:0016042,lipid catabolic process,3.237,-1.596,false,1,30,30,heterogeneity_loss
+RR1_NASA,GO:0007059,chromosome segregation,2.615,1.585,true,1,30,30,heterogeneity_loss
+RR1_NASA,GO:1901991,negative regulation of mitotic cell cycle phase transition,1.178,1.584,false,1,30,30,heterogeneity_loss
+RR1_NASA,GO:0001959,regulation of cytokine-mediated signaling pathway,1.083,1.577,false,0.033,30,30,likely_noise
+RR1_NASA,GO:0010389,regulation of G2/M transition of mitotic cell cycle,1.021,1.574,false,0,30,30,likely_noise
+RR1_NASA,GO:0006163,purine nucleotide metabolic process,3.577,-1.572,false,1,30,30,heterogeneity_loss
+RR1_NASA,GO:0034308,primary alcohol metabolic process,1.03,-1.57,true,0.033,30,30,likely_noise
+RR1_NASA,GO:0000280,nuclear division,2.183,1.566,false,1,30,30,heterogeneity_loss
+RR1_NASA,GO:0008637,apoptotic mitochondrial changes,1.129,-1.552,false,0.967,30,30,heterogeneity_loss
+RR1_NASA,GO:0046890,regulation of lipid biosynthetic process,1.678,-1.549,false,0.967,30,30,heterogeneity_loss
+RR1_NASA,GO:1901988,negative regulation of cell cycle phase transition,1.424,1.536,true,1,30,30,heterogeneity_loss
+RR1_NASA,GO:0000302,response to reactive oxygen species,1.451,-1.486,true,0.967,30,30,heterogeneity_loss
+RR1_NASA,GO:0034614,cellular response to reactive oxygen species,1.047,-1.48,true,0.967,30,30,heterogeneity_loss
+RR1_NASA,GO:0006066,alcohol metabolic process,1.593,-1.411,true,1,30,30,heterogeneity_loss
+RR1_NASA,GO:0019216,regulation of lipid metabolic process,1.035,-1.28,false,0.967,30,30,heterogeneity_loss
+RR6,GO:0002474,antigen processing and presentation of peptide antigen via MHC class I,3.874,-2.243,true,1,30,30,heterogeneity_loss
+RR6,GO:0050881,musculoskeletal movement,3.136,2.201,false,1,30,30,heterogeneity_loss
+RR6,GO:0003009,skeletal muscle contraction,3.284,2.194,false,1,30,30,heterogeneity_loss
+RR6,GO:0050879,multicellular organismal movement,3.58,2.16,false,1,30,30,heterogeneity_loss
+RR6,GO:0002483,antigen processing and presentation of endogenous peptide antigen,2.922,-2.142,true,0,30,30,likely_noise
+RR6,GO:0019885,antigen processing and presentation of endogenous peptide antigen via MHC class I,2.922,-2.142,true,0,30,30,likely_noise
+RR6,GO:0006953,acute-phase response,2.843,-2.097,true,1,30,30,heterogeneity_loss
+RR6,GO:0090009,primitive streak formation,1.798,2.091,false,0,30,30,likely_noise
+RR6,GO:0006068,ethanol catabolic process,2.413,-2.077,false,1,30,30,heterogeneity_loss
+RR6,GO:0019883,antigen processing and presentation of endogenous antigen,2.993,-2.057,true,0,30,30,likely_noise
+RR6,GO:0002476,antigen processing and presentation of endogenous peptide antigen via MHC class Ib,2.233,-2.051,true,0,30,30,likely_noise
+RR6,GO:0002484,antigen processing and presentation of endogenous peptide antigen via MHC class I via ER pathway,2.233,-2.051,true,0,30,30,likely_noise
+RR6,GO:0034308,primary alcohol metabolic process,3.833,-2.045,true,1,30,30,heterogeneity_loss
+RR6,GO:0034310,primary alcohol catabolic process,2.55,-2.037,false,1,30,30,heterogeneity_loss
+RR6,GO:0006067,ethanol metabolic process,2.53,-2.036,false,1,30,30,heterogeneity_loss
+RR6,GO:0002486,"antigen processing and presentation of endogenous peptide antigen via MHC class I via ER pathway, TAP-independent",2.577,-2.034,true,0,30,30,likely_noise
+RR6,GO:0033865,nucleoside bisphosphate metabolic process,2.655,-2.028,false,1,30,30,heterogeneity_loss
+RR6,GO:0033875,ribonucleoside bisphosphate metabolic process,2.655,-2.028,false,1,30,30,heterogeneity_loss
+RR6,GO:0034032,purine nucleoside bisphosphate metabolic process,2.655,-2.028,false,1,30,30,heterogeneity_loss
+RR6,GO:0034035,purine ribonucleoside bisphosphate metabolic process,2.655,-2.028,false,1,30,30,heterogeneity_loss
+RR6,GO:0050427,3'-phosphoadenosine 5'-phosphosulfate metabolic process,2.655,-2.028,false,1,30,30,heterogeneity_loss
+RR6,GO:0006066,alcohol metabolic process,7.193,-2.003,true,1,30,30,heterogeneity_loss
+RR6,GO:0001975,response to amphetamine,1.662,1.99,false,0,30,30,likely_noise
+RR6,GO:1901970,positive regulation of mitotic sister chromatid separation,1.765,-1.977,false,0,30,30,likely_noise
+RR6,GO:0002428,antigen processing and presentation of peptide antigen via MHC class Ib,2.092,-1.969,true,0,30,30,likely_noise
+RR6,GO:0002475,antigen processing and presentation via MHC class Ib,2.128,-1.961,true,0,30,30,likely_noise
+RR6,GO:0010965,regulation of mitotic sister chromatid separation,2.378,-1.959,false,0,30,30,likely_noise
+RR6,GO:0007094,mitotic spindle assembly checkpoint signaling,1.963,-1.952,false,0,30,30,likely_noise
+RR6,GO:0071173,spindle assembly checkpoint signaling,1.963,-1.952,false,0,30,30,likely_noise
+RR6,GO:0071174,mitotic spindle checkpoint signaling,1.963,-1.952,false,0,30,30,likely_noise
+RR6,GO:0033046,negative regulation of sister chromatid segregation,1.999,-1.946,false,0,30,30,likely_noise
+RR6,GO:0033048,negative regulation of mitotic sister chromatid segregation,1.999,-1.946,false,0,30,30,likely_noise
+RR6,GO:0045841,negative regulation of mitotic metaphase/anaphase transition,1.999,-1.946,false,0,30,30,likely_noise
+RR6,GO:2000816,negative regulation of mitotic sister chromatid separation,1.999,-1.946,false,0,30,30,likely_noise
+RR6,GO:0031577,spindle checkpoint signaling,2.104,-1.945,false,0,30,30,likely_noise
+RR6,GO:0007096,regulation of exit from mitosis,1.548,-1.93,false,0,30,30,likely_noise
+RR6,GO:1902100,negative regulation of metaphase/anaphase transition of cell cycle,2.128,-1.921,false,0,30,30,likely_noise
+RR6,GO:1905819,negative regulation of chromosome separation,2.128,-1.921,false,0,30,30,likely_noise
+RR6,GO:0060004,reflex,1.339,1.921,false,0,30,30,likely_noise
+RR6,GO:0051306,mitotic sister chromatid separation,2.22,-1.91,false,0,30,30,likely_noise
+RR6,GO:0008608,attachment of spindle microtubules to kinetochore,2.216,-1.909,false,0,30,30,likely_noise
+RR6,GO:0051784,negative regulation of nuclear division,2.116,-1.908,false,0,30,30,likely_noise
+RR6,GO:0042776,proton motive force-driven mitochondrial ATP synthesis,1.999,-1.903,false,0,30,30,likely_noise
+RR6,GO:0045842,positive regulation of mitotic metaphase/anaphase transition,1.525,-1.887,false,0,30,30,likely_noise
+RR6,GO:0008202,steroid metabolic process,5.442,-1.885,false,1,30,30,heterogeneity_loss
+RR6,GO:0015986,proton motive force-driven ATP synthesis,1.999,-1.883,false,0,30,30,likely_noise
+RR6,GO:0033047,regulation of mitotic sister chromatid segregation,1.985,-1.872,false,0,30,30,likely_noise
+RR6,GO:0045839,negative regulation of mitotic nuclear division,1.952,-1.858,false,0,30,30,likely_noise
+RR6,GO:0051791,medium-chain fatty acid metabolic process,1.201,1.857,false,1,30,30,heterogeneity_loss
+RR6,GO:0051985,negative regulation of chromosome segregation,1.608,-1.853,false,0,30,30,likely_noise
+RR6,GO:0055062,phosphate ion homeostasis,1.01,1.847,false,0,30,30,likely_noise
+RR6,GO:0071394,cellular response to testosterone stimulus,1.156,-1.833,false,0,30,30,likely_noise
+RR6,GO:0006359,regulation of transcription by RNA polymerase III,1.156,1.827,true,0,30,30,likely_noise
+RR6,GO:0021533,cell differentiation in hindbrain,1.248,1.825,true,1,30,30,heterogeneity_loss
+RR6,GO:0046686,response to cadmium ion,1.588,-1.822,false,0,30,30,likely_noise
+RR6,GO:0051923,sulfation,1.116,-1.821,false,1,30,30,heterogeneity_loss
+RR6,GO:0048149,behavioral response to ethanol,1.031,1.817,false,0,30,30,likely_noise
+RR6,GO:0038166,angiotensin-activated signaling pathway,1.03,1.816,false,0,30,30,likely_noise
+RR6,GO:0021697,cerebellar cortex formation,1.12,1.813,true,1,30,30,heterogeneity_loss
+RR6,GO:0046164,alcohol catabolic process,1.258,-1.81,false,1,30,30,heterogeneity_loss
+RR6,GO:0090306,meiotic spindle assembly,1.031,-1.808,false,0,30,30,likely_noise
+RR6,GO:0061179,negative regulation of insulin secretion involved in cellular response to glucose stimulus,1.159,-1.807,false,0,30,30,likely_noise
+RR6,GO:0009409,response to cold,1.39,1.789,false,1,30,30,heterogeneity_loss
+RR6,GO:0051304,chromosome separation,1.422,-1.783,false,0,30,30,likely_noise
+RR6,GO:0043903,regulation of biological process involved in symbiotic interaction,1.216,-1.779,true,0,30,30,likely_noise
+RR6,GO:0002023,reduction of food intake in response to dietary excess,1.072,1.775,false,1,30,30,heterogeneity_loss
+RR6,GO:0032780,negative regulation of ATP-dependent activity,1.019,-1.759,false,0,30,30,likely_noise
+RR6,GO:0045475,locomotor rhythm,1.01,-1.751,false,0,30,30,likely_noise
+RR6,GO:0035458,cellular response to interferon-beta,1.4,-1.751,false,1,30,30,heterogeneity_loss
+RR6,GO:0002118,aggressive behavior,1.03,1.748,false,0,30,30,likely_noise
+RR6,GO:0043647,inositol phosphate metabolic process,1.248,1.745,false,0,30,30,likely_noise
+RR6,GO:0051310,metaphase chromosome alignment,1.673,-1.737,false,0,30,30,likely_noise
+RR6,GO:0033108,mitochondrial respiratory chain complex assembly,1.555,-1.736,false,0,30,30,likely_noise
+RR6,GO:0001523,retinoid metabolic process,1.375,-1.731,true,0,30,30,likely_noise
+RR6,GO:0051783,regulation of nuclear division,1.81,-1.73,false,0,30,30,likely_noise
+RR6,GO:1905818,regulation of chromosome separation,1.471,-1.724,false,0,30,30,likely_noise
+RR6,GO:0042572,retinol metabolic process,1.32,-1.723,true,0,30,30,likely_noise
+RR6,GO:0000212,meiotic spindle organization,1.045,-1.723,false,0,30,30,likely_noise
+RR6,GO:0035456,response to interferon-beta,1.165,-1.711,false,0,30,30,likely_noise
+RR6,GO:0007143,female meiotic nuclear division,1.018,-1.709,false,0,30,30,likely_noise
+RR6,GO:0030239,myofibril assembly,1.047,1.693,false,0,30,30,likely_noise
+RR6,GO:0006692,prostanoid metabolic process,1.047,-1.69,true,0,30,30,likely_noise
+RR6,GO:0016101,diterpenoid metabolic process,1.4,-1.686,true,0,30,30,likely_noise
+RR6,GO:0000070,mitotic sister chromatid segregation,2.227,-1.681,false,0,30,30,likely_noise
+RR6,GO:0007088,regulation of mitotic nuclear division,1.233,-1.678,false,0,30,30,likely_noise
+RR6,GO:0050000,chromosome localization,1.639,-1.668,false,0,30,30,likely_noise
+RR6,GO:0042445,hormone metabolic process,2.518,-1.663,true,0,30,30,likely_noise
+RR6,GO:0099149,regulation of postsynaptic neurotransmitter receptor internalization,1.062,1.661,true,0,30,30,likely_noise
+RR6,GO:0006693,prostaglandin metabolic process,1.077,-1.657,true,0,30,30,likely_noise
+RR6,GO:0099084,postsynaptic specialization organization,1.01,1.653,false,1,30,30,heterogeneity_loss
+RR6,GO:0022904,respiratory electron transport chain,1.383,-1.649,false,0,30,30,likely_noise
+RR6,GO:0051785,positive regulation of nuclear division,1.03,-1.646,false,0,30,30,likely_noise
+RR6,GO:0010927,cellular component assembly involved in morphogenesis,1.766,1.64,false,0,30,30,likely_noise
+RR6,GO:0032989,cellular anatomical entity morphogenesis,1.766,1.64,false,0,30,30,likely_noise
+RR6,GO:0009062,fatty acid catabolic process,1.322,1.636,false,1,30,30,heterogeneity_loss
+RR6,GO:0006635,fatty acid beta-oxidation,1.158,1.636,false,1,30,30,heterogeneity_loss
+RR6,GO:0030071,regulation of mitotic metaphase/anaphase transition,1.18,-1.624,false,0,30,30,likely_noise
+RR6,GO:0035270,endocrine system development,1.23,1.619,false,0,30,30,likely_noise
+RR6,GO:0007091,metaphase/anaphase transition of mitotic cell cycle,1.047,-1.613,false,0,30,30,likely_noise
+RR6,GO:0019395,fatty acid oxidation,1.291,1.605,false,1,30,30,heterogeneity_loss
+RR6,GO:0009584,detection of visible light,1.033,-1.598,false,0,30,30,likely_noise
+RR6,GO:0033559,unsaturated fatty acid metabolic process,1.173,-1.59,false,0,30,30,likely_noise
+RR6,GO:0044403,biological process involved in symbiotic interaction,1.166,-1.588,true,0,30,30,likely_noise
+RR6,GO:0006119,oxidative phosphorylation,1.288,-1.584,false,0,30,30,likely_noise
+RR6,GO:0072329,monocarboxylic acid catabolic process,1.4,1.581,false,1,30,30,heterogeneity_loss
+RR6,GO:2001251,negative regulation of chromosome organization,1.01,-1.57,true,0,30,30,likely_noise
+RR6,GO:0046394,carboxylic acid biosynthetic process,2.056,-1.556,false,0,30,30,likely_noise
+RR6,GO:0046890,regulation of lipid biosynthetic process,1.383,-1.53,false,0,30,30,likely_noise
+RR6,GO:0034440,lipid oxidation,1.03,1.523,false,1,30,30,heterogeneity_loss
+RR6,GO:0000819,sister chromatid segregation,1.316,-1.522,false,0,30,30,likely_noise
+RR6,GO:1902850,microtubule cytoskeleton organization involved in mitosis,1.117,-1.519,false,0,30,30,likely_noise
+RR6,GO:0016053,organic acid biosynthetic process,1.558,-1.508,false,0,30,30,likely_noise
+RR6,GO:0140014,mitotic nuclear division,1.264,-1.506,false,0,30,30,likely_noise
+RR6,GO:0098813,nuclear chromosome segregation,1.242,-1.495,false,0,30,30,likely_noise
+RR6,GO:0016331,morphogenesis of embryonic epithelium,1.18,1.468,true,0,30,30,likely_noise
+RR6,GO:0055088,lipid homeostasis,1.03,-1.448,false,0,30,30,likely_noise
+RR8,GO:0033490,cholesterol biosynthetic process via lathosterol,3.629,2.378,false,1,30,30,heterogeneity_loss
+RR8,GO:0045337,farnesyl diphosphate biosynthetic process,2.541,2.222,false,1,30,30,heterogeneity_loss
+RR8,GO:0006084,acetyl-CoA metabolic process,2.671,2.185,false,1,30,30,heterogeneity_loss
+RR8,GO:0045338,farnesyl diphosphate metabolic process,1.919,2.108,true,1,30,30,heterogeneity_loss
+RR8,GO:0032543,mitochondrial translation,3.734,2.105,false,1,30,30,heterogeneity_loss
+RR8,GO:0033385,geranylgeranyl diphosphate metabolic process,2.556,2.093,false,1,30,30,heterogeneity_loss
+RR8,GO:0006695,cholesterol biosynthetic process,2.28,2.074,false,1,30,30,heterogeneity_loss
+RR8,GO:1902653,secondary alcohol biosynthetic process,2.28,2.074,false,1,30,30,heterogeneity_loss
+RR8,GO:0071616,acyl-CoA biosynthetic process,2.172,2.071,false,1,30,30,heterogeneity_loss
+RR8,GO:0016126,sterol biosynthetic process,2.387,2.044,false,1,30,30,heterogeneity_loss
+RR8,GO:0070106,interleukin-27-mediated signaling pathway,2.515,-2.01,false,0.967,30,30,heterogeneity_loss
+RR8,GO:0002476,antigen processing and presentation of endogenous peptide antigen via MHC class Ib,2.121,-1.99,true,1,30,30,heterogeneity_loss
+RR8,GO:0002484,antigen processing and presentation of endogenous peptide antigen via MHC class I via ER pathway,2.121,-1.99,true,1,30,30,heterogeneity_loss
+RR8,GO:0051775,response to redox state,1.751,1.98,false,0.033,30,30,likely_noise
+RR8,GO:0045214,sarcomere organization,1.963,1.973,false,1,30,30,heterogeneity_loss
+RR8,GO:0016114,terpenoid biosynthetic process,1.367,1.972,false,0.033,30,30,likely_noise
+RR8,GO:0045292,"mRNA cis splicing, via spliceosome",1.448,1.964,true,1,30,30,heterogeneity_loss
+RR8,GO:2001053,regulation of mesenchymal cell apoptotic process,1.313,1.962,false,0,30,30,likely_noise
+RR8,GO:0030239,myofibril assembly,1.936,1.959,false,1,30,30,heterogeneity_loss
+RR8,GO:0140053,mitochondrial gene expression,3.368,1.949,false,1,30,30,heterogeneity_loss
+RR8,GO:0008299,isoprenoid biosynthetic process,1.289,1.941,false,1,30,30,heterogeneity_loss
+RR8,GO:0002115,store-operated calcium entry,1.66,-1.938,false,0.033,30,30,likely_noise
+RR8,GO:0002486,"antigen processing and presentation of endogenous peptide antigen via MHC class I via ER pathway, TAP-independent",1.758,-1.93,true,1,30,30,heterogeneity_loss
+RR8,GO:0006406,mRNA export from nucleus,1.881,1.906,true,1,30,30,heterogeneity_loss
+RR8,GO:0015697,quaternary ammonium group transport,1.458,-1.886,false,1,30,30,heterogeneity_loss
+RR8,GO:2000253,positive regulation of feeding behavior,1.681,1.885,false,1,30,30,heterogeneity_loss
+RR8,GO:0003323,type B pancreatic cell development,1.008,1.88,false,0,30,30,likely_noise
+RR8,GO:0050966,detection of mechanical stimulus involved in sensory perception of pain,1.367,-1.88,true,1,30,30,heterogeneity_loss
+RR8,GO:0050482,arachidonate secretion,1.327,-1.871,true,1,30,30,heterogeneity_loss
+RR8,GO:1903963,arachidonate transport,1.327,-1.871,true,1,30,30,heterogeneity_loss
+RR8,GO:0031018,endocrine pancreas development,1.274,1.871,false,0,30,30,likely_noise
+RR8,GO:0010832,negative regulation of myotube differentiation,1.331,-1.852,false,0.033,30,30,likely_noise
+RR8,GO:0002475,antigen processing and presentation via MHC class Ib,1.277,-1.85,true,1,30,30,heterogeneity_loss
+RR8,GO:0030656,regulation of vitamin metabolic process,1.38,-1.845,false,1,30,30,heterogeneity_loss
+RR8,GO:0071715,icosanoid transport,1.448,-1.838,true,1,30,30,heterogeneity_loss
+RR8,GO:0006637,acyl-CoA metabolic process,1.946,1.822,false,1,30,30,heterogeneity_loss
+RR8,GO:0006414,translational elongation,1.448,1.818,true,0.967,30,30,heterogeneity_loss
+RR8,GO:0006376,mRNA splice site recognition,1.15,1.812,true,1,30,30,heterogeneity_loss
+RR8,GO:0032790,ribosome disassembly,1.078,1.812,true,0,30,30,likely_noise
+RR8,GO:1903008,organelle disassembly,1.66,1.809,true,1,30,30,heterogeneity_loss
+RR8,GO:0030397,membrane disassembly,1.237,-1.807,false,1,30,30,heterogeneity_loss
+RR8,GO:0032309,icosanoid secretion,1.05,-1.8,true,1,30,30,heterogeneity_loss
+RR8,GO:0044273,sulfur compound catabolic process,1.269,-1.79,false,1,30,30,heterogeneity_loss
+RR8,GO:1905168,positive regulation of double-strand break repair via homologous recombination,1.159,1.79,true,0,30,30,likely_noise
+RR8,GO:0017158,regulation of calcium ion-dependent exocytosis,1.271,-1.779,false,1,30,30,heterogeneity_loss
+RR8,GO:2001185,"regulation of CD8-positive, alpha-beta T cell activation",1.024,-1.771,true,0.033,30,30,likely_noise
+RR8,GO:2001256,regulation of store-operated calcium entry,1.237,-1.767,false,0.033,30,30,likely_noise
+RR8,GO:0051081,nuclear membrane disassembly,1.048,-1.765,false,1,30,30,heterogeneity_loss
+RR8,GO:0099538,synaptic signaling via neuropeptide,1.159,-1.761,false,0,30,30,likely_noise
+RR8,GO:0006656,phosphatidylcholine biosynthetic process,1.033,1.755,false,1,30,30,heterogeneity_loss
+RR8,GO:0002438,acute inflammatory response to antigenic stimulus,1.088,-1.744,true,0,30,30,likely_noise
+RR8,GO:0019228,neuronal action potential,1.081,-1.743,true,0,30,30,likely_noise
+RR8,GO:0015695,organic cation transport,1.38,-1.74,false,1,30,30,heterogeneity_loss
+RR8,GO:0033599,regulation of mammary gland epithelial cell proliferation,1.008,-1.733,false,1,30,30,heterogeneity_loss
+RR8,GO:0048265,response to pain,1.043,-1.732,true,1,30,30,heterogeneity_loss
+RR8,GO:0090398,cellular senescence,1.274,1.701,false,0,30,30,likely_noise
+RR8,GO:0006403,RNA localization,1.718,1.697,true,1,30,30,heterogeneity_loss
+RR8,GO:0089718,amino acid import across plasma membrane,1.002,-1.68,true,1,30,30,heterogeneity_loss
+RR8,GO:0060700,regulation of ribonuclease activity,1.195,-1.663,false,0,30,30,likely_noise
+RR8,GO:0042254,ribosome biogenesis,2.671,1.657,true,1,30,30,heterogeneity_loss
+RR8,GO:1905039,carboxylic acid transmembrane transport,1.425,-1.646,true,1,30,30,heterogeneity_loss
+RR8,GO:0071824,protein-DNA complex organization,1.367,1.644,true,0,30,30,likely_noise
+RR8,GO:0016072,rRNA metabolic process,2.043,1.624,true,1,30,30,heterogeneity_loss
+RR8,GO:0006364,rRNA processing,1.919,1.604,true,1,30,30,heterogeneity_loss
+RR8,GO:0035725,sodium ion transmembrane transport,1.119,-1.602,true,1,30,30,heterogeneity_loss
+RR8,GO:0006633,fatty acid biosynthetic process,1.501,1.597,false,0,30,30,likely_noise
+RR8,GO:0055002,striated muscle cell development,1.516,1.593,false,1,30,30,heterogeneity_loss
+RR8,GO:0006694,steroid biosynthetic process,1.448,1.585,false,0,30,30,likely_noise
+RR8,GO:0051236,establishment of RNA localization,1.176,1.561,true,0.033,30,30,likely_noise
+RR8,GO:0010927,cellular component assembly involved in morphogenesis,1.159,1.559,false,1,30,30,heterogeneity_loss
+RR8,GO:0032989,cellular anatomical entity morphogenesis,1.159,1.559,false,1,30,30,heterogeneity_loss
+RR8,GO:0050806,positive regulation of synaptic transmission,1.191,-1.54,false,1,30,30,heterogeneity_loss
+RR8,GO:0050657,nucleic acid transport,1.166,1.531,true,1,30,30,heterogeneity_loss
+RR8,GO:0050658,RNA transport,1.166,1.531,true,1,30,30,heterogeneity_loss
+RR8,GO:0006865,amino acid transport,1.048,-1.526,true,1,30,30,heterogeneity_loss
+RR8,GO:0007416,synapse assembly,1.024,-1.472,true,1,30,30,heterogeneity_loss
+RR8,GO:0051054,positive regulation of DNA metabolic process,1.643,1.453,true,0.033,30,30,likely_noise
+RR8,GO:0006457,protein folding,1.236,1.453,false,1,30,30,heterogeneity_loss
+RR9,GO:0033489,cholesterol biosynthetic process via desmosterol,7.15,2.704,true,1,30,30,heterogeneity_loss
+RR9,GO:0036196,zymosterol metabolic process,7.15,2.67,true,1,30,30,heterogeneity_loss
+RR9,GO:0036197,zymosterol biosynthetic process,7.15,2.67,true,1,30,30,heterogeneity_loss
+RR9,GO:0033490,cholesterol biosynthetic process via lathosterol,6.977,2.584,false,1,30,30,heterogeneity_loss
+RR9,GO:0051791,medium-chain fatty acid metabolic process,4.525,2.404,false,1,30,30,heterogeneity_loss
+RR9,GO:0045337,farnesyl diphosphate biosynthetic process,5,2.387,false,1,30,30,heterogeneity_loss
+RR9,GO:0045338,farnesyl diphosphate metabolic process,5.17,2.371,true,1,30,30,heterogeneity_loss
+RR9,GO:0006695,cholesterol biosynthetic process,4.563,2.319,false,1,30,30,heterogeneity_loss
+RR9,GO:1902653,secondary alcohol biosynthetic process,4.563,2.319,false,1,30,30,heterogeneity_loss
+RR9,GO:0010142,"farnesyl diphosphate biosynthetic process, mevalonate pathway",5.263,2.304,true,1,30,30,heterogeneity_loss
+RR9,GO:1902767,isoprenoid biosynthetic process via mevalonate,5.263,2.304,true,1,30,30,heterogeneity_loss
+RR9,GO:0016126,sterol biosynthetic process,4.346,2.302,false,1,30,30,heterogeneity_loss
+RR9,GO:0090208,positive regulation of triglyceride metabolic process,3.339,2.242,false,1,30,30,heterogeneity_loss
+RR9,GO:0033385,geranylgeranyl diphosphate metabolic process,3.806,2.231,false,1,30,30,heterogeneity_loss
+RR9,GO:0045922,negative regulation of fatty acid metabolic process,2.78,2.189,false,1,30,30,heterogeneity_loss
+RR9,GO:1901523,icosanoid catabolic process,2.246,2.153,false,1,30,30,heterogeneity_loss
+RR9,GO:0046164,alcohol catabolic process,2.489,2.12,false,1,30,30,heterogeneity_loss
+RR9,GO:0008299,isoprenoid biosynthetic process,2.422,2.108,false,1,30,30,heterogeneity_loss
+RR9,GO:0048643,positive regulation of skeletal muscle tissue development,1.504,2.096,false,1,30,30,heterogeneity_loss
+RR9,GO:0010898,positive regulation of triglyceride catabolic process,1.881,2.094,false,1,30,30,heterogeneity_loss
+RR9,GO:0042758,long-chain fatty acid catabolic process,2.256,2.093,false,1,30,30,heterogeneity_loss
+RR9,GO:1901569,fatty acid derivative catabolic process,2.066,2.079,false,1,30,30,heterogeneity_loss
+RR9,GO:0016125,sterol metabolic process,5.958,2.077,false,1,30,30,heterogeneity_loss
+RR9,GO:0051304,chromosome separation,7.15,-2.075,false,1,30,30,heterogeneity_loss
+RR9,GO:0010965,regulation of mitotic sister chromatid separation,6.423,-2.061,false,1,30,30,heterogeneity_loss
+RR9,GO:0033047,regulation of mitotic sister chromatid segregation,5.958,-2.06,false,1,30,30,heterogeneity_loss
+RR9,GO:0031577,spindle checkpoint signaling,5.379,-2.053,false,1,30,30,heterogeneity_loss
+RR9,GO:0033046,negative regulation of sister chromatid segregation,5.635,-2.052,false,1,30,30,heterogeneity_loss
+RR9,GO:0033048,negative regulation of mitotic sister chromatid segregation,5.635,-2.052,false,1,30,30,heterogeneity_loss
+RR9,GO:0045841,negative regulation of mitotic metaphase/anaphase transition,5.635,-2.052,false,1,30,30,heterogeneity_loss
+RR9,GO:2000816,negative regulation of mitotic sister chromatid separation,5.635,-2.052,false,1,30,30,heterogeneity_loss
+RR9,GO:1902100,negative regulation of metaphase/anaphase transition of cell cycle,5.635,-2.04,false,1,30,30,heterogeneity_loss
+RR9,GO:1905819,negative regulation of chromosome separation,5.635,-2.04,false,1,30,30,heterogeneity_loss
+RR9,GO:0036100,leukotriene catabolic process,2.013,2.032,false,1,30,30,heterogeneity_loss
+RR9,GO:0090009,primitive streak formation,1.753,2.029,false,1,30,30,heterogeneity_loss
+RR9,GO:0055062,phosphate ion homeostasis,1.572,2.027,false,1,30,30,heterogeneity_loss
+RR9,GO:0008203,cholesterol metabolic process,5.385,2.024,false,1,30,30,heterogeneity_loss
+RR9,GO:0051306,mitotic sister chromatid separation,5.8,-2.021,false,1,30,30,heterogeneity_loss
+RR9,GO:1905818,regulation of chromosome separation,6.67,-2.021,false,1,30,30,heterogeneity_loss
+RR9,GO:0009648,photoperiodism,1.931,2.012,false,1,30,30,heterogeneity_loss
+RR9,GO:0043153,entrainment of circadian clock by photoperiod,1.931,2.012,false,1,30,30,heterogeneity_loss
+RR9,GO:0007094,mitotic spindle assembly checkpoint signaling,5.379,-2.009,false,1,30,30,heterogeneity_loss
+RR9,GO:0071173,spindle assembly checkpoint signaling,5.379,-2.009,false,1,30,30,heterogeneity_loss
+RR9,GO:0071174,mitotic spindle checkpoint signaling,5.379,-2.009,false,1,30,30,heterogeneity_loss
+RR9,GO:0036101,leukotriene B4 catabolic process,1.853,2.004,false,1,30,30,heterogeneity_loss
+RR9,GO:0016114,terpenoid biosynthetic process,1.931,2.004,false,1,30,30,heterogeneity_loss
+RR9,GO:1902652,secondary alcohol metabolic process,5.785,2.003,false,1,30,30,heterogeneity_loss
+RR9,GO:0051985,negative regulation of chromosome segregation,5.247,-1.989,false,1,30,30,heterogeneity_loss
+RR9,GO:0009649,entrainment of circadian clock,1.924,1.981,false,1,30,30,heterogeneity_loss
+RR9,GO:0045839,negative regulation of mitotic nuclear division,5.16,-1.967,false,1,30,30,heterogeneity_loss
+RR9,GO:0006577,amino-acid betaine metabolic process,1.783,1.957,false,1,30,30,heterogeneity_loss
+RR9,GO:0033865,nucleoside bisphosphate metabolic process,1.418,1.957,false,1,30,30,heterogeneity_loss
+RR9,GO:0033875,ribonucleoside bisphosphate metabolic process,1.418,1.957,false,1,30,30,heterogeneity_loss
+RR9,GO:0034032,purine nucleoside bisphosphate metabolic process,1.418,1.957,false,1,30,30,heterogeneity_loss
+RR9,GO:0034035,purine ribonucleoside bisphosphate metabolic process,1.418,1.957,false,1,30,30,heterogeneity_loss
+RR9,GO:0050427,3'-phosphoadenosine 5'-phosphosulfate metabolic process,1.418,1.957,false,1,30,30,heterogeneity_loss
+RR9,GO:0036102,leukotriene B4 metabolic process,1.357,1.946,false,1,30,30,heterogeneity_loss
+RR9,GO:0051923,sulfation,1.801,1.943,false,1,30,30,heterogeneity_loss
+RR9,GO:0046322,negative regulation of fatty acid oxidation,1.246,1.929,true,1,30,30,heterogeneity_loss
+RR9,GO:0048557,embryonic digestive tract morphogenesis,1.465,1.916,false,0.967,30,30,heterogeneity_loss
+RR9,GO:0051315,attachment of mitotic spindle microtubules to kinetochore,3.583,-1.911,false,1,30,30,heterogeneity_loss
+RR9,GO:1901856,negative regulation of cellular respiration,1.124,1.908,false,0.967,30,30,heterogeneity_loss
+RR9,GO:0045844,positive regulation of striated muscle tissue development,1.339,1.907,false,1,30,30,heterogeneity_loss
+RR9,GO:0048636,positive regulation of muscle organ development,1.339,1.907,false,1,30,30,heterogeneity_loss
+RR9,GO:1901863,positive regulation of muscle tissue development,1.339,1.907,false,1,30,30,heterogeneity_loss
+RR9,GO:1905198,manchette assembly,1.845,1.906,false,0.033,30,30,likely_noise
+RR9,GO:1901970,positive regulation of mitotic sister chromatid separation,2.808,-1.904,false,1,30,30,heterogeneity_loss
+RR9,GO:0000070,mitotic sister chromatid segregation,7.15,-1.892,false,1,30,30,heterogeneity_loss
+RR9,GO:0007398,ectoderm development,1.339,1.884,true,0,30,30,likely_noise
+RR9,GO:1905820,positive regulation of chromosome separation,3.212,-1.88,false,1,30,30,heterogeneity_loss
+RR9,GO:0015937,coenzyme A biosynthetic process,1.195,1.871,false,0.033,30,30,likely_noise
+RR9,GO:0050996,positive regulation of lipid catabolic process,1.46,1.866,false,1,30,30,heterogeneity_loss
+RR9,GO:0006693,prostaglandin metabolic process,3.402,-1.862,true,1,30,30,heterogeneity_loss
+RR9,GO:0090324,negative regulation of oxidative phosphorylation,1.109,1.856,false,0.967,30,30,heterogeneity_loss
+RR9,GO:0051784,negative regulation of nuclear division,3.514,-1.854,false,1,30,30,heterogeneity_loss
+RR9,GO:0002082,regulation of oxidative phosphorylation,1.46,1.849,false,0.967,30,30,heterogeneity_loss
+RR9,GO:0061029,eyelid development in camera-type eye,1.102,1.845,false,0.967,30,30,heterogeneity_loss
+RR9,GO:0051984,positive regulation of chromosome segregation,3.014,-1.838,false,1,30,30,heterogeneity_loss
+RR9,GO:0070341,fat cell proliferation,1.089,1.836,false,0,30,30,likely_noise
+RR9,GO:0002407,dendritic cell chemotaxis,2.184,-1.834,false,1,30,30,heterogeneity_loss
+RR9,GO:0006692,prostanoid metabolic process,3.248,-1.833,true,1,30,30,heterogeneity_loss
+RR9,GO:0036315,cellular response to sterol,1.208,1.831,false,0,30,30,likely_noise
+RR9,GO:0072329,monocarboxylic acid catabolic process,3.592,1.829,false,1,30,30,heterogeneity_loss
+RR9,GO:0007143,female meiotic nuclear division,2.445,-1.819,false,1,30,30,heterogeneity_loss
+RR9,GO:0034310,primary alcohol catabolic process,1.084,1.818,false,1,30,30,heterogeneity_loss
+RR9,GO:0010866,regulation of triglyceride biosynthetic process,1.354,1.817,false,0,30,30,likely_noise
+RR9,GO:0010867,positive regulation of triglyceride biosynthetic process,1.102,1.81,false,0.033,30,30,likely_noise
+RR9,GO:1903083,protein localization to condensed chromosome,2.003,-1.808,false,1,30,30,heterogeneity_loss
+RR9,GO:0006068,ethanol catabolic process,1.109,1.806,false,1,30,30,heterogeneity_loss
+RR9,GO:1901568,fatty acid derivative metabolic process,1.525,1.804,false,1,30,30,heterogeneity_loss
+RR9,GO:1990573,potassium ion import across plasma membrane,2.419,-1.803,true,1,30,30,heterogeneity_loss
+RR9,GO:0006817,phosphate ion transport,1.022,1.802,false,0,30,30,likely_noise
+RR9,GO:0034501,protein localization to kinetochore,2.169,-1.8,false,1,30,30,heterogeneity_loss
+RR9,GO:0008608,attachment of spindle microtubules to kinetochore,2.711,-1.797,false,1,30,30,heterogeneity_loss
+RR9,GO:1902101,positive regulation of metaphase/anaphase transition of cell cycle,1.922,-1.796,false,1,30,30,heterogeneity_loss
+RR9,GO:0006067,ethanol metabolic process,1.022,1.788,false,1,30,30,heterogeneity_loss
+RR9,GO:0051310,metaphase chromosome alignment,3.985,-1.786,false,1,30,30,heterogeneity_loss
+RR9,GO:0010466,negative regulation of peptidase activity,1.917,-1.786,false,1,30,30,heterogeneity_loss
+RR9,GO:0032467,positive regulation of cytokinesis,2.297,-1.784,false,1,30,30,heterogeneity_loss
+RR9,GO:0045842,positive regulation of mitotic metaphase/anaphase transition,2.018,-1.783,false,1,30,30,heterogeneity_loss
+RR9,GO:0090306,meiotic spindle assembly,1.801,-1.779,false,1,30,30,heterogeneity_loss
+RR9,GO:0060221,retinal rod cell differentiation,1.967,-1.771,false,1,30,30,heterogeneity_loss
+RR9,GO:0051383,kinetochore organization,2.195,-1.763,false,1,30,30,heterogeneity_loss
+RR9,GO:0051307,meiotic chromosome separation,2.149,-1.763,false,1,30,30,heterogeneity_loss
+RR9,GO:0019682,glyceraldehyde-3-phosphate metabolic process,1.144,1.762,true,0.033,30,30,likely_noise
+RR9,GO:0048641,regulation of skeletal muscle tissue development,1.196,1.761,false,1,30,30,heterogeneity_loss
+RR9,GO:0070601,centromeric sister chromatid cohesion,2.081,-1.758,false,1,30,30,heterogeneity_loss
+RR9,GO:0050765,negative regulation of phagocytosis,1.784,-1.756,true,1,30,30,heterogeneity_loss
+RR9,GO:0090207,regulation of triglyceride metabolic process,1.542,1.755,false,1,30,30,heterogeneity_loss
+RR9,GO:0014808,release of sequestered calcium ion into cytosol by sarcoplasmic reticulum,1.931,-1.743,false,1,30,30,heterogeneity_loss
+RR9,GO:1903514,release of sequestered calcium ion into cytosol by endoplasmic reticulum,1.986,-1.741,false,1,30,30,heterogeneity_loss
+RR9,GO:0090266,regulation of mitotic cell cycle spindle assembly checkpoint,1.801,-1.74,false,1,30,30,heterogeneity_loss
+RR9,GO:1903504,regulation of mitotic spindle checkpoint,1.801,-1.74,false,1,30,30,heterogeneity_loss
+RR9,GO:0051987,positive regulation of attachment of spindle microtubules to kinetochore,1.686,-1.737,false,1,30,30,heterogeneity_loss
+RR9,GO:0090231,regulation of spindle checkpoint,1.746,-1.737,false,1,30,30,heterogeneity_loss
+RR9,GO:0071605,monocyte chemotactic protein-1 production,1.917,-1.733,false,1,30,30,heterogeneity_loss
+RR9,GO:0071637,regulation of monocyte chemotactic protein-1 production,1.917,-1.733,false,1,30,30,heterogeneity_loss
+RR9,GO:0050000,chromosome localization,3.684,-1.732,false,1,30,30,heterogeneity_loss
+RR9,GO:0034143,regulation of toll-like receptor 4 signaling pathway,1.886,-1.73,false,1,30,30,heterogeneity_loss
+RR9,GO:0070269,pyroptotic inflammatory response,1.966,-1.727,false,1,30,30,heterogeneity_loss
+RR9,GO:0098543,detection of other organism,1.713,-1.726,true,1,30,30,heterogeneity_loss
+RR9,GO:0002220,innate immune response activating cell surface receptor signaling pathway,2.801,-1.726,false,1,30,30,heterogeneity_loss
+RR9,GO:0010951,negative regulation of endopeptidase activity,1.487,-1.715,false,1,30,30,heterogeneity_loss
+RR9,GO:0051280,negative regulation of release of sequestered calcium ion into cytosol,1.69,-1.714,false,1,30,30,heterogeneity_loss
+RR9,GO:0044771,meiotic cell cycle phase transition,1.651,-1.71,false,1,30,30,heterogeneity_loss
+RR9,GO:0070296,sarcoplasmic reticulum calcium ion transport,1.967,-1.708,false,1,30,30,heterogeneity_loss
+RR9,GO:0000022,mitotic spindle elongation,1.65,-1.708,false,1,30,30,heterogeneity_loss
+RR9,GO:0007056,spindle assembly involved in female meiosis,1.343,-1.708,false,1,30,30,heterogeneity_loss
+RR9,GO:0051231,spindle elongation,1.438,-1.701,false,1,30,30,heterogeneity_loss
+RR9,GO:0098703,calcium ion import across plasma membrane,1.46,-1.7,true,1,30,30,heterogeneity_loss
+RR9,GO:1902656,calcium ion import into cytosol,1.46,-1.7,true,1,30,30,heterogeneity_loss
+RR9,GO:0090181,regulation of cholesterol metabolic process,1.125,1.696,false,0.033,30,30,likely_noise
+RR9,GO:0097623,potassium ion export across plasma membrane,1.529,-1.696,false,1,30,30,heterogeneity_loss
+RR9,GO:0045722,positive regulation of gluconeogenesis,1.1,1.696,true,0.033,30,30,likely_noise
+RR9,GO:0051988,regulation of attachment of spindle microtubules to kinetochore,1.552,-1.694,false,1,30,30,heterogeneity_loss
+RR9,GO:0002765,immune response-inhibiting signal transduction,1.401,-1.693,true,1,30,30,heterogeneity_loss
+RR9,GO:1904706,negative regulation of vascular associated smooth muscle cell proliferation,1.648,-1.691,false,1,30,30,heterogeneity_loss
+RR9,GO:1902423,regulation of attachment of mitotic spindle microtubules to kinetochore,1.509,-1.69,false,0.967,30,30,heterogeneity_loss
+RR9,GO:0007088,regulation of mitotic nuclear division,2.884,-1.689,false,1,30,30,heterogeneity_loss
+RR9,GO:0051281,positive regulation of release of sequestered calcium ion into cytosol,1.339,-1.689,true,1,30,30,heterogeneity_loss
+RR9,GO:0052548,regulation of endopeptidase activity,1.271,-1.687,false,0.033,30,30,likely_noise
+RR9,GO:0032814,regulation of natural killer cell activation,1.572,-1.682,true,1,30,30,heterogeneity_loss
+RR9,GO:0009595,detection of biotic stimulus,1.572,-1.681,true,1,30,30,heterogeneity_loss
+RR9,GO:0001516,prostaglandin biosynthetic process,1.606,-1.679,false,1,30,30,heterogeneity_loss
+RR9,GO:0046457,prostanoid biosynthetic process,1.606,-1.679,false,1,30,30,heterogeneity_loss
+RR9,GO:0032604,granulocyte macrophage colony-stimulating factor production,1.442,-1.678,false,0.033,30,30,likely_noise
+RR9,GO:0032645,regulation of granulocyte macrophage colony-stimulating factor production,1.442,-1.678,false,0.033,30,30,likely_noise
+RR9,GO:0051255,spindle midzone assembly,1.299,-1.675,false,1,30,30,heterogeneity_loss
+RR9,GO:0070671,response to interleukin-12,1.286,-1.673,true,1,30,30,heterogeneity_loss
+RR9,GO:0016045,detection of bacterium,1.225,-1.673,true,0.033,30,30,likely_noise
+RR9,GO:0008206,bile acid metabolic process,1.179,1.671,false,0.033,30,30,likely_noise
+RR9,GO:0032703,negative regulation of interleukin-2 production,1.491,-1.671,true,0.033,30,30,likely_noise
+RR9,GO:0071459,"protein localization to chromosome, centromeric region",1.462,-1.669,false,1,30,30,heterogeneity_loss
+RR9,GO:0031649,heat generation,1.274,-1.668,true,0.967,30,30,heterogeneity_loss
+RR9,GO:0035655,interleukin-18-mediated signaling pathway,1.181,-1.662,false,1,30,30,heterogeneity_loss
+RR9,GO:0071351,cellular response to interleukin-18,1.181,-1.662,false,1,30,30,heterogeneity_loss
+RR9,GO:0002920,regulation of humoral immune response,1.481,-1.662,true,0.033,30,30,likely_noise
+RR9,GO:0006984,ER-nucleus signaling pathway,1.231,1.659,false,0.033,30,30,likely_noise
+RR9,GO:0010745,negative regulation of macrophage derived foam cell differentiation,1.349,-1.657,false,1,30,30,heterogeneity_loss
+RR9,GO:0006968,cellular defense response,1.346,-1.657,true,0.033,30,30,likely_noise
+RR9,GO:0006635,fatty acid beta-oxidation,1.22,1.655,false,0.033,30,30,likely_noise
+RR9,GO:0035194,regulatory ncRNA-mediated post-transcriptional gene silencing,1.417,1.653,true,0.967,30,30,heterogeneity_loss
+RR9,GO:0034144,negative regulation of toll-like receptor 4 signaling pathway,1.256,-1.651,false,0,30,30,likely_noise
+RR9,GO:0010880,regulation of release of sequestered calcium ion into cytosol by sarcoplasmic reticulum,1.471,-1.651,false,1,30,30,heterogeneity_loss
+RR9,GO:0090022,regulation of neutrophil chemotaxis,1.486,-1.651,true,0.033,30,30,likely_noise
+RR9,GO:0030157,pancreatic juice secretion,1.102,-1.651,false,0,30,30,likely_noise
+RR9,GO:0140014,mitotic nuclear division,5.158,-1.648,false,1,30,30,heterogeneity_loss
+RR9,GO:0045132,meiotic chromosome segregation,2.036,-1.647,false,1,30,30,heterogeneity_loss
+RR9,GO:0071639,positive regulation of monocyte chemotactic protein-1 production,1.256,-1.647,false,0.033,30,30,likely_noise
+RR9,GO:0000212,meiotic spindle organization,1.444,-1.643,false,1,30,30,heterogeneity_loss
+RR9,GO:0042304,regulation of fatty acid biosynthetic process,1.015,1.642,false,1,30,30,heterogeneity_loss
+RR9,GO:0070673,response to interleukin-18,1.046,-1.641,false,0.967,30,30,heterogeneity_loss
+RR9,GO:0098814,spontaneous synaptic transmission,1.091,-1.641,true,0,30,30,likely_noise
+RR9,GO:1901978,positive regulation of cell cycle checkpoint,1.216,-1.638,false,0,30,30,likely_noise
+RR9,GO:0061669,spontaneous neurotransmitter secretion,1.279,-1.634,false,0.033,30,30,likely_noise
+RR9,GO:0034086,maintenance of sister chromatid cohesion,1.18,-1.631,false,0.967,30,30,heterogeneity_loss
+RR9,GO:0002702,positive regulation of production of molecular mediator of immune response,2.119,-1.631,true,1,30,30,heterogeneity_loss
+RR9,GO:0051382,kinetochore assembly,1.281,-1.63,false,1,30,30,heterogeneity_loss
+RR9,GO:0034088,maintenance of mitotic sister chromatid cohesion,1.046,-1.628,false,1,30,30,heterogeneity_loss
+RR9,GO:0051481,negative regulation of cytosolic calcium ion concentration,1.178,-1.625,false,0.967,30,30,heterogeneity_loss
+RR9,GO:0016322,neuron remodeling,1.133,-1.624,false,0.033,30,30,likely_noise
+RR9,GO:1903715,regulation of aerobic respiration,1,1.623,false,0,30,30,likely_noise
+RR9,GO:0006957,"complement activation, alternative pathway",1.064,-1.622,true,0,30,30,likely_noise
+RR9,GO:0031664,regulation of lipopolysaccharide-mediated signaling pathway,1.443,-1.622,true,1,30,30,heterogeneity_loss
+RR9,GO:0032310,prostaglandin secretion,1.022,-1.621,false,0,30,30,likely_noise
+RR9,GO:2000508,regulation of dendritic cell chemotaxis,1.153,-1.619,false,0.967,30,30,heterogeneity_loss
+RR9,GO:0006813,potassium ion transport,2.706,-1.618,true,1,30,30,heterogeneity_loss
+RR9,GO:0001787,natural killer cell proliferation,1.138,-1.618,false,0,30,30,likely_noise
+RR9,GO:0002638,negative regulation of immunoglobulin production,1.022,-1.616,true,1,30,30,heterogeneity_loss
+RR9,GO:0033004,negative regulation of mast cell activation,1.151,-1.615,false,0,30,30,likely_noise
+RR9,GO:1903170,negative regulation of calcium ion transmembrane transport,1.26,-1.614,false,1,30,30,heterogeneity_loss
+RR9,GO:0060193,positive regulation of lipase activity,1.046,-1.612,false,0.033,30,30,likely_noise
+RR9,GO:0006637,acyl-CoA metabolic process,2.111,1.608,false,1,30,30,heterogeneity_loss
+RR9,GO:0043457,regulation of cellular respiration,1.218,1.603,false,0,30,30,likely_noise
+RR9,GO:0032725,positive regulation of granulocyte macrophage colony-stimulating factor production,1.109,-1.602,false,0.033,30,30,likely_noise
+RR9,GO:0030449,regulation of complement activation,1.185,-1.602,true,0,30,30,likely_noise
+RR9,GO:0033623,regulation of integrin activation,1.077,-1.602,true,0,30,30,likely_noise
+RR9,GO:0002701,negative regulation of production of molecular mediator of immune response,1.136,-1.601,true,0.967,30,30,heterogeneity_loss
+RR9,GO:0071361,cellular response to ethanol,1.038,-1.596,false,0,30,30,likely_noise
+RR9,GO:0034114,regulation of heterotypic cell-cell adhesion,1.052,-1.596,false,1,30,30,heterogeneity_loss
+RR9,GO:0031665,negative regulation of lipopolysaccharide-mediated signaling pathway,1.028,-1.594,false,0,30,30,likely_noise
+RR9,GO:0002381,immunoglobulin production involved in immunoglobulin-mediated immune response,1.218,-1.592,false,1,30,30,heterogeneity_loss
+RR9,GO:0071312,cellular response to alkaloid,1.122,-1.591,false,0.967,30,30,heterogeneity_loss
+RR9,GO:0090023,positive regulation of neutrophil chemotaxis,1.119,-1.591,true,0.033,30,30,likely_noise
+RR9,GO:0042104,positive regulation of activated T cell proliferation,1.037,-1.59,false,0,30,30,likely_noise
+RR9,GO:1901894,regulation of ATPase-coupled calcium transmembrane transporter activity,1.033,-1.588,false,0.033,30,30,likely_noise
+RR9,GO:1902476,chloride transmembrane transport,1.323,-1.587,false,1,30,30,heterogeneity_loss
+RR9,GO:1903305,regulation of regulated secretory pathway,2.276,-1.579,true,1,30,30,heterogeneity_loss
+RR9,GO:0086010,membrane depolarization during action potential,1.006,-1.577,false,0.967,30,30,heterogeneity_loss
+RR9,GO:1902850,microtubule cytoskeleton organization involved in mitosis,2.339,-1.577,false,1,30,30,heterogeneity_loss
+RR9,GO:0048662,negative regulation of smooth muscle cell proliferation,1.259,-1.576,true,1,30,30,heterogeneity_loss
+RR9,GO:0007052,mitotic spindle organization,2.119,-1.576,false,1,30,30,heterogeneity_loss
+RR9,GO:0002312,B cell activation involved in immune response,1.606,-1.571,true,1,30,30,heterogeneity_loss
+RR9,GO:0090307,mitotic spindle assembly,1.414,-1.57,false,0.967,30,30,heterogeneity_loss
+RR9,GO:0002027,regulation of heart rate,1.401,-1.569,false,1,30,30,heterogeneity_loss
+RR9,GO:0034440,lipid oxidation,1.458,1.563,false,0.033,30,30,likely_noise
+RR9,GO:0030212,hyaluronan metabolic process,1.125,-1.559,false,0.033,30,30,likely_noise
+RR9,GO:1901991,negative regulation of mitotic cell cycle phase transition,2.37,-1.559,false,1,30,30,heterogeneity_loss
+RR9,GO:0051480,regulation of cytosolic calcium ion concentration,1.094,-1.558,false,1,30,30,heterogeneity_loss
+RR9,GO:0140115,export across plasma membrane,1.274,-1.555,true,1,30,30,heterogeneity_loss
+RR9,GO:0051225,spindle assembly,1.871,-1.554,false,1,30,30,heterogeneity_loss
+RR9,GO:0002377,immunoglobulin production,1.488,-1.55,false,1,30,30,heterogeneity_loss
+RR9,GO:0030261,chromosome condensation,1.105,-1.548,false,0,30,30,likely_noise
+RR9,GO:0051783,regulation of nuclear division,1.853,-1.546,false,1,30,30,heterogeneity_loss
+RR9,GO:0032272,negative regulation of protein polymerization,1.18,-1.542,false,1,30,30,heterogeneity_loss
+RR9,GO:0045840,positive regulation of mitotic nuclear division,1.024,-1.541,false,0.967,30,30,heterogeneity_loss
+RR9,GO:0002637,regulation of immunoglobulin production,1.259,-1.539,false,1,30,30,heterogeneity_loss
+RR9,GO:0006821,chloride transport,1.339,-1.531,false,1,30,30,heterogeneity_loss
+RR9,GO:0030837,negative regulation of actin filament polymerization,1.069,-1.53,false,1,30,30,heterogeneity_loss
+RR9,GO:0046889,positive regulation of lipid biosynthetic process,1.46,1.527,false,1,30,30,heterogeneity_loss
+RR9,GO:0001676,long-chain fatty acid metabolic process,1.367,1.525,true,0.033,30,30,likely_noise
+RR9,GO:1904063,negative regulation of cation transmembrane transport,1.089,-1.523,false,0.967,30,30,heterogeneity_loss
+RR9,GO:0050777,negative regulation of immune response,2.297,-1.523,true,1,30,30,heterogeneity_loss
+RR9,GO:0007051,spindle organization,2.186,-1.519,false,1,30,30,heterogeneity_loss
+RR9,GO:0051926,negative regulation of calcium ion transport,1.011,-1.517,false,0.033,30,30,likely_noise
+RR9,GO:0006749,glutathione metabolic process,1.136,-1.515,false,1,30,30,heterogeneity_loss
+RR9,GO:0002752,cell surface pattern recognition receptor signaling pathway,1.279,-1.513,false,0,30,30,likely_noise
+RR9,GO:0006694,steroid biosynthetic process,2.066,1.509,false,0.033,30,30,likely_noise
+RR9,GO:0034766,negative regulation of monoatomic ion transmembrane transport,1.109,-1.505,false,0.967,30,30,heterogeneity_loss
+RR9,GO:0031348,negative regulation of defense response,2.701,-1.504,true,1,30,30,heterogeneity_loss
+RR9,GO:0098656,monoatomic anion transmembrane transport,1.141,-1.498,true,1,30,30,heterogeneity_loss
+RR9,GO:0019395,fatty acid oxidation,1.35,1.497,false,0.033,30,30,likely_noise
+RR9,GO:0060078,regulation of postsynaptic membrane potential,1.464,-1.494,false,1,30,30,heterogeneity_loss
+RR9,GO:0035967,cellular response to topologically incorrect protein,1.218,1.484,false,1,30,30,heterogeneity_loss
+RR9,GO:0046928,regulation of neurotransmitter secretion,1.032,-1.483,false,0.033,30,30,likely_noise
+RR9,GO:0070252,actin-mediated cell contraction,1.133,-1.482,false,1,30,30,heterogeneity_loss
+RR9,GO:0030048,actin filament-based movement,1.238,-1.477,false,1,30,30,heterogeneity_loss
+RR9,GO:0043271,negative regulation of monoatomic ion transport,1.259,-1.475,false,1,30,30,heterogeneity_loss
+RR9,GO:0030833,regulation of actin filament polymerization,1.332,-1.474,true,1,30,30,heterogeneity_loss
+RR9,GO:0046165,alcohol biosynthetic process,1.676,1.469,false,0.033,30,30,likely_noise
+RR9,GO:0051048,negative regulation of secretion,1.43,-1.467,false,0.033,30,30,likely_noise
+RR9,GO:0050886,endocrine process,1.056,-1.466,false,0.033,30,30,likely_noise
+RR9,GO:0030216,keratinocyte differentiation,1.017,1.463,false,0,30,30,likely_noise
+RR9,GO:0051494,negative regulation of cytoskeleton organization,1.21,-1.446,false,1,30,30,heterogeneity_loss
+RR9,GO:0008064,regulation of actin polymerization or depolymerization,1.096,-1.436,true,1,30,30,heterogeneity_loss
+RR9,GO:0030041,actin filament polymerization,1.251,-1.434,true,1,30,30,heterogeneity_loss
+RR9,GO:0019217,regulation of fatty acid metabolic process,1.037,1.433,false,0,30,30,likely_noise
+RR9,GO:0042180,ketone metabolic process,1.853,1.431,false,0,30,30,likely_noise
+RR9,GO:0019369,arachidonate metabolic process,1.037,1.428,false,0.033,30,30,likely_noise
+RR9,GO:0030832,regulation of actin filament length,1.337,-1.428,true,1,30,30,heterogeneity_loss
+RR9,GO:0007292,female gamete generation,1.033,-1.42,false,0.033,30,30,likely_noise
+RR9,GO:0006937,regulation of muscle contraction,1.052,-1.416,false,0.033,30,30,likely_noise
+RR9,GO:0043123,positive regulation of canonical NF-kappaB signal transduction,1.35,-1.412,false,0.033,30,30,likely_noise
+RR9,GO:1902904,negative regulation of supramolecular fiber organization,1.059,-1.407,false,1,30,30,heterogeneity_loss
+RR9,GO:0032271,regulation of protein polymerization,1.129,-1.399,false,1,30,30,heterogeneity_loss
+RR9,GO:0045930,negative regulation of mitotic cell cycle,1.387,-1.395,false,1,30,30,heterogeneity_loss
+RR9,GO:0002520,immune system development,1.191,-1.387,false,0.033,30,30,likely_noise
+RR9,GO:0017157,regulation of exocytosis,1.203,-1.387,true,0.033,30,30,likely_noise
+RR9,GO:1903531,negative regulation of secretion by cell,1.083,-1.387,false,0.033,30,30,likely_noise
+RR9,GO:0060047,heart contraction,1.11,-1.379,false,1,30,30,heterogeneity_loss
+RR9,GO:0090068,positive regulation of cell cycle process,1.352,-1.375,false,1,30,30,heterogeneity_loss
+RR9,GO:0051258,protein polymerization,1.487,-1.343,false,1,30,30,heterogeneity_loss
+RR9,GO:0035966,response to topologically incorrect protein,1.138,1.329,false,1,30,30,heterogeneity_loss
+RR9,GO:0007611,learning or memory,1.173,-1.322,true,1,30,30,heterogeneity_loss
+RR9,GO:0043122,regulation of canonical NF-kappaB signal transduction,1.017,-1.307,false,0,30,30,likely_noise
+RR9,GO:0050890,cognition,1.21,-1.304,true,1,30,30,heterogeneity_loss
+RR9,GO:0007249,canonical NF-kappaB signal transduction,1.309,-1.303,false,0,30,30,likely_noise
+RR9,GO:0021700,developmental maturation,1.2,-1.301,false,1,30,30,heterogeneity_loss
+RR9,GO:0030258,lipid modification,1.044,1.289,false,0.033,30,30,likely_noise
+RR9,GO:1901990,regulation of mitotic cell cycle phase transition,1.046,-1.289,false,0.967,30,30,heterogeneity_loss
+RR3,GO:0030239,myofibril assembly,6.892,2.512,false,1,30,30,heterogeneity_loss
+RR3,GO:0055002,striated muscle cell development,6.892,2.424,false,1,30,30,heterogeneity_loss
+RR3,GO:0045214,sarcomere organization,6.892,2.404,false,1,30,30,heterogeneity_loss
+RR3,GO:0031032,actomyosin structure organization,6.892,2.277,false,1,30,30,heterogeneity_loss
+RR3,GO:0055001,muscle cell development,6.892,2.253,false,1,30,30,heterogeneity_loss
+RR3,GO:0050881,musculoskeletal movement,3.861,2.239,false,1,30,30,heterogeneity_loss
+RR3,GO:0003009,skeletal muscle contraction,3.714,2.226,false,1,30,30,heterogeneity_loss
+RR3,GO:0050879,multicellular organismal movement,3.861,2.203,false,1,30,30,heterogeneity_loss
+RR3,GO:0090075,relaxation of muscle,3.454,2.19,false,1,30,30,heterogeneity_loss
+RR3,GO:0010927,cellular component assembly involved in morphogenesis,4.82,2.153,false,1,30,30,heterogeneity_loss
+RR3,GO:0032989,cellular anatomical entity morphogenesis,4.82,2.153,false,1,30,30,heterogeneity_loss
+RR3,GO:1901077,regulation of relaxation of muscle,3.05,2.087,false,1,30,30,heterogeneity_loss
+RR3,GO:0048741,skeletal muscle fiber development,2.186,2.083,false,1,30,30,heterogeneity_loss
+RR3,GO:0009583,detection of light stimulus,1.864,-2.071,false,1,30,30,heterogeneity_loss
+RR3,GO:0014888,striated muscle adaptation,1.876,2.054,true,1,30,30,heterogeneity_loss
+RR3,GO:0070885,negative regulation of calcineurin-NFAT signaling cascade,1.967,2.032,false,1,30,30,heterogeneity_loss
+RR3,GO:0106057,negative regulation of calcineurin-mediated signaling,1.967,2.032,false,1,30,30,heterogeneity_loss
+RR3,GO:0014904,myotube cell development,1.945,2.024,false,1,30,30,heterogeneity_loss
+RR3,GO:0050849,negative regulation of calcium-mediated signaling,1.967,2.022,false,1,30,30,heterogeneity_loss
+RR3,GO:0043501,skeletal muscle adaptation,1.754,2.018,false,1,30,30,heterogeneity_loss
+RR3,GO:0007602,phototransduction,1.515,-2.001,true,0,30,30,likely_noise
+RR3,GO:0070296,sarcoplasmic reticulum calcium ion transport,1.843,1.992,false,1,30,30,heterogeneity_loss
+RR3,GO:0043462,regulation of ATP-dependent activity,1.515,1.987,false,1,30,30,heterogeneity_loss
+RR3,GO:0021772,olfactory bulb development,1.682,-1.977,false,0,30,30,likely_noise
+RR3,GO:0010880,regulation of release of sequestered calcium ion into cytosol by sarcoplasmic reticulum,1.193,1.947,false,1,30,30,heterogeneity_loss
+RR3,GO:0140131,positive regulation of lymphocyte chemotaxis,1.153,-1.946,true,0,30,30,likely_noise
+RR3,GO:0035767,endothelial cell chemotaxis,1.214,-1.942,true,1,30,30,heterogeneity_loss
+RR3,GO:0050953,sensory perception of light stimulus,2.109,-1.94,true,1,30,30,heterogeneity_loss
+RR3,GO:0007601,visual perception,1.99,-1.939,true,1,30,30,heterogeneity_loss
+RR3,GO:0014819,regulation of skeletal muscle contraction,1.101,1.91,false,1,30,30,heterogeneity_loss
+RR3,GO:0032781,positive regulation of ATP-dependent activity,1.317,1.909,false,1,30,30,heterogeneity_loss
+RR3,GO:1903514,release of sequestered calcium ion into cytosol by endoplasmic reticulum,1.103,1.909,false,1,30,30,heterogeneity_loss
+RR3,GO:0035825,homologous recombination,1.249,1.898,false,0,30,30,likely_noise
+RR3,GO:0014854,response to inactivity,1.747,1.89,false,1,30,30,heterogeneity_loss
+RR3,GO:0006937,regulation of muscle contraction,1.918,1.889,false,1,30,30,heterogeneity_loss
+RR3,GO:0007131,reciprocal meiotic recombination,1.095,1.873,true,0,30,30,likely_noise
+RR3,GO:0140527,reciprocal homologous recombination,1.095,1.873,true,0,30,30,likely_noise
+RR3,GO:1901623,regulation of lymphocyte chemotaxis,1.103,-1.872,true,1,30,30,heterogeneity_loss
+RR3,GO:0014808,release of sequestered calcium ion into cytosol by sarcoplasmic reticulum,1.004,1.872,false,1,30,30,heterogeneity_loss
+RR3,GO:0070884,regulation of calcineurin-NFAT signaling cascade,1.101,1.858,false,1,30,30,heterogeneity_loss
+RR3,GO:0106056,regulation of calcineurin-mediated signaling,1.101,1.858,false,1,30,30,heterogeneity_loss
+RR3,GO:0061323,cell proliferation involved in heart morphogenesis,1.017,-1.853,false,1,30,30,heterogeneity_loss
+RR3,GO:2000136,regulation of cell proliferation involved in heart morphogenesis,1.017,-1.853,false,1,30,30,heterogeneity_loss
+RR3,GO:0014870,response to muscle inactivity,1.244,1.842,false,1,30,30,heterogeneity_loss
+RR3,GO:0071313,cellular response to caffeine,1.101,1.821,false,1,30,30,heterogeneity_loss
+RR3,GO:0006942,regulation of striated muscle contraction,1.317,1.819,false,1,30,30,heterogeneity_loss
+RR3,GO:0090257,regulation of muscle system process,2.436,1.785,false,1,30,30,heterogeneity_loss
+RR3,GO:0050905,neuromuscular process,1.738,1.772,false,1,30,30,heterogeneity_loss
+RR3,GO:0007519,skeletal muscle tissue development,1.515,1.769,false,1,30,30,heterogeneity_loss
+RR3,GO:0003263,cardioblast proliferation,1.101,-1.767,false,0,30,30,likely_noise
+RR3,GO:0003264,regulation of cardioblast proliferation,1.101,-1.767,false,0,30,30,likely_noise
+RR3,GO:0007127,meiosis I,1.004,1.761,false,0,30,30,likely_noise
+RR3,GO:0060538,skeletal muscle organ development,1.682,1.76,false,1,30,30,heterogeneity_loss
+RR3,GO:0043500,muscle adaptation,1.283,1.72,false,1,30,30,heterogeneity_loss
+RR3,GO:0048754,branching morphogenesis of an epithelial tube,1.663,-1.717,true,0,30,30,likely_noise
+RR3,GO:0032543,mitochondrial translation,1.283,1.715,false,0,30,30,likely_noise
+RR3,GO:0007517,muscle organ development,1.901,1.68,false,1,30,30,heterogeneity_loss
+RR3,GO:0051321,meiotic cell cycle,1.804,1.679,false,0,30,30,likely_noise
+RR3,GO:0140013,meiotic nuclear division,1.004,1.635,false,0,30,30,likely_noise
+RR3,GO:0001763,morphogenesis of a branching structure,1.317,-1.633,true,0,30,30,likely_noise
+RR3,GO:0014706,striated muscle tissue development,1.843,1.613,false,1,30,30,heterogeneity_loss
+RR3,GO:0060047,heart contraction,1.001,1.599,false,1,30,30,heterogeneity_loss
+RR3,GO:1903046,meiotic cell cycle process,1.062,1.593,false,0,30,30,likely_noise
+RR3,GO:0044282,small molecule catabolic process,1.444,1.585,false,0,30,30,likely_noise
+RR3,GO:0003015,heart process,1.004,1.585,false,1,30,30,heterogeneity_loss
+RR3,GO:0061138,morphogenesis of a branching epithelium,1.101,-1.578,true,0,30,30,likely_noise
+RR3,GO:0009060,aerobic respiration,1.103,1.541,false,0,30,30,likely_noise
+RR3,GO:0061448,connective tissue development,1.45,-1.51,true,0,30,30,likely_noise
+RR3,GO:0071560,cellular response to transforming growth factor beta stimulus,1.103,-1.501,true,0,30,30,likely_noise
+RR3,GO:0045333,cellular respiration,1.206,1.497,false,0,30,30,likely_noise
+RR3,GO:0042063,gliogenesis,1.168,-1.459,true,0,30,30,likely_noise
+RR47,GO:0033865,nucleoside bisphosphate metabolic process,1.59,1.999,false,1,30,30,heterogeneity_loss
+RR47,GO:0033875,ribonucleoside bisphosphate metabolic process,1.59,1.999,false,1,30,30,heterogeneity_loss
+RR47,GO:0034032,purine nucleoside bisphosphate metabolic process,1.59,1.999,false,1,30,30,heterogeneity_loss
+RR47,GO:0034035,purine ribonucleoside bisphosphate metabolic process,1.59,1.999,false,1,30,30,heterogeneity_loss
+RR47,GO:0050427,3'-phosphoadenosine 5'-phosphosulfate metabolic process,1.59,1.999,false,1,30,30,heterogeneity_loss
+RR47,GO:0042776,proton motive force-driven mitochondrial ATP synthesis,1.82,1.922,false,1,30,30,heterogeneity_loss
+RR47,GO:0015986,proton motive force-driven ATP synthesis,1.696,1.914,false,0.967,30,30,heterogeneity_loss
+RR47,GO:0022904,respiratory electron transport chain,2.977,1.902,false,0.967,30,30,heterogeneity_loss
+RR47,GO:0070593,dendrite self-avoidance,1.09,1.858,false,0.033,30,30,likely_noise
+RR47,GO:0006068,ethanol catabolic process,1.053,1.853,false,0.967,30,30,heterogeneity_loss
+RR47,GO:0006704,glucocorticoid biosynthetic process,2.397,-1.821,false,1,30,30,heterogeneity_loss
+RR47,GO:0006805,xenobiotic metabolic process,1.996,1.814,false,0.967,30,30,heterogeneity_loss
+RR47,GO:0042775,mitochondrial ATP synthesis coupled electron transport,1.276,1.812,false,0,30,30,likely_noise
+RR47,GO:0008211,glucocorticoid metabolic process,2.059,-1.798,false,1,30,30,heterogeneity_loss
+RR47,GO:0006067,ethanol metabolic process,1.174,1.781,false,0.967,30,30,heterogeneity_loss
+RR47,GO:0034310,primary alcohol catabolic process,1.155,1.776,false,0.967,30,30,heterogeneity_loss
+RR47,GO:0022900,electron transport chain,1.925,1.77,false,0.967,30,30,heterogeneity_loss
+RR47,GO:0045059,positive thymic T cell selection,1.838,-1.767,true,0.967,30,30,heterogeneity_loss
+RR47,GO:0042773,ATP synthesis coupled electron transport,1.59,1.767,false,0,30,30,likely_noise
+RR47,GO:0010819,regulation of T cell chemotaxis,1.569,-1.73,true,0.967,30,30,heterogeneity_loss
+RR47,GO:1905521,regulation of macrophage migration,1.696,-1.726,true,1,30,30,heterogeneity_loss
+RR47,GO:0002377,immunoglobulin production,2.146,-1.721,false,0.967,30,30,heterogeneity_loss
+RR47,GO:0140131,positive regulation of lymphocyte chemotaxis,1.431,-1.719,true,0.967,30,30,heterogeneity_loss
+RR47,GO:0045060,negative thymic T cell selection,1.696,-1.717,true,0.967,30,30,heterogeneity_loss
+RR47,GO:0019646,aerobic electron transport chain,1.207,1.713,false,0,30,30,likely_noise
+RR47,GO:0045582,positive regulation of T cell differentiation,2.086,-1.706,true,0.967,30,30,heterogeneity_loss
+RR47,GO:0002637,regulation of immunoglobulin production,1.75,-1.694,false,0.967,30,30,heterogeneity_loss
+RR47,GO:0002702,positive regulation of production of molecular mediator of immune response,1.826,-1.693,true,1,30,30,heterogeneity_loss
+RR47,GO:0010820,positive regulation of T cell chemotaxis,1.317,-1.693,true,0.967,30,30,heterogeneity_loss
+RR47,GO:0045621,positive regulation of lymphocyte differentiation,2.257,-1.681,true,0.967,30,30,heterogeneity_loss
+RR47,GO:0010758,regulation of macrophage chemotaxis,1.404,-1.677,true,1,30,30,heterogeneity_loss
+RR47,GO:0120178,steroid hormone biosynthetic process,1.696,-1.672,false,0.967,30,30,heterogeneity_loss
+RR47,GO:0006700,C21-steroid hormone biosynthetic process,1.175,-1.659,false,0,30,30,likely_noise
+RR47,GO:0002763,positive regulation of myeloid leukocyte differentiation,1.428,-1.645,true,1,30,30,heterogeneity_loss
+RR47,GO:0045066,regulatory T cell differentiation,1.308,-1.635,false,0.967,30,30,heterogeneity_loss
+RR47,GO:0002714,positive regulation of B cell mediated immunity,1.149,-1.628,false,0.967,30,30,heterogeneity_loss
+RR47,GO:0002891,positive regulation of immunoglobulin mediated immune response,1.149,-1.628,false,0.967,30,30,heterogeneity_loss
+RR47,GO:0051131,chaperone-mediated protein complex assembly,1.067,-1.623,false,0.967,30,30,heterogeneity_loss
+RR47,GO:0072538,T-helper 17 type immune response,1.149,-1.621,true,0.967,30,30,heterogeneity_loss
+RR47,GO:0150077,regulation of neuroinflammatory response,1.01,-1.619,true,0.967,30,30,heterogeneity_loss
+RR47,GO:0002639,positive regulation of immunoglobulin production,1.04,-1.614,false,0.967,30,30,heterogeneity_loss
+RR47,GO:0006119,oxidative phosphorylation,1.409,1.611,false,0.967,30,30,heterogeneity_loss
+RR47,GO:0002312,B cell activation involved in immune response,1.396,-1.606,true,0.967,30,30,heterogeneity_loss
+RR47,GO:0045589,regulation of regulatory T cell differentiation,1.079,-1.605,false,0.967,30,30,heterogeneity_loss
+RR47,GO:0009988,cell-cell recognition,1.007,-1.604,true,0.967,30,30,heterogeneity_loss
+RR47,GO:1903020,positive regulation of glycoprotein metabolic process,1.083,-1.603,false,0.967,30,30,heterogeneity_loss
+RR47,GO:0002888,positive regulation of myeloid leukocyte mediated immunity,1.078,-1.602,true,1,30,30,heterogeneity_loss
+RR47,GO:0035455,response to interferon-alpha,1.076,-1.596,false,0,30,30,likely_noise
+RR47,GO:2000510,positive regulation of dendritic cell chemotaxis,1.064,-1.587,false,0.967,30,30,heterogeneity_loss
+RR47,GO:0002520,immune system development,1.999,-1.582,false,0.967,30,30,heterogeneity_loss
+RR47,GO:0002360,T cell lineage commitment,1.038,-1.579,false,0.967,30,30,heterogeneity_loss
+RR47,GO:0002381,immunoglobulin production involved in immunoglobulin-mediated immune response,1.013,-1.575,false,0.967,30,30,heterogeneity_loss
+RR47,GO:0043123,positive regulation of canonical NF-kappaB signal transduction,1.757,-1.559,false,1,30,30,heterogeneity_loss
+RR47,GO:0042446,hormone biosynthetic process,1.083,-1.558,false,0,30,30,likely_noise
+RR47,GO:0002761,regulation of myeloid leukocyte differentiation,1.272,-1.533,true,0.967,30,30,heterogeneity_loss
+RR47,GO:0030512,negative regulation of transforming growth factor beta receptor signaling pathway,1.092,-1.529,false,0,30,30,likely_noise
+RR47,GO:0048661,positive regulation of smooth muscle cell proliferation,1.202,-1.527,true,0,30,30,likely_noise
+RR47,GO:0033209,tumor necrosis factor-mediated signaling pathway,1.137,-1.515,false,0.967,30,30,heterogeneity_loss
+RR47,GO:0048534,hematopoietic or lymphoid organ development,1.038,-1.512,false,0.967,30,30,heterogeneity_loss
+RR47,GO:1902905,positive regulation of supramolecular fiber organization,1.121,-1.505,false,0.967,30,30,heterogeneity_loss
+RR47,GO:0016125,sterol metabolic process,1.198,1.484,false,0.967,30,30,heterogeneity_loss
+RR47,GO:0050777,negative regulation of immune response,1.361,-1.472,true,0.967,30,30,heterogeneity_loss
+RR47,GO:0001959,regulation of cytokine-mediated signaling pathway,1.032,-1.464,false,0.967,30,30,heterogeneity_loss
+RR47,GO:0051495,positive regulation of cytoskeleton organization,1.17,-1.45,false,0.967,30,30,heterogeneity_loss
+RR47,GO:0045637,regulation of myeloid cell differentiation,1.173,-1.449,true,0.967,30,30,heterogeneity_loss
+RR47,GO:0071356,cellular response to tumor necrosis factor,1.2,-1.435,false,0.967,30,30,heterogeneity_loss
+RR47,GO:0060759,regulation of response to cytokine stimulus,1.022,-1.432,false,0.967,30,30,heterogeneity_loss
+RR47,GO:0007249,canonical NF-kappaB signal transduction,1.544,-1.418,false,0.967,30,30,heterogeneity_loss
+RR47,GO:0043122,regulation of canonical NF-kappaB signal transduction,1.236,-1.414,false,0.967,30,30,heterogeneity_loss
+RR47,GO:0031348,negative regulation of defense response,1.013,-1.392,true,0.967,30,30,heterogeneity_loss
+RR47,GO:0071559,response to transforming growth factor beta,1.079,-1.388,true,0.967,30,30,heterogeneity_loss
+RR47,GO:1903532,positive regulation of secretion by cell,1.282,-1.388,true,0.967,30,30,heterogeneity_loss
+RR47,GO:0071560,cellular response to transforming growth factor beta stimulus,1.032,-1.387,true,0.967,30,30,heterogeneity_loss
+RR47,GO:0051047,positive regulation of secretion,1.116,-1.376,true,0.967,30,30,heterogeneity_loss
+RR47,GO:0030100,regulation of endocytosis,1.09,-1.372,true,0.967,30,30,heterogeneity_loss
