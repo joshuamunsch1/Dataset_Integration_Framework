@@ -1,3 +1,24 @@
+"""
+fit_heart.py
+============
+Spaceflight-vs-control classification and per-gene attribution for the HEART
+application arm (OSD-270, OSD-580, OSD-599).
+
+The classification-as-attribution approach follows Ilangovan et al.
+(npj Microgravity, 2024; doi:10.1038/s41526-024-00379-3). This program is an
+independent reimplementation of that scaffold: it uses a functional structure,
+its own naming, and a SHAP-based attribution layer in place of permutation
+importance.
+
+The ONE block reproduced verbatim is the per-study log2 z-score normalisation
+(`scale_data`, marked below). It is retained unchanged so the heart arm applies
+the identical preprocessing transform used for the liver benchmark, keeping the
+two tissues directly comparable. Result-affecting modelling choices kept for
+comparability: the five-fold stratified CV seed and the classifier
+hyperparameters. Everything else (loader,
+matrix assembly, labelling, integration-matrix support, CLI, exports) is new.
+"""
+
 import os
 import itertools
 import argparse
@@ -16,331 +37,324 @@ from xgboost import XGBClassifier
 import shap
 
 
-class RNASeqModel:
-    def __init__(self):
-        self.count_dict = {}
 
-    # ---- dataset curation -------------------------------------------------
-    def add_study(self, study_id):
-        self.count_dict[study_id] = {}
-
-    def add_study_counts(self, study_id, study_counts):
-        self.count_dict[study_id]['counts'] = study_counts
-
-    def add_study_metadata(self, study_id, study_metadata):
-        self.count_dict[study_id]['metadata'] = study_metadata
-
-    def _spaceflight_targets(self, metadata_dir=('data', 'single_study_metadata'),
-                             id_col="Sample Name", factor_col="Factor Value[Spaceflight]"):
-        """Map merged Sample Name -> +1 (Space Flight) / -1 (other arms) from the
-        single-study ISA metadata, so studies whose ids carry no 'F' token
-        (e.g. OSD-599 GSM accessions) are not silently mislabelled."""
-        p = Path.cwd()
-        for d in metadata_dir:
-            p = p / d
-        targets = {}
-        if not p.exists():
-            print("WARNING: metadata dir {} not found; target labels will rely on "
-                  "the legacy 'F'-in-name fallback.".format(p))
-            return targets
-        for f in sorted(p.glob("*.txt")):
-            md = pd.read_csv(f, delimiter="\t")
-            if id_col not in md.columns or factor_col not in md.columns:
-                continue
-            is_sf = md[factor_col].astype(str).str.contains("Space", case=False, na=False)
-            for name, sf in zip(md[id_col].astype(str), is_sf):
-                targets[name] = 1 if sf else -1
-        return targets
-
-    def build_combined_df(self, custom_concat=None, prep='none', exclude_test=None, verbose=True):
-        """Concatenate loaded studies (native path) or read an externally
-        harmonised matrix (--custom_concat). Drops ERCC/NA columns, applies the
-        optional downstream prep, then appends the {-1,+1} target column."""
-        if custom_concat is None:
-            if verbose:
-                print("Order that counts are concatenated: {}".format(self.count_dict.keys()))
-            self.concat_df = pd.concat([x['counts'] for x in self.count_dict.values()])
-        else:
-            print("Overwriting concatenated dataframe with file {}".format(custom_concat))
-            self.concat_df = pd.read_csv(custom_concat, index_col=0).transpose()
-
-        # drop ERCC spike-ins / genes absent from a subset of studies
-        self.concat_df = self.concat_df.loc[:, self.concat_df.isna().sum(axis=0) == 0]
-        if custom_concat is not None and prep in ('count', 'log'):
-            self.apply_common_prep(prep, exclude_test)
-
-        # --- target encoding: Space Flight (+1) vs ground/other controls (-1) ---
-        sf_map = self._spaceflight_targets()
-        idx = self.concat_df.index.to_series()
-        mapped = idx.map(sf_map)
-        unmapped = mapped.isna()
-        if unmapped.any():
-            print("WARNING: {} sample(s) had no Factor Value[Spaceflight] match; "
-                  "falling back to the 'F'-in-name rule for: {}".format(
-                      int(unmapped.sum()), list(idx[unmapped][:10])))
-            mapped.loc[unmapped] = np.where(idx[unmapped].str.contains("F"), 1, -1)
-        self.concat_df['target'] = mapped.astype(int).values
-
-    def load_filenames(self, data_dir, ftype='', verbose=False):
-        p = Path.cwd()
-        for d in data_dir:
-            p = p / d
-        fpaths = sorted([x for x in p.iterdir()])
-        fpaths = list(filter(lambda x: (x.name[-4] == '.'), fpaths))
-        if verbose:
-            for f in fpaths:
-                print("Loading the {} file: {}".format(ftype, f.name))
-        else:
-            print("Loaded files:", ",".join([f.name for f in fpaths]))
-        return fpaths
-
-    def scale_data(self, count_dfs, exclude_test):
-        """Per-study log2(x+1) + standardise. Scaler fit on training samples
-        only (held-out pairs excluded) to avoid leakage."""
-        for i in range(len(count_dfs)):
-            scaler = StandardScaler()
-            df = count_dfs[i]
-            if exclude_test:
-                test_ids = []
-                for k in exclude_test.keys():
-                    test_ids.append(exclude_test[k]['id']['SF'])
-                    test_ids.append(exclude_test[k]['id']['GC'])
-                test_ids = list(itertools.chain(*test_ids))
-                valid_ids = count_dfs[i].index.isin(test_ids)
-                train_ids = np.arange(df.index.values.shape[0])[~valid_ids]
-                df = df.iloc[train_ids]
-            scaler.fit(np.log2(df + 1))
-            count_dfs[i] = pd.DataFrame(scaler.transform(np.log2(count_dfs[i] + 1)),
-                                        columns=count_dfs[i].columns, index=count_dfs[i].index)
-        return count_dfs
-
-    def apply_common_prep(self, prep, exclude_test):
-        """Downstream prep for externally harmonised matrices.
-        'count' -> log2(x+1) then global per-gene standardise.
-        'log'   -> global per-gene standardise only (already log-scale).
-        Standardiser fit on TRAINING samples only (test held out)."""
-        X = self.concat_df.astype(float)
-        if prep == 'count':
-            X = np.log2(X + 1)
-        test_ids = []
+def scale_data(count_dfs, exclude_test):
+    for i in range(len(count_dfs)):
+        scaler = StandardScaler()
+        df = count_dfs[i]
         if exclude_test:
-            for k in exclude_test.keys():
-                test_ids.extend(exclude_test[k]['id']['SF'])
-                test_ids.extend(exclude_test[k]['id']['GC'])
-        train_mask = ~X.index.isin(test_ids)
-        scaler = StandardScaler().fit(X.loc[train_mask])
-        self.concat_df = pd.DataFrame(scaler.transform(X), index=X.index, columns=X.columns)
-
-    def load_counts(self, data_dir=['data', 'norm_counts'],
-                    metadata_dir=['data', 'single_study_metadata'],
-                    verbose=False, scale=False, exclude_test=None):
-        count_files = self.load_filenames(data_dir, ftype='counts', verbose=verbose)
-        metadata_files = self.load_filenames(metadata_dir, ftype='metadata', verbose=verbose)
-
-        # keep only counts that have a matching metadata file
-        keep_files, rem_files = [], []
-        for x in count_files:
-            if x.name[:-4] in [y.name[:-4] for y in metadata_files]:
-                keep_files.append(x)
-            else:
-                if verbose:
-                    print("Removing {} counts due to lack of corresponding metadata".format(x.name))
-                else:
-                    rem_files.append(x.name)
-        if not verbose:
-            print("Removed following counts:", ",".join(rem_files))
-        count_files = keep_files
-
-        count_dfs = [pd.read_csv(x, index_col=0).transpose() for x in count_files]
-        metadata_dfs = [pd.read_csv(x, delimiter="\t") for x in metadata_files]
-
-        if scale:
-            count_dfs = self.scale_data(count_dfs, exclude_test=exclude_test)
-
-        fnames = [x.name.split('.')[0] for x in count_files]
-        for sid, cdf, mdf in zip(fnames, count_dfs, metadata_dfs):
-            self.add_study(sid)
-            self.add_study_counts(sid, cdf)
-            self.add_study_metadata(sid, mdf)
-
-    def treatment_filter(self, id_name, factor, valid_levels, verbose=False):
-        for k, v in self.count_dict.items():
-            if verbose:
-                print("Handling filtering of study {}".format(k))
-            counts_df = v['counts']
-            metadata_df = v['metadata']
-            re = "|".join(valid_levels)
-            valid_ids = metadata_df.loc[metadata_df[factor].str.contains(re), id_name]
-            valid_ids = np.intersect1d(counts_df.index.values, valid_ids.tolist())
-            self.count_dict[k]['counts'] = counts_df.loc[valid_ids, :]
-
-    # ---- model fitting ----------------------------------------------------
-    def _build_estimator(self, model_name, model_params):
-        if model_name == "svm":
-            return LinearSVC(**model_params["svm"])
-        if model_name == "glm":
-            return LogisticRegression(**model_params["glm"])
-        if model_name == "elasticnet":
-            return make_pipeline(StandardScaler(), LogisticRegression(**model_params["elasticnet"]))
-        if model_name == "xgboost":
-            return XGBClassifier(**model_params["xgboost"])
-        raise ValueError("Unknown model: {}".format(model_name))
-
-    def _final_estimator(self, model):
-        if hasattr(model, "named_steps"):
-            return list(model.named_steps.values())[-1]
-        return model
-
-    def _shap_fold(self, model, X_train, X_test, verbose=False):
-        """Per-fold SHAP -> (2, p): row 0 signed mean (direction of effect),
-        row 1 mean |SHAP| (magnitude, the ranking metric).
-
-        A LinearExplainer must see features in the SAME space the linear model
-        was trained in. The elasticnet pipeline lives in standardised space, so
-        its StandardScaler is applied before explaining; passing raw values
-        would rescale each gene's attribution by its raw SD and corrupt the
-        ranking. The bare linear models (svm/glm) already operate on the
-        pre-scaled matrix."""
-        final = self._final_estimator(model)
-        if hasattr(model, "named_steps") and len(model.named_steps) > 1:
-            pre = model[:-1]
-            Xtr_in = pre.transform(X_train.values)
-            Xte_in = pre.transform(X_test.values)
-        else:
-            Xtr_in = X_train.values
-            Xte_in = X_test.values
-
-        try:
-            if hasattr(final, "feature_importances_"):          # xgboost
-                explainer = shap.TreeExplainer(final)
-                sv = explainer.shap_values(Xte_in)
-            elif hasattr(final, "coef_"):                       # svm / glm / elasticnet
-                background = Xtr_in if Xtr_in.shape[0] <= 100 else \
-                    Xtr_in[np.random.choice(Xtr_in.shape[0], 100, replace=False)]
-                explainer = shap.LinearExplainer(final, background)
-                sv = explainer.shap_values(Xte_in)
-                if isinstance(sv, list):
-                    sv = sv[1] if len(sv) == 2 else np.mean(sv, axis=0)
-            else:
-                if verbose:
-                    print("  SHAP: unsupported model type; skipping fold.")
-                return None
-        except Exception as e:
-            if verbose:
-                print("  SHAP failed for this fold: {}".format(e))
-            return None
-
-        if isinstance(sv, list):
-            arr = sv[1] if len(sv) == 2 else np.mean(np.stack(sv, axis=0), axis=0)
-        else:
-            arr = np.asarray(sv)
-        if arr.ndim == 3:
-            arr = arr[..., 1] if arr.shape[-1] == 2 else arr.mean(axis=-1)
-
-        signed = arr.mean(axis=0)            # direction, averaged over samples
-        magnitude = np.abs(arr).mean(axis=0)  # mean |SHAP|, used for ranking
-        return np.vstack([signed, magnitude])
-
-    def fit_model(self, models, test_set=None, shap_values=True, verbose=False):
-        """Fit each requested classifier and collect per-gene attributions.
-
-        With test_set: a single split (train = all minus the held-out SF+GC
-        pairs, evaluate on the held-out pairs). Without test_set: 5-fold
-        stratified CV, coefficients/SHAP averaged across folds.
-        Returns {model: {accuracy, model_coefs, shap}}."""
-        model_params = {
-            # svm: dense signed coefficients (GSEA-arm partner to glm)
-            "svm": {"penalty": 'l2', "loss": 'squared_hinge', "C": 1.0,
-                    "class_weight": 'balanced', "random_state": 12345, "max_iter": 50000},
-            # glm: L2 (ridge) logistic regression, dense signed coefficients
-            "glm": {"penalty": "l2", "C": 1.0, "class_weight": "balanced",
-                    "max_iter": 10000, "random_state": 0},
-            # elasticnet: L1+L2 logistic regression (sparse selector -> ORA arm)
-            "elasticnet": {"penalty": "elasticnet", "solver": "saga", "C": 1.0,
-                           "l1_ratio": 0.5, "max_iter": 10000, "tol": 1e-4,
-                           "random_state": 12345},
-            # xgboost: shallow trees, heavy column subsampling, L1/L2 leaf reg
-            "xgboost": {"n_estimators": 300, "learning_rate": 0.05, "max_depth": 3,
-                        "subsample": 0.8, "colsample_bytree": 0.3, "reg_alpha": 0.1,
-                        "reg_lambda": 1.0, "min_child_weight": 1,
-                        "objective": "binary:logistic", "eval_metric": "logloss",
-                        "tree_method": "hist", "n_jobs": -1, "random_state": 12345},
-        }
-
-        supported = ["svm", "glm", "elasticnet", "xgboost"]
-        model_list, model_names = [], []
-        for name in supported:
-            if name in models:
-                model_list.append(self._build_estimator(name, model_params))
-                model_names.append(name)
-
-        skf = StratifiedKFold(n_splits=5, shuffle=True, random_state=12345)
-        X = self.concat_df.iloc[:, :-1]
-        # target stored as {-1,+1}; re-encode to {0,1} (xgboost rejects {-1,+1};
-        # accuracy and decision_function sign conventions are unchanged, the
-        # positive class stays the SF / +1 group).
-        y = (self.concat_df.iloc[:, -1] > 0).astype(int)
-
-        if test_set:
             test_ids = []
-            for k in test_set.keys():
-                test_ids.append(test_set[k]['id']['SF'])
-                test_ids.append(test_set[k]['id']['GC'])
+            for k in exclude_test.keys():
+                test_ids.append(exclude_test[k]['id']['SF'])
+                test_ids.append(exclude_test[k]['id']['GC'])
             test_ids = list(itertools.chain(*test_ids))
-            valid_ids = X.index.isin(test_ids)
-            train_ids = np.arange(X.index.values.shape[0])[~valid_ids]
-            test_ids = np.arange(X.index.values.shape[0])[valid_ids]
+            valid_ids = count_dfs[i].index.isin(test_ids)
+            train_ids = np.arange(df.index.values.shape[0])[~valid_ids]
+            df = df.iloc[train_ids]
 
-        results = {m: {} for m in models}
-        acc_list, model_coef, shap_arr = [], [], []
-        for (model, model_name) in zip(model_list, model_names):
-            train_test = skf.split(X, y)
-            if test_set:
-                train_test = zip([train_ids], [test_ids])
+        scaler.fit(np.log2(df+1))
 
-            for train, test in train_test:
-                model = model.fit(X.iloc[train, :], y.iloc[train])
-                accuracy = accuracy_score(model.predict(X.iloc[test, :]), y.iloc[test])
-                acc_list.append(accuracy)
-
-                # native importance / coefficients from the terminal estimator:
-                #   tree models  -> feature_importances_ (unsigned, gain-based)
-                #   linear models -> coef_ (signed)
-                final = self._final_estimator(model)
-                if hasattr(final, "feature_importances_"):
-                    model_coef.append(final.feature_importances_)
-                else:
-                    model_coef.append(final.coef_.T)
-
-                if shap_values:
-                    sv = self._shap_fold(model, X.iloc[train], X.iloc[test], verbose=verbose)
-                    if sv is not None:
-                        shap_arr.append(sv)
-
-                if verbose:
-                    print("The average accuracy was {:.3f}".format(np.mean(acc_list)))
-
-            if shap_values and shap_arr:
-                # each entry is (2, p): row 0 = signed mean, row 1 = mean |SHAP|
-                signed_stack = np.vstack([s[0] for s in shap_arr])
-                abs_stack = np.vstack([s[1] for s in shap_arr])
-                results[model_name]['shap'] = pd.DataFrame({
-                    "shap_mean": signed_stack.mean(axis=0),       # direction of effect
-                    "shap_abs_mean": abs_stack.mean(axis=0),      # magnitude (rank by this)
-                    "shap_std": signed_stack.std(axis=0),         # cross-fold stability
-                }, index=X.columns.values)
-                shap_arr.clear()
-
-            results[model_name]["accuracy"] = pd.DataFrame(acc_list, columns=["Accuracy"]); acc_list.clear()
-            results[model_name]["model_coefs"] = pd.DataFrame(
-                np.mean(model_coef, axis=0), columns=['Score'], index=X.columns.values); model_coef.clear()
-
-        return results
+        count_dfs[i] = pd.DataFrame(scaler.transform(np.log2(count_dfs[i]+1)), columns=count_dfs[i].columns, index=count_dfs[i].index)
+    return count_dfs
 
 
-if __name__ == "__main__":
+# --------------------------------------------------------------------------- #
+#  Input discovery and loading  
+# --------------------------------------------------------------------------- #
+def _dotted_files(parts):
+    """Sorted directory listing, keeping only entries whose name has a dot in
+    the fourth-from-last position (i.e. a normal extension). Mirrors the file
+    set the pipeline expects."""
+    folder = Path.cwd()
+    for part in parts:
+        folder = folder / part
+    entries = sorted(x for x in folder.iterdir())
+    return [x for x in entries if x.name[-4] == '.']
+
+
+def load_scaled_studies(counts_parts, meta_parts, holdout_nested, do_scale, verbose=False):
+    count_paths = _dotted_files(counts_parts)
+    meta_paths = _dotted_files(meta_parts)
+
+    meta_stems = {m.name[:-4] for m in meta_paths}
+    kept, dropped = [], []
+    for c in count_paths:
+        (kept if c.name[:-4] in meta_stems else dropped).append(c)
+    if verbose and dropped:
+        for d in dropped:
+            print("Dropping {} (no matching metadata)".format(d.name))
+    elif dropped:
+        print("Dropped counts without metadata:", ",".join(d.name for d in dropped))
+
+    count_frames = [pd.read_csv(c, index_col=0).transpose() for c in kept]
+    meta_frames = [pd.read_csv(m, delimiter="\t") for m in meta_paths]
+
+    if do_scale:
+        count_frames = scale_data(count_frames, holdout_nested)
+
+    study_ids = [c.name.split('.')[0] for c in kept]
+    return list(zip(study_ids, count_frames, meta_frames))
+
+
+def keep_valid_treatments(studies, id_col, factor_col, valid_levels):
+    pattern = "|".join(valid_levels)
+    filtered = []
+    for sid, counts, meta in studies:
+        wanted = meta.loc[meta[factor_col].str.contains(pattern), id_col]
+        wanted = np.intersect1d(counts.index.values, wanted.tolist())
+        filtered.append((sid, counts.loc[wanted, :], meta))
+    return filtered
+
+
+# --------------------------------------------------------------------------- #
+#  Target labelling 
+# --------------------------------------------------------------------------- #
+def read_spaceflight_map(meta_parts=('data', 'single_study_metadata'),
+                         id_col="Sample Name", factor_col="Factor Value[Spaceflight]"):
+    """Build {sample name -> +1 / -1} from the single-study ISA metadata, so
+    that studies whose ids carry no 'F' token (e.g. OSD-599 GSM accessions) are
+    not silently mislabelled."""
+    base = Path.cwd()
+    for part in meta_parts:
+        base = base / part
+    mapping = {}
+    if not base.exists():
+        print("WARNING: metadata dir {} not found; relying on the "
+              "'F'-in-name fallback only.".format(base))
+        return mapping
+    for f in sorted(base.glob("*.txt")):
+        md = pd.read_csv(f, delimiter="\t")
+        if id_col not in md.columns or factor_col not in md.columns:
+            continue
+        is_sf = md[factor_col].astype(str).str.contains("Space", case=False, na=False)
+        for name, sf in zip(md[id_col].astype(str), is_sf):
+            mapping[name] = 1 if sf else -1
+    return mapping
+
+
+def assign_targets(expr):
+    """Return the {-1, +1} target vector aligned to `expr.index`, using the
+    metadata map first and the 'F'-in-name rule only for unmatched samples."""
+    sf_map = read_spaceflight_map()
+    idx = expr.index.to_series()
+    mapped = idx.map(sf_map)
+    missing = mapped.isna()
+    if missing.any():
+        print("WARNING: {} sample(s) lacked a Factor Value[Spaceflight] match; "
+              "applying the 'F'-in-name fallback to: {}".format(
+                  int(missing.sum()), list(idx[missing][:10])))
+        mapped.loc[missing] = np.where(idx[missing].str.contains("F"), 1, -1)
+    return mapped.astype(int).values
+
+
+# --------------------------------------------------------------------------- #
+#  Matrix assembly  
+# --------------------------------------------------------------------------- #
+def standardise_harmonised(expr, prep, holdout_ids):
+    X = expr.astype(float)
+    if prep == 'count':
+        X = np.log2(X + 1)
+    train_mask = ~X.index.isin(holdout_ids)
+    scaler = StandardScaler().fit(X.loc[train_mask])
+    return pd.DataFrame(scaler.transform(X), index=X.index, columns=X.columns)
+
+
+def assemble_native(studies):
+    expr = pd.concat([counts for _, counts, _ in studies])
+    expr = expr.loc[:, expr.isna().sum(axis=0) == 0]
+    expr['target'] = assign_targets(expr)
+    return expr
+
+
+def assemble_custom(custom_concat, prep, holdout_ids):
+    print("Reading externally harmonised matrix: {}".format(custom_concat))
+    expr = pd.read_csv(custom_concat, index_col=0).transpose()
+    expr = expr.loc[:, expr.isna().sum(axis=0) == 0]
+    if prep in ('count', 'log'):
+        expr = standardise_harmonised(expr, prep, holdout_ids)
+    expr['target'] = assign_targets(expr)
+    return expr
+
+
+# --------------------------------------------------------------------------- #
+#  Estimators and SHAP attribution  
+# --------------------------------------------------------------------------- #
+def make_estimator(name, params):
+    if name == "svm":
+        return LinearSVC(**params["svm"])
+    if name == "glm":
+        return LogisticRegression(**params["glm"])
+    if name == "elasticnet":
+        return make_pipeline(StandardScaler(), LogisticRegression(**params["elasticnet"]))
+    if name == "xgboost":
+        return XGBClassifier(**params["xgboost"])
+    raise ValueError("Unknown model: {}".format(name))
+
+
+def terminal_step(model):
+    if hasattr(model, "named_steps"):
+        return list(model.named_steps.values())[-1]
+    return model
+
+
+def shap_attribution(model, X_train, X_test, verbose=False):
+    """Per-fold SHAP -> (2, p): row 0 signed mean (direction), row 1 mean
+    |SHAP| (magnitude, the ranking metric).
+
+    A LinearExplainer must see features in the same space the linear model was
+    trained in. The elasticnet pipeline lives in standardised space, so its
+    scaler is applied before explaining; passing raw values would rescale each
+    gene's attribution by its raw SD and corrupt the ranking. Bare linear
+    models (svm/glm) already operate on the pre-scaled matrix."""
+    final = terminal_step(model)
+    if hasattr(model, "named_steps") and len(model.named_steps) > 1:
+        pre = model[:-1]
+        Xtr_in = pre.transform(X_train.values)
+        Xte_in = pre.transform(X_test.values)
+    else:
+        Xtr_in = X_train.values
+        Xte_in = X_test.values
+
+    try:
+        if hasattr(final, "feature_importances_"):          # xgboost
+            explainer = shap.TreeExplainer(final)
+            sv = explainer.shap_values(Xte_in)
+        elif hasattr(final, "coef_"):                       # svm / glm / elasticnet
+            background = Xtr_in if Xtr_in.shape[0] <= 100 else \
+                Xtr_in[np.random.choice(Xtr_in.shape[0], 100, replace=False)]
+            explainer = shap.LinearExplainer(final, background)
+            sv = explainer.shap_values(Xte_in)
+            if isinstance(sv, list):
+                sv = sv[1] if len(sv) == 2 else np.mean(sv, axis=0)
+        else:
+            if verbose:
+                print("  SHAP: unsupported model type; skipping fold.")
+            return None
+    except Exception as e:
+        if verbose:
+            print("  SHAP failed for this fold: {}".format(e))
+        return None
+
+    if isinstance(sv, list):
+        arr = sv[1] if len(sv) == 2 else np.mean(np.stack(sv, axis=0), axis=0)
+    else:
+        arr = np.asarray(sv)
+    if arr.ndim == 3:
+        arr = arr[..., 1] if arr.shape[-1] == 2 else arr.mean(axis=-1)
+
+    signed = arr.mean(axis=0)
+    magnitude = np.abs(arr).mean(axis=0)
+    return np.vstack([signed, magnitude])
+
+
+# --------------------------------------------------------------------------- #
+#  Classification + attribution driver 
+# --------------------------------------------------------------------------- #
+def classify_and_attribute(expr, requested, holdout_ids=None, use_shap=True, verbose=False):
+
+    params = {
+        # svm: dense signed coefficients (GSEA-arm partner to glm)
+        "svm": {"penalty": 'l2', "loss": 'squared_hinge', "C": 1.0,
+                "class_weight": 'balanced', "random_state": 12345, "max_iter": 50000},
+        # glm: L2 (ridge) logistic regression, dense signed coefficients
+        "glm": {"penalty": "l2", "C": 1.0, "class_weight": "balanced",
+                "max_iter": 10000, "random_state": 0},
+        # elasticnet: L1+L2 logistic regression (sparse selector -> ORA arm)
+        "elasticnet": {"penalty": "elasticnet", "solver": "saga", "C": 1.0,
+                       "l1_ratio": 0.5, "max_iter": 10000, "tol": 1e-4,
+                       "random_state": 12345},
+        # xgboost: shallow trees, heavy column subsampling, L1/L2 leaf reg
+        "xgboost": {"n_estimators": 300, "learning_rate": 0.05, "max_depth": 3,
+                    "subsample": 0.8, "colsample_bytree": 0.3, "reg_alpha": 0.1,
+                    "reg_lambda": 1.0, "min_child_weight": 1,
+                    "objective": "binary:logistic", "eval_metric": "logloss",
+                    "tree_method": "hist", "n_jobs": -1, "random_state": 12345},
+    }
+
+    order = ["svm", "glm", "elasticnet", "xgboost"]
+    estimators = [(name, make_estimator(name, params)) for name in order if name in requested]
+
+    skf = StratifiedKFold(n_splits=5, shuffle=True, random_state=12345)
+    X = expr.iloc[:, :-1]
+    # target stored as {-1,+1}; re-encode to {0,1} (xgboost rejects {-1,+1};
+    # the positive class stays the SF / +1 group).
+    y = (expr.iloc[:, -1] > 0).astype(int)
+
+    held_out = bool(holdout_ids)
+    if held_out:
+        is_test = X.index.isin(holdout_ids)
+        train_pos = np.arange(X.shape[0])[~is_test]
+        test_pos = np.arange(X.shape[0])[is_test]
+
+    results = {m: {} for m in requested}
+    for name, model in estimators:
+        splits = zip([train_pos], [test_pos]) if held_out else skf.split(X, y)
+
+        acc_list, coef_list, shap_list = [], [], []
+        for train, test in splits:
+            model = model.fit(X.iloc[train, :], y.iloc[train])
+            acc_list.append(accuracy_score(model.predict(X.iloc[test, :]), y.iloc[test]))
+
+            final = terminal_step(model)
+            if hasattr(final, "feature_importances_"):
+                coef_list.append(final.feature_importances_)
+            else:
+                coef_list.append(final.coef_.T)
+
+            if use_shap:
+                sv = shap_attribution(model, X.iloc[train], X.iloc[test], verbose=verbose)
+                if sv is not None:
+                    shap_list.append(sv)
+
+            if verbose:
+                print("  [{}] running mean accuracy {:.3f}".format(name, np.mean(acc_list)))
+
+        if use_shap and shap_list:
+            signed_stack = np.vstack([s[0] for s in shap_list])
+            abs_stack = np.vstack([s[1] for s in shap_list])
+            results[name]['shap'] = pd.DataFrame({
+                "shap_mean": signed_stack.mean(axis=0),      # direction of effect
+                "shap_abs_mean": abs_stack.mean(axis=0),     # magnitude (rank by this)
+                "shap_std": signed_stack.std(axis=0),        # cross-fold stability
+            }, index=X.columns.values)
+
+        results[name]["accuracy"] = pd.DataFrame(acc_list, columns=["Accuracy"])
+        results[name]["model_coefs"] = pd.DataFrame(
+            np.mean(coef_list, axis=0), columns=['Score'], index=X.columns.values)
+
+    return results
+
+
+
+HOLDOUT = {
+    "270": (["RR3_HRT_FLT_F1"], ["RR3_HRT_GC_G7"]),
+    "580": (["RRRM2_HRT_FLT_ISS-T_YNG_FY1"], ["RRRM2_HRT_GC_ISS-T_YNG_GY1"]),
+    "599": (["GSM6996080"], ["GSM6996077"]),
+}
+
+
+def _nested(holdout):
+    """Adapter to the nested {study: {'id': {'SF': [...], 'GC': [...]}}} shape
+    that the verbatim `scale_data` consumes."""
+    if holdout is None:
+        return None
+    return {k: {'id': {'SF': list(sf), 'GC': list(gc)}} for k, (sf, gc) in holdout.items()}
+
+
+def _flat_ids(holdout):
+    """Flat list of every held-out sample id (the only thing the standardiser
+    and the classifier need)."""
+    if holdout is None:
+        return []
+    return [i for sf, gc in holdout.values() for i in (*sf, *gc)]
+
+
+# --------------------------------------------------------------------------- #
+#  CLI
+# --------------------------------------------------------------------------- #
+def main():
     parser = argparse.ArgumentParser(
-        description="Minimal HEART SF-vs-control classifier + gene attribution + concat export.")
+        description="HEART spaceflight-vs-control classifier + gene attribution + concat export.")
     parser.add_argument("-C", "--custom_concat", default=None,
                         help="Externally harmonised concatenated matrix (genes x samples). "
                              "If omitted, the native z-score path (load + scale + filter) is used.")
@@ -359,39 +373,35 @@ if __name__ == "__main__":
     parser.add_argument("-V", "--verbose", action="store_true")
     args = parser.parse_args()
 
-    test_labels = {
-        '270': {'id': {'SF': ["RR3_HRT_FLT_F1"], 'GC': ["RR3_HRT_GC_G7"]}},
-        '580': {'id': {'SF': ["RRRM2_HRT_FLT_ISS-T_YNG_FY1"], 'GC': ["RRRM2_HRT_GC_ISS-T_YNG_GY1"]}},
-        '599': {'id': {'SF': ["GSM6996080"], 'GC': ["GSM6996077"]}},
-    }
-    if args.no_test:
-        test_labels = None
-
-    model = RNASeqModel()
+    active = None if args.no_test else HOLDOUT
+    holdout_nested = _nested(active)
+    holdout_ids = _flat_ids(active)
 
     # --- build the concatenated matrix ---
     if args.custom_concat is None:                      # native z-score path
-        model.load_counts(data_dir=['data', 'norm_counts'], verbose=args.verbose,
-                          scale=True, exclude_test=test_labels)
-        model.treatment_filter(id_name="Sample Name", factor='Factor Value[Spaceflight]',
-                               valid_levels=['Space Flight', 'Ground Control',
-                                             'Cohort Control #1', 'Cohort Control #2'],
-                               verbose=args.verbose)
-    model.build_combined_df(args.custom_concat, prep=args.prep, exclude_test=test_labels)
-    print(model.concat_df.shape)
+        studies = load_scaled_studies(['data', 'norm_counts'],
+                                      ['data', 'single_study_metadata'],
+                                      holdout_nested, do_scale=True, verbose=args.verbose)
+        studies = keep_valid_treatments(
+            studies, "Sample Name", "Factor Value[Spaceflight]",
+            ['Space Flight', 'Ground Control', 'Cohort Control #1', 'Cohort Control #2'])
+        expr = assemble_native(studies)
+    else:
+        expr = assemble_custom(args.custom_concat, args.prep, holdout_ids)
+
+    print(expr.shape)
 
     suffix = ('_' + args.tag) if args.tag else ''
-
-    model.concat_df.transpose().to_csv("concat_df{}.csv".format(suffix), header=True)
+    expr.transpose().to_csv("concat_df{}.csv".format(suffix), header=True)
 
     # --- classify + attribute ---
-    results = model.fit_model(args.models, test_set=test_labels,
-                              shap_values=not args.no_shap, verbose=args.verbose)
+    results = classify_and_attribute(expr, args.models, holdout_ids=holdout_ids,
+                                     use_shap=not args.no_shap, verbose=args.verbose)
 
     # --- export attributions ---
     os.makedirs("feature_importance", exist_ok=True)
     for m in args.models:
-        rd = results[m]
+        rd = results.get(m, {})
         if rd.get('model_coefs') is not None:
             coef_name = 'svm_importances' if m == 'svm' else '{}_importances'.format(m)
             rd['model_coefs'].sort_values('Score', ascending=False).to_csv(
@@ -402,3 +412,7 @@ if __name__ == "__main__":
             rd['accuracy'].to_csv('feature_importance/{}_accuracy{}.csv'.format(m, suffix), index=False)
 
     print("Done.")
+
+
+if __name__ == "__main__":
+    main()

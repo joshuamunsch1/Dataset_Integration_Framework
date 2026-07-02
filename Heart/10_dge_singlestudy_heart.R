@@ -1,5 +1,6 @@
 # ============================================================
 # 10_dge_singlestudy.R
+# adapted from Ilangovan et al. for z-score route applied to heart
 # ============================================================
 
 suppressPackageStartupMessages({
